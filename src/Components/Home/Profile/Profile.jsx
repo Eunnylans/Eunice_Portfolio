@@ -27,6 +27,9 @@ export default function Profile() {
               <a href="https://www.youtube.com/channel/UCzfYTsnAfmb8P8Xda5mDNQQ">
                 <i className="fa fa-youtube-square"></i>
               </a>
+              <a href="https://github.com/Eunnylans">
+                <i className="fa fa-github"></i>
+              </a>
             </div>
           </div>
 
@@ -61,7 +64,7 @@ export default function Profile() {
                 />
               </h1>
               <span className="profile-role-tagline">
-                Mastery of building application with Frontend operations.
+                Master of building application with Frontend operations.
               </span>
             </span>
           </div>
