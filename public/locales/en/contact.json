@@ -1,0 +1,11 @@
+{
+    "contact-title": "Contact",
+    "get-in-touch": "Wanna get in touch or talk about a project? Feel free to contact me?",
+    "enter-name-placeholder": "Please enter your name",
+    "name-error-placeholder": "Please enter a name fewer than 30 characters",
+    "enter-email-placeholder": "Please enter your email",
+    "email-error-placeholder": "Invalid email address",
+    "enter-message-placeholder": "Please enter your message",
+    "message-error-placeholder": "Oops, you forgot your message",
+    "send-message-button": "Send message"
+}

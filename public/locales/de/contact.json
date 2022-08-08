@@ -1,0 +1,11 @@
+{
+    "contact-title": "Kontakt",
+    "get-in-touch": "Sie möchten sich mit mir in Verbindung setzen oder über ein Projekt sprechen? Fühlen Sie sich frei, mich zu kontaktieren?",
+    "enter-name-placeholder": "Bitte geben Sie Ihren Namen ein",
+    "name-error-placeholder": "Bitte geben Sie einen Namen mit weniger als 30 Zeichen ein",
+    "enter-email-placeholder": "Bitte geben Sie Ihre E-Mail ein",
+    "email-error-placeholder": "Ungültige E-Mail Adresse",
+    "enter-message-placeholder": "Bitte geben Sie Ihre Nachricht ein",
+    "message-error-placeholder": "Ups, Sie haben Ihre Nachricht vergessen",
+    "send-message-button": "Nachricht abschicken"
+}

@@ -1,13 +1,26 @@
+import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import Profile from "./Profile/Profile";
-import Footer from "./Footer/Footer";
-import "./Home.css";
+import Footer from "./Footer";
+import Profile from "./Profile";
 
-export default function Home() {
+const useStyles = makeStyles((theme) => ({
+  homeContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    minHeight: "670px",
+    backgroundColor: "indigo",
+  },
+}));
+
+const Home = () => {
+  const classes = useStyles();
+
   return (
-    <div className="home-container">
+    <div className={classes.homeContainer}>
       <Profile />
       <Footer />
     </div>
   );
-}
+};
+export default Home;
