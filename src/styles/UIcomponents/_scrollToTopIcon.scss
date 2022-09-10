@@ -1,0 +1,55 @@
+@import '../base';
+
+.to-top-icon {
+  z-index: 200;
+  animation: fadeout 1s linear 0s forwards;
+
+  &:hover {
+    cursor: pointer;
+    fill: $gray;
+  }
+
+  &.showIcon {
+    animation: fadein 1s linear 0s forwards;
+  }
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(50%);
+    opacity: 0.1;
+    visibility: hidden;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+    padding: 3px;
+    border: 2px solid $gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 3%;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+    padding: 3px;
+    border: 2px solid $gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 3%;
+  }
+
+  to {
+    transform: translateY(50%);
+    opacity: 0.1;
+    visibility: hidden;
+  }
+}

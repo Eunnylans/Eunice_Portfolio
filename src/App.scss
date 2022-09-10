@@ -1,0 +1,15 @@
+@import "./styles/base";
+
+//components
+@import "./styles/components/hero";
+@import "./styles/components/navbar";
+@import "./styles/components/aboutme";
+@import "./styles/components/projects.scss";
+@import "./styles/components/footer";
+@import "./styles/components/hamburgerMenu";
+@import "./styles/components/contacts";
+
+//UIcomponents
+@import "./styles/UIcomponents/sectionTitle";
+@import "./styles/UIcomponents/themeToggleButton";
+@import "./styles/UIcomponents/scrollToTopIcon";

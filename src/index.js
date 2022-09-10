@@ -1,17 +1,14 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "./index.css";
-// import "./Translation/i18n";
+import { UIContextProvider } from "./context/ui-context";
 
 ReactDOM.render(
   <BrowserRouter>
-    <React.StrictMode>
-      <Suspense fallback={null}>
-        <App />
-      </Suspense>
-    </React.StrictMode>
+    <UIContextProvider>
+      <App />
+    </UIContextProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );

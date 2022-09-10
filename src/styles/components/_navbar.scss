@@ -1,0 +1,114 @@
+@import '../base';
+
+.navbar {
+  padding: 0px 100px;
+  height: 80px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .home-icon {
+    padding: 10px 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & img {
+      height: 100%;
+    }
+  }
+
+  .navbar-links-list {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .nav-link,
+      .nav-link-resume {
+        display: block;
+        line-height: 100%;
+        font-size: $fontsize-midText;
+        text-decoration: none;
+
+        &-active,
+        &:hover {
+          color: $royalblue;
+          font-weight: 500;
+        }
+
+        &:visited {
+          text-decoration: none;
+          color: $gray;
+        }
+      }
+
+      .nav-link-resume {
+        &:visited {
+          color: $gray;
+        }
+
+        &:hover {
+          color: $royalblue;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &.dark {
+      li {
+        .nav-link,
+        .nav-link-resume {
+          &-active,
+          &:hover {
+            color: $lightblue;
+          }
+
+          &:visited {
+            color: white;
+          }
+        }
+
+        .nav-link-resume {
+          &:visited {
+            color: white;
+          }
+
+          &:hover {
+            color: $lightblue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    height: 60px;
+    width: 100vw;
+    padding: 0px 30px;
+
+    .navbar-links-list {
+      li {
+        width: auto;
+        padding: 0 10px;
+
+        .nav-link,
+        .nav-link-resume {
+          font-size: $fontsize-smallText;
+        }
+      }
+    }
+  }
+}

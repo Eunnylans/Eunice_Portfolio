@@ -1,0 +1,46 @@
+//variables
+$royalblue: #264de4;
+$lightblue: #64e6f0;
+$gray: #615e5e;
+$lightgray: #fafafa;
+$darkgray: #1a1a1a;
+$fontsize-title: 96px;
+$fontsize-largeText: 20px;
+$fontsize-midText: 18px;
+$fontsize-smallText: 16px;
+$fontsize-minText: 14px;
+
+//functions
+@function setTextColor($color) {
+  @if (lightness($color) > 70) {
+    @return $gray;
+  } @else {
+    @return white;
+  }
+}
+
+//mixins
+// @mixin setText($lineHeight) {
+//   font-size: $fontsize-midText;
+//   line-height: $lineHeight;
+// }
+
+@mixin setBGAndTextColor($color) {
+  background-color: $color;
+  color: setTextColor($color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  @include setBGAndTextColor($lightgray);
+}
+
+body.dark {
+  @include setBGAndTextColor($darkgray);
+}
