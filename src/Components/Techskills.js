@@ -1,10 +1,9 @@
 import { Card, Grid, Icon, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
-import React from "react";
-
-
-
+import React, { useContext, useLayoutEffect, useRef, useState } from "react";
+import UIContext from "../context/ui-context";
+import SectionTitle from "../UIcomponents/SectionTitle";
 
 const useStyles = makeStyles((theme) => ({
   techStackContainer: {
@@ -94,8 +93,31 @@ const Techskills = ({ match }) => {
     },
   ];
 
+  const uiCtx = useContext(UIContext);
+  const ref = useRef();
+  const [fadeIn, setFadeIn] = useState(false);
+
+  const onScroll = () => {
+    const topPos = ref.current.offsetTop;
+    const bottomPos = ref.current.offsetTop + ref.current.offsetHeight;
+
+    if (
+      topPos + 150 < window.scrollY + window.innerHeight &&
+      bottomPos > window.scrollY
+    ) {
+      setFadeIn(true);
+    } else {
+      setFadeIn(false);
+    }
+  };
+
+  useLayoutEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <>
+    <div className={`Techskills ${fadeIn ? "fadeIn" : null}`} ref={ref}>
       <Grid container spacing={4} className={classes.techStackContainer}>
         {myTechStack &&
           myTechStack.map((tech) => {
@@ -133,9 +155,8 @@ const Techskills = ({ match }) => {
             );
           })}
       </Grid>
-    </>
+    </div>
   );
 };
 
 export default Techskills;
-
