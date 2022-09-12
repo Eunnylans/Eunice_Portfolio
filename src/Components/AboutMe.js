@@ -15,7 +15,6 @@ import {
 import Typical from "react-typical";
 import ProfilePic from "../assets/Eunice.jpeg";
 import UIContext from "../context/ui-context";
-import SectionTitle from "../UIcomponents/SectionTitle";
 
 const skillsArr = [
   {
@@ -120,48 +119,78 @@ const AboutMe = () => {
   });
 
   return (
-    <div className="aboutme" id="aboutme">
+    <div className="profile-container">
       <div
-        className={`aboutme-content ${uiCtx.isDark ? "dark" : null}`}
+        className={`profile-parent ${uiCtx.isDark ? "dark" : null}`}
         ref={ref}
       >
-       
-        <div className="aboutme-summary-text">
-          <SectionTitle className="aboutme-title">
-            {" "}
-            Hello, I'M{" "}
-            <span className="highlighted-text">Eunice Abieyuwa Igbinedion</span>
-          </SectionTitle>
-          <p>
-            {" "}
-            <h1>
-              {" "}
-              <Typical
-                loop={Infinity}
-                steps={[
-                  "Enthusiastic Dev 🌐",
-                  1000,
-                  "Frontend Developer 👩‍💻",
-                  1000,
-                  "React Developer 👩‍💻",
-                  1000,
-                  "Database Administrator 📊",
-                  1000,
-                  "Sales Enthusiast 🔮",
-                  1000,
-                ]}
-              />
-            </h1>
-          </p>
-          <p>
-            Master of building application with Frontend operations. <br />
-            As a Brand Marketer-turned-Front-End Developer, my goal is to
-            provide solutions that create a better user experience. <br />
-            By combining my marketing expertise with my technical skills, I can
-            push your business forward.
-          </p>
+        <div className="profile-details">
+          <div className="colz">
+            <div className="colz-icon">
+              <a href="https://www.facebook.com/igbinedion.abieyuwa">
+                <i className="fa fa-facebook-square"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/eunice-abieyuwa-igbinedion-82bb88117/">
+                <i className="fa fa-linkedin"></i>
+              </a>
+              <a href="https://www.xing.com/profile/EuniceAbieyuwa_Igbinedion/cv">
+                <i className="fa fa-xing"></i>
+              </a>
+              <a href="https://www.instagram.com/leuchtender_stern18/">
+                <i className="fa fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/eunnylans">
+                <i className="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCzfYTsnAfmb8P8Xda5mDNQQ">
+                <i className="fa fa-youtube-square"></i>
+              </a>
+              <a href="https://github.com/Eunnylans">
+                <i className="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
 
-          <div className="profile-options">
+          <div className="profile-details-name">
+            <span className="primary-text">
+              {" "}
+              Hello, I'M{" "}
+              <span className="highlighted-text">
+                Eunice Abieyuwa Igbinedion
+              </span>
+            </span>
+          </div>
+          <div className="profile-details-role">
+            <span className="primary-text">
+              {" "}
+              <h1>
+                {" "}
+                <Typical
+                  loop={Infinity}
+                  steps={[
+                    "Enthusiastic Dev 🌐",
+                    1000,
+                    "Frontend Developer 👩‍💻",
+                    1000,
+                    "React Developer 👩‍💻",
+                    1000,
+                    "Database Administrator 📊",
+                    1000,
+                    "Sales Enthusiast 🔮",
+                    1000,
+                  ]}
+                />
+              </h1>
+              <span className="profile-role-tagline">
+                Master of building application with Frontend operations. <br />
+                As a Brand Marketer-turned-Front-End Developer, my goal is to
+                provide solutions that create a better user experience. <br />
+                By combining my marketing expertise with my technical skills, I
+                can push your business forward.
+              </span>
+            </span>
+          </div>
+          <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
             <button className="btn primary-btn">
               {""}
               Hire Me{" "}
@@ -171,24 +200,14 @@ const AboutMe = () => {
             </a>
           </div>
         </div>
-      </div>
-        {/*
-      <div className={`aboutme-text-additional ${fadeIn ? "fadeIn" : null}`}>
-        <div className="aboutme-text-personal">
+        <div className="profile-picture">
+          <img
+            src={ProfilePic}
+            alt="Profile"
+            className="profile-picture-background"
+          />
         </div>
-      
-        <div className="aboutme-text-skills">
-          <h3>Technologies</h3>
-          <div className="aboutme-skills-list">{skillsList}</div>
-        </div>
-       
       </div>
-       */}
-      <div className={`aboutme-summary ${fadeIn ? "fadeIn" : null}`}>
-      <div className="aboutme-profilePic">
-        <img src={ProfilePic} alt="Profile" className='profilePic' />
-      </div>
-    </div>
     </div>
   );
 };
