@@ -1,10 +1,9 @@
 import { Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
-import UIContext from "../context/ui-context";
-import SectionTitle from "../UIcomponents/SectionTitle";
 import { useForm } from "react-hook-form";
 import Fade from "react-reveal/Fade";
+import UIContext from "../context/ui-context";
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -159,12 +158,12 @@ const Messages = () => {
   };
 
   useLayoutEffect(() => {
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <>
+    <div className={`messages ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
       <section style={{ background: "#252934" }}>
         <svg
           preserveAspectRatio="none"
@@ -266,7 +265,7 @@ const Messages = () => {
           </form>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

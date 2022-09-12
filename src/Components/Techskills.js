@@ -117,12 +117,12 @@ const Techskills = ({ match }) => {
   }, []);
 
   return (
-    <div className={`Techskills ${fadeIn ? "fadeIn" : null}`} ref={ref}>
+    <div className={`techskills ${uiCtx.isDark ? "dark" : null}`}>
       <Grid container spacing={4} className={classes.techStackContainer}>
         {myTechStack &&
           myTechStack.map((tech) => {
             return (
-              <>
+              <div>
                 <Grid item className={classes.techStackContainer}>
                   <Card elevation={0} className={classes.card}>
                     <div className={classes.iconsDiv}>
@@ -151,7 +151,7 @@ const Techskills = ({ match }) => {
                     </Typography>
                   </Card>
                 </Grid>
-              </>
+              </div>
             );
           })}
       </Grid>
