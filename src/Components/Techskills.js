@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
     padding: "0 0 50px 0",
+    height: "300%",
+    width: "100%",
   },
 
   iconsDiv: {
