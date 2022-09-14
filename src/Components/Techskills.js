@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import UIContext from "../context/ui-context";
-import SectionTitle from "../UIcomponents/SectionTitle";
 
 const useStyles = makeStyles((theme) => ({
   techStackContainer: {
@@ -12,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
     padding: "0 0 50px 0",
-    height: "300%",
-    width: "100%",
+    maxWidth: "100%",
+    minHeight: "100vh",
   },
 
   iconsDiv: {
@@ -43,9 +42,12 @@ const useStyles = makeStyles((theme) => ({
 
   card: {
     background: "#F6F6F6",
-    height: "300px",
-    width: "300px",
+    height: "500px",
+    width: "500px",
     borderBottom: "4px solid #10ABB0",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "50%",
   },
 
   cardTypo: {

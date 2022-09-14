@@ -341,13 +341,13 @@
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	height: 10%;
-	min-height: fit-content;
+	max-width: 100%;
+	min-height: 100vh;
 }
 .profile-parent {
 	display: flex;
 	align-items: center;
-	color: aliceblue;
+	color: rgba(21, 39, 198, 0.852);
 }
 .profile-details-name {
 	font-size: 24px;
