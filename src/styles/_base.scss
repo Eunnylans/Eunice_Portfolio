@@ -1,4 +1,17 @@
+//variables
+$royalblue: #264de4;
+$lightblue: #64e6f0;
+$gray: #615e5e;
+$lightgray: #fafafa;
+$darkgray: #1a1a1a;
+$fontsize-title: 96px;
+$fontsize-largeText: 20px;
+$fontsize-midText: 18px;
+$fontsize-smallText: 16px;
+$fontsize-minText: 14px;
+
 :root {
+  --lightblue: #64e6f0;
   --light-blue: #04c3ff;
   --light-blue-shadow: rgb(69 211 255 / 27%);
   --sea-green: #0abead;
@@ -17,18 +30,6 @@
   --toast-success: #0cbfae;
   --loader-color: #0cbfae;
 }
-
-//variables
-$royalblue: #264de4;
-$lightblue: #64e6f0;
-$gray: #615e5e;
-$lightgray: #fafafa;
-$darkgray: #1a1a1a;
-$fontsize-title: 96px;
-$fontsize-largeText: 20px;
-$fontsize-midText: 18px;
-$fontsize-smallText: 16px;
-$fontsize-minText: 14px;
 
 //functions
 @function setTextColor($color) {
@@ -55,4 +56,118 @@ $fontsize-minText: 14px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+body {
+  @include setBGAndTextColor($lightgray);
+}
+
+body.dark {
+  @include setBGAndTextColor($darkgray);
+}
+
+//for about me
+
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Poppins-Thin.ttf");
+}
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+* {
+  outline: none;
+}
+body {
+  margin: 0;
+  overflow-y: overlay;
+  font-family: "Poppins Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins SemiBold";
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #0cbfae;
+  &:hover {
+    color: aliceblue;
+    border: 2px solid #ff5823;
+    background-color: #1f2235;
+  }
+}
+.highlighted-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #0cbfae;
+}
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
 }
