@@ -227,7 +227,7 @@ const Messages = () => {
             />
             <Typography
               gutterBottom
-              style={{ color: "#726F6E" }}
+              style={{ color: "white" }}
               variant="caption"
             >
               {errors.email && errors.email.message}
@@ -246,7 +246,7 @@ const Messages = () => {
             ></textarea>
             <Typography
               gutterBottom
-              style={{ color: "#726F6E" }}
+              style={{ color: "white" }}
               variant="caption"
             >
               {errors.message && "Oops, you forgot your message"}

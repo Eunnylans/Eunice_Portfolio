@@ -124,7 +124,7 @@ const AboutMe = () => {
         className={`profile-parent ${uiCtx.isDark ? "dark" : null}`}
         ref={ref}
       >
-        <div className="profile-details">
+        <div  className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
           <div className="colz">
             <div className="colz-icon">
               <a href="https://www.facebook.com/igbinedion.abieyuwa">
@@ -151,7 +151,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="profile-details-name">
+          <div className={`profile-details-name ${fadeIn ? "fadeIn" : null}`}>
             <span className="primary-text">
               {" "}
               Hello, I'M{" "}

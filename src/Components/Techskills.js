@@ -51,14 +51,14 @@ const useStyles = makeStyles((theme) => ({
   },
 
   cardTypo: {
-    fontFamily: "Raleway, sans-serif",
+    fontFamily: "Poppins SemiBold",
     padding: "50px 0 10px 0",
     textAlign: "center",
-    fontWeight: "10px",
+    fontWeight: "20px",
   },
 
   typoSpan: {
-    fontFamily: "Raleway, sans-serif",
+    fontFamily: "Poppins SemiBold",
     fontWeight: "bold",
   },
 }));
