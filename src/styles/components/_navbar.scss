@@ -6,6 +6,7 @@
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: "Poppins Medium";
 
   .home-icon {
     padding: 10px 0;
@@ -40,6 +41,7 @@
         line-height: 100%;
         font-size: $fontsize-midText;
         text-decoration: none;
+        font-family: "Poppins Medium";
 
         &-active,
         &:hover {

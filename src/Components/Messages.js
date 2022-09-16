@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#252934",
     paddingTop: theme.spacing(5),
     margin: "auto",
   },
@@ -19,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
   contactTypo: {
     textTransform: "uppercase",
     fontWeight: "bold",
-    color: "white",
+    color: "#0cbfae",
     textAlign: "center",
   },
 
   questionTypo: {
-    color: "#10ABB0",
+    color: "#0cbfae",
     textAlign: "center",
     marginLeft: "25px",
     [theme.breakpoints.down("sm")]: {
@@ -36,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     border: "0px",
     width: "110px",
     height: "4px",
-    backgroundColor: "#fff",
+    backgroundColor: "#0cbfae",
     margin: "10px 0 40px 0",
   },
 
@@ -62,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Raleway, sans-serif",
     width: "100%",
     marginBottom: "8px",
-    backgroundColor: "#1E242C",
+    backgroundColor: "#0cbfae",
     color: "white",
     border: "none",
   },
@@ -70,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   textArea: {
     fontFamily: "Raleway, sans-serif",
     padding: "10px 0px 10px 10px",
-    backgroundColor: "#1E242C",
+    backgroundColor: " #0cbfae",
     color: "white",
     width: "100%",
     height: "100%",
@@ -81,14 +80,14 @@ const useStyles = makeStyles((theme) => ({
 
   submitButton: {
     cursor: "pointer",
-    alignSelf: "flex-end",
+    alignSelf: "center",
     padding: "10px 15px",
     marginRight: "-10px",
     color: "white",
     fontFamily: "Raleway, sans-serif",
-    backgroundColor: "transparent",
+    backgroundColor: "#0cbfae",
     borderRadius: "0px",
-    border: "2px solid white",
+    border: "2px solid  #0cbfae",
     "&:hover": {
       backgroundColor: "#10ABB0",
       color: "white",
@@ -164,7 +163,7 @@ const Messages = () => {
 
   return (
     <div className={`messages ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
-      <section style={{ background: "#252934" }}>
+      <section >
         <svg
           preserveAspectRatio="none"
           viewBox="0 0 100 102"
@@ -174,7 +173,7 @@ const Messages = () => {
           xmlns="http://www.w3.org/2000/svg"
           className="svgcolor-light"
         >
-          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+          <path d="M0 0 L50 100 L100 0 Z" fill="#0cbfae" stroke="#0cbfae"></path>
         </svg>
         <div id="contact" className={classes.wrapper}>
           <Fade left>

@@ -365,34 +365,55 @@
 }
 .primary-text {
   color: (--white);
+  font-family: "Poppins Bold";
+  font-weight: 900;
+  font-size: xx-large;
 }
 .highlighted-text {
-  color: var(--dark-orange);
+  color: $royalblue;
+  font-family: "Poppins Bold";
 }
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
-  font-family: "Poppins Light";
+  font-family: "Poppins Medium";
 }
 .profile-options {
   .highlighted-btn {
     margin: 0 0 0 28px;
+    font-family: "Poppins Medium";
+    font-weight: 500;
+    font-size: 19px;
     &:hover {
       margin: 0 0 0 28px;
-      background-color: cornsilk;
+      background-color: white;
+      border-color: #0cbfae;
+      color: #111;
+    }
+  }
+
+  .primary-btn {
+    margin: 0 0 0 28px;
+    font-family: "Poppins Medium";
+    font-weight: 500;
+    font-size: 19px;
+    &:hover {
+      margin: 0 0 0 28px;
+      background-color: white;
+      border-color: #0cbfae;
       color: #111;
     }
   }
 }
 .profile-picture {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-shadow: 0 1px 0px 0px var(--white);
-	border-radius: 50%;
-	height: 380px;
-	width: 380px;
-	margin: 0 0px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px #0cbfae;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
 }
 .profile-picture-background {
   height: 92%;
