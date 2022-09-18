@@ -73,7 +73,7 @@ const Techskills = ({ match }) => {
       icon: "fas fa-desktop",
       languages_practices: "Languages:",
       language_PracticeList: "HTML, CSS, Sass, JavaScript, ReactJS",
-      tools: "about:tech-tools",
+      tools: "Tech Tools",
       tooList:
         "GitHUB, Material UI, Particles.js, Bootstrap, React Spring, Figma, Netlify",
     },
@@ -83,7 +83,7 @@ const Techskills = ({ match }) => {
       icon: "fas fa-database",
       languages_practices: "Languages",
       language_PracticeList: "NodeJs, NoSQL, SQL",
-      tools: "about:tech-tools",
+      tools: "Tech Tools",
       tooList: "Express, MongoDB, PostgreSQL, GitHUB, Heroku",
     },
     {
@@ -92,7 +92,7 @@ const Techskills = ({ match }) => {
       icon: "fas fa-sitemap",
       languages_practices: "Practices:",
       language_PracticeList: "Agile, SCRUM",
-      tools: "Tools I Use:",
+      tools: "Tools Used:",
       tooList: "Trello, Slack, Discord",
     },
   ];

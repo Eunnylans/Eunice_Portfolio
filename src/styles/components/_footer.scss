@@ -8,14 +8,17 @@
   align-items: flex-end;
   padding-bottom: 20px;
   text-align: center;
+  background-color: #0cbfae;
 
   p {
     color: $gray;
+    font-family: "Poppins Medium";
   }
 
   &.dark {
     p {
       color: white;
+      font-family: "Poppins Medium";
     }
   }
 }

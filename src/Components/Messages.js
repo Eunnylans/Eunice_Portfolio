@@ -17,12 +17,14 @@ const useStyles = makeStyles((theme) => ({
 
   contactTypo: {
     textTransform: "uppercase",
+    fonzFamily: "Poppins Medium",
     fontWeight: "bold",
     color: "#0cbfae",
     textAlign: "center",
   },
 
   questionTypo: {
+    fonzFamily: "Poppins Medium",
     color: "#0cbfae",
     textAlign: "center",
     marginLeft: "25px",
@@ -58,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   input: {
     margin: "auto",
     padding: "10px 0px 10px 10px",
-    fontFamily: "Raleway, sans-serif",
+    fontFamily: "Poppins Medium",
     width: "100%",
     marginBottom: "8px",
     backgroundColor: "#0cbfae",
@@ -67,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   textArea: {
-    fontFamily: "Raleway, sans-serif",
+    fonzFamily: "Poppins Medium",
     padding: "10px 0px 10px 10px",
     backgroundColor: " #0cbfae",
     color: "white",
@@ -84,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px 15px",
     marginRight: "-10px",
     color: "white",
-    fontFamily: "Raleway, sans-serif",
+    fonzFamily: "Poppins Medium",
     backgroundColor: "#0cbfae",
     borderRadius: "0px",
     border: "2px solid  #0cbfae",
@@ -163,7 +165,7 @@ const Messages = () => {
 
   return (
     <div className={`messages ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
-      <section >
+      <section>
         <svg
           preserveAspectRatio="none"
           viewBox="0 0 100 102"
@@ -173,7 +175,11 @@ const Messages = () => {
           xmlns="http://www.w3.org/2000/svg"
           className="svgcolor-light"
         >
-          <path d="M0 0 L50 100 L100 0 Z" fill="#0cbfae" stroke="#0cbfae"></path>
+          <path
+            d="M0 0 L50 100 L100 0 Z"
+            fill="#0cbfae"
+            stroke="#0cbfae"
+          ></path>
         </svg>
         <div id="contact" className={classes.wrapper}>
           <Fade left>

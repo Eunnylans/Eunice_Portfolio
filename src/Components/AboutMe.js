@@ -127,27 +127,7 @@ const AboutMe = () => {
         <div  className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
           <div className="colz">
             <div className="colz-icon">
-              <a href="https://www.facebook.com/igbinedion.abieyuwa">
-                <i className="fa fa-facebook-square"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/eunice-abieyuwa-igbinedion-82bb88117/">
-                <i className="fa fa-linkedin"></i>
-              </a>
-              <a href="https://www.xing.com/profile/EuniceAbieyuwa_Igbinedion/cv">
-                <i className="fa fa-xing"></i>
-              </a>
-              <a href="https://www.instagram.com/leuchtender_stern18/">
-                <i className="fa fa-instagram"></i>
-              </a>
-              <a href="https://twitter.com/eunnylans">
-                <i className="fa fa-twitter"></i>
-              </a>
-              <a href="https://www.youtube.com/channel/UCzfYTsnAfmb8P8Xda5mDNQQ">
-                <i className="fa fa-youtube-square"></i>
-              </a>
-              <a href="https://github.com/Eunnylans">
-                <i className="fa fa-github"></i>
-              </a>
+            {skillsList}
             </div>
           </div>
 
