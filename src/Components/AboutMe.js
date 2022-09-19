@@ -1,4 +1,6 @@
-import { useContext, useLayoutEffect, useRef, useState } from "react";
+import React, { useContext, useLayoutEffect, useRef, useState } from "react";
+import UIContext from '../context/ui-context';
+import SectionTitle from '../UIcomponents/SectionTitle';
 import { FaSass } from "react-icons/fa";
 import {
   SiCss3,
@@ -14,7 +16,7 @@ import {
 } from "react-icons/si";
 import Typical from "react-typical";
 import ProfilePic from "../assets/Eunice.jpeg";
-import UIContext from "../context/ui-context";
+
 
 const skillsArr = [
   {
@@ -131,13 +133,13 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className={`profile-details-name ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-details-name">
             <span className="primary-text">
               {" "}
               Hello, I'M{" "}
-              <span className="highlighted-text">
+              <SectionTitle className="highlighted-text">
                 Eunice Abieyuwa Igbinedion
-              </span>
+              </SectionTitle>
             </span>
           </div>
           <div className="profile-details-role">
@@ -180,7 +182,7 @@ const AboutMe = () => {
             </a>
           </div>
         </div>
-        <div className="profile-picture">
+        <div  className={`profile-picture ${fadeIn ? "fadeIn" : null}`}>
           <img
             src={ProfilePic}
             alt="Profile"

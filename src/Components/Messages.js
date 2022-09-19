@@ -1,108 +1,11 @@
 import { Divider, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import Fade from "react-reveal/Fade";
 import UIContext from "../context/ui-context";
 
-const useStyles = makeStyles((theme) => ({
-  wrapper: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingTop: theme.spacing(5),
-    margin: "auto",
-  },
-
-  contactTypo: {
-    textTransform: "uppercase",
-    fonzFamily: "Poppins Medium",
-    fontWeight: "bold",
-    color: "#0cbfae",
-    textAlign: "center",
-  },
-
-  questionTypo: {
-    fonzFamily: "Poppins Medium",
-    color: "#0cbfae",
-    textAlign: "center",
-    marginLeft: "25px",
-    [theme.breakpoints.down("sm")]: {
-      margin: "20px",
-    },
-  },
-
-  divider: {
-    border: "0px",
-    width: "110px",
-    height: "4px",
-    backgroundColor: "#0cbfae",
-    margin: "10px 0 40px 0",
-  },
-
-  form: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column",
-    margin: "auto",
-    marginTop: "40px",
-    marginBottom: "80px",
-    width: "500px",
-    height: "300px",
-    [theme.breakpoints.down("xs")]: {
-      width: "250px",
-      height: "300px",
-    },
-  },
-
-  input: {
-    margin: "auto",
-    padding: "10px 0px 10px 10px",
-    fontFamily: "Poppins Medium",
-    width: "100%",
-    marginBottom: "8px",
-    backgroundColor: "#0cbfae",
-    color: "white",
-    border: "none",
-  },
-
-  textArea: {
-    fonzFamily: "Poppins Medium",
-    padding: "10px 0px 10px 10px",
-    backgroundColor: " #0cbfae",
-    color: "white",
-    width: "100%",
-    height: "100%",
-    marginBottom: "8px",
-    margin: "auto",
-    border: "none",
-  },
-
-  submitButton: {
-    cursor: "pointer",
-    alignSelf: "center",
-    padding: "10px 15px",
-    marginRight: "-10px",
-    color: "white",
-    fonzFamily: "Poppins Medium",
-    backgroundColor: "#0cbfae",
-    borderRadius: "0px",
-    border: "2px solid  #0cbfae",
-    "&:hover": {
-      backgroundColor: "#10ABB0",
-      color: "white",
-      border: "none",
-    },
-  },
-}));
-
 const Messages = () => {
-  const classes = useStyles();
-
-  // <--- START - Email JS onSubmit and Feedback finction ---> //
-  const { register, handleSubmit, errors } = useForm(); // <--- deconstruction of the necessary props ---> //
+  const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data, reset) => {
     alert(
@@ -181,22 +84,22 @@ const Messages = () => {
             stroke="#0cbfae"
           ></path>
         </svg>
-        <div id="contact" className={classes.wrapper}>
+        <div id="contact" className="wrapper">
           <Fade left>
-            <Typography className={classes.contactTypo} variant="h4">
+            <Typography className="contactTypo" variant="h4">
               CONTACT ME
             </Typography>
           </Fade>
           <Fade right>
-            <Divider class={classes.divider}></Divider>
+            <Divider class="divider"></Divider>
           </Fade>
-          <Typography className={classes.questionTypo} variant="body1">
+          <Typography className="questionTypo" variant="body1">
             "Wanna get in touch or talk about a project? Feel free to contact
             me?"
           </Typography>
-          <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
+          <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <input
-              className={classes.input}
+              className="input"
               type="text"
               id="enter-name"
               name="name"
@@ -219,7 +122,7 @@ const Messages = () => {
             </Typography>
 
             <input
-              className={classes.input}
+              className="input"
               type="email"
               id="enter-email"
               name="email"
@@ -240,7 +143,7 @@ const Messages = () => {
             </Typography>
 
             <textarea
-              className={classes.textArea}
+              className="textArea"
               type="text"
               id="enter-message"
               name="message"
@@ -263,7 +166,7 @@ const Messages = () => {
               disableRipple="true"
               variant="contained"
               color="secondary"
-              className={classes.submitButton}
+              className="submitButton"
             >
               "Send message"
             </button>
