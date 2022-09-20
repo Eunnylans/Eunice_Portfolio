@@ -343,93 +343,99 @@
   justify-content: center;
   max-width: 100%;
   min-height: 100vh;
-}
-.profile-parent {
-  display: flex;
-  align-items: center;
-  color: #849592;
-}
-.profile-details-name {
-  font-size: 24px;
-  font-family: "Poppins SemiBold";
-}
-.profile-details-role {
-  display: flex;
-  flex-direction: column;
-  margin: 14px 0 24px 0;
-  h1 {
-    font-size: 35px;
-    font-family: cursive;
-    color: #0cbfae;
+
+  .profile-parent {
+    display: flex;
+    align-items: center;
+    color: $darkgray;
   }
-}
-.primary-text {
-  color: (--white);
-  font-family: "Poppins Bold";
-  font-weight: 900;
-  font-size: xx-large;
-}
-.highlighted-text {
-  color: $royalblue;
-  font-family: "Poppins Bold";
-}
-.profile-role-tagline {
-  font-size: 19px;
-  margin: 5px 0 0 0;
-  font-family: "Poppins Medium";
-}
-.profile-options {
-  .highlighted-btn {
-    margin: 0 0 0 28px;
-    font-family: "Poppins Medium";
-    font-weight: 500;
-    font-size: 19px;
-    &:hover {
-      margin: 0 0 0 28px;
-      background-color: white;
-      border-color: #0cbfae;
-      color: #111;
+  .profile-details-name {
+    font-size: 24px;
+    font-family: "Poppins SemiBold";
+  }
+  .profile-details-role {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    h1 {
+      font-size: 35px;
+      font-family: cursive;
+      color: #0cbfae;
     }
+  }
+  .primary-text {
+    color: (--white);
+    font-family: "Poppins SemiBold";
+    font-weight: 600;
+    font-size: x-large;
+  }
+  .highlighted-text {
+    color: $royalblue;
+    font-size: large;
+    font-family: "Poppins SemiBold";
   }
 
-  .primary-btn {
-    margin: 0 0 0 28px;
+  .profile-role-tagline {
+    font-size: $fontsize-largeText;
     font-family: "Poppins Medium";
-    font-weight: 500;
-    font-size: 19px;
-    &:hover {
+    line-height: 1.3;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn linear 0.8s forwards;
+    animation-delay: 0.3s;
+  }
+ 
+  .profile-options {
+    .highlighted-btn {
       margin: 0 0 0 28px;
-      background-color: white;
-      border-color: #0cbfae;
-      color: #111;
+      font-family: "Poppins Medium";
+      font-weight: 500;
+      font-size: 19px;
+      &:hover {
+        margin: 0 0 0 28px;
+        background-color: white;
+        border-color: #0cbfae;
+        color: #111;
+      }
+    }
+
+    .primary-btn {
+      margin: 0 0 0 28px;
+      font-family: "Poppins Medium";
+      font-weight: 500;
+      font-size: 19px;
+      &:hover {
+        margin: 0 0 0 28px;
+        background-color: white;
+        border-color: #0cbfae;
+        color: #111;
+      }
     }
   }
-}
-.profile-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 0px 0px #0cbfae;
-  border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0 0px 0 100px;
-}
-.profile-picture-background {
-  height: 92%;
-  width: 92%;
-  // background-image: url("../../../Assets/Home/WhatsApp\ Image\ 2022-05-12\ at\ 7.37.10\ PM.jpeg");
-  background-size: cover;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  &:hover {
-    transform: scale(1.07);
-    transition: 1s ease-out;
+  .profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px #0cbfae;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
   }
-}
-.colz {
-  .colz-icon {
+  .profile-picture-background {
+    height: 92%;
+    width: 92%;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      transform: scale(1.07);
+      transition: 1s ease-out;
+    }
+  }
+  .colz {
+    .colz-icon {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -441,8 +447,18 @@
       &:hover {
         transform: scale(1.5);
       }
+    }
+  }
+  &.dark {
+    .profile-role-tagline {
+      color: white;
+    }
+    .highlighted-text {
+      color: #0cbfae;
+    }
   }
 }
+
 @media screen and (max-width: 1110px) {
   .profile-picture {
     margin: 0 0px 0 80px;
@@ -463,6 +479,7 @@
     }
   }
 }
+
 @media screen and (max-width: 910px) {
   .profile-picture {
     height: 320px;

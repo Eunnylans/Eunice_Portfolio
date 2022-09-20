@@ -11,12 +11,12 @@
     text-transform: uppercase;
     font-family: "Poppins Medium";
     font-weight: bold;
-    color: #0cbfae;
+    color: $darkgray;
     text-align: center;
   }
   .questionTypo {
     font-family: "Poppins Medium";
-    color: #0cbfae;
+    color: $darkgray;
     text-align: center;
     margin-left: 25px;
   }
@@ -33,10 +33,11 @@
   font-family: "Poppins Medium";
   width: 100%;
   margin-bottom: 8px;
-  background-color: #0cbfae;
-  color: white;
+//   background-color: #0cbfae;
+  color: $darkgray;
   border: none;
 }
+
 form {
   display: flex;
   justify-content: center;
@@ -54,15 +55,15 @@ form {
     font-family: "Poppins Medium";
     width: 100%;
     margin-bottom: 8px;
-    background-color: #0cbfae;
-    color: white;
+    background-color: #cef1ee;
+    color: $darkgray;
     border: none;
   }
   textArea {
     font-family: "Poppins Medium";
     padding: 10px 0px 10px 10px;
-    background-color: #0cbfae;
-    color: white;
+    background-color: #cef1ee;
+    color: $darkgray;
     width: 100%;
     height: 100%;
     margin-bottom: 8px;
@@ -74,9 +75,9 @@ form {
     align-self: center;
     padding: 10px 15px;
     margin-right: -10px;
-    color: white;
+    color: $darkgray;
     font-family: "Poppins Medium";
-    background-color: #0cbfae;
+    background-color: #cef1ee;
     border-radius: 0px;
     border: 2px solid #0cbfae;
     &:hover {

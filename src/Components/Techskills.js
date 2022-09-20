@@ -1,71 +1,9 @@
 import { Card, Grid, Icon, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import UIContext from "../context/ui-context";
 
-const useStyles = makeStyles((theme) => ({
-  techStackContainer: {
-    marginTop: theme.spacing(2),
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    padding: "0 0 50px 0",
-    maxWidth: "100%",
-    minHeight: "100vh",
-  },
-
-  iconsDiv: {
-    margin: "auto",
-    // marginTop: theme.spacing(3),
-    width: "80px",
-    height: "80px",
-  },
-
-  icons: {
-    color: "#252525",
-    padding: "10px 0px 10px 0px",
-    height: "50px",
-    width: "50px",
-    fontSize: "40px",
-    textAlign: "center",
-    margin: "10px 0 0 0",
-  },
-
-  divider: {
-    width: "30px",
-    height: "4px",
-    backgroundColor: "#10ABB0",
-    margin: "auto",
-    marginTop: "10px",
-  },
-
-  card: {
-    background: "#F6F6F6",
-    height: "500px",
-    width: "500px",
-    borderBottom: "4px solid #10ABB0",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "50%",
-  },
-
-  cardTypo: {
-    fontFamily: "Poppins SemiBold",
-    padding: "50px 0 10px 0",
-    textAlign: "center",
-    fontWeight: "20px",
-  },
-
-  typoSpan: {
-    fontFamily: "Poppins SemiBold",
-    fontWeight: "bold",
-  },
-}));
-
 const Techskills = ({ match }) => {
-  const classes = useStyles();
-
   const myTechStack = [
     {
       id: 1,
@@ -122,24 +60,22 @@ const Techskills = ({ match }) => {
 
   return (
     <div className={`techskills ${uiCtx.isDark ? "dark" : null}`}>
-      <Grid container spacing={4} className={classes.techStackContainer}>
+      <Grid container spacing={4} className="techStackContainer">
         {myTechStack &&
           myTechStack.map((tech) => {
             return (
               <div>
-                <Grid item className={classes.techStackContainer}>
-                  <Card elevation={0} className={classes.card}>
-                    <div className={classes.iconsDiv}>
-                      <Icon
-                        className={classNames(`${tech.icon}`, classes.icons)}
-                      />
-                      <div class={classes.divider}></div>
+                <Grid item className="techStackContainer">
+                  <Card elevation={0} className="card">
+                    <div className="iconsDiv">
+                      <Icon className={classNames(`${tech.icon}`)} id="icons"/>
+                      <div className="divider"></div>
                     </div>
-                    <Typography variant="h6" className={classes.cardTypo}>
+                    <Typography variant="h5" className="cardTypo">
                       {tech.category}
                     </Typography>
                     <Typography variant="body2" align="center">
-                      <span className={classes.typoSpan}>
+                      <span className="typoSpan">
                         {tech.languages_practices}
                       </span>
                       <br />
@@ -149,7 +85,7 @@ const Techskills = ({ match }) => {
                       variant="body2"
                       style={{ padding: "15px 25px", margin: "auto" }}
                     >
-                      <span className={classes.typoSpan}>{tech.tools}</span>
+                      <span className="typoSpan">{tech.tools}</span>
                       <br />
                       {tech.tooList}
                     </Typography>

@@ -145,7 +145,7 @@ const AboutMe = () => {
           <div className="profile-details-role">
             <span className="primary-text">
               {" "}
-              <h1>
+              <h3>
                 {" "}
                 <Typical
                   loop={Infinity}
@@ -162,7 +162,7 @@ const AboutMe = () => {
                     1000,
                   ]}
                 />
-              </h1>
+              </h3>
               <span className="profile-role-tagline">
                 Master of building application with Frontend operations. <br />
                 As a Brand Marketer-turned-Front-End Developer, my goal is to

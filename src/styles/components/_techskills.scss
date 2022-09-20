@@ -1,0 +1,61 @@
+@import "../base";
+
+.techStackContainer {
+  margin-top: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0 50px 0;
+  max-width: 100%;
+  min-height: 100vh;
+
+  .iconsDiv {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+
+    #icons {
+      color: #252525;
+      padding: 10px 0px 10px 0px;
+      height: 50px;
+      width: 50px;
+      font-size: 40px;
+      text-align: center;
+      margin: 10px 0 0 0;
+    }
+
+    .divider {
+      width: 30px;
+      height: 4px;
+      background-color: #10abb0;
+      margin: auto;
+      margin-top: 10px;
+    }
+  }
+
+  .card {
+    background: #f6f6f6;
+    height: 600px;
+    width: 500px;
+    border-bottom: 4px solid #10abb0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+  }
+
+  .cardTypo {
+    font-family: "Poppins SemiBold";
+    padding: 50px 0 10px 0;
+    text-align: center;
+    font-weight: 50px;
+    font-size: $fontsize-largeText;
+    color: $darkgray;
+  }
+
+  .typoSpan {
+    font-family: "Poppins SemiBold";
+    font-weight: bold;
+    font-size: $fontsize-largeText;
+    color: $darkgray;
+  }
+}
