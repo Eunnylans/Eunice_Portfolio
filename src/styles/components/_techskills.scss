@@ -15,7 +15,7 @@
     height: 80px;
 
     #icons {
-      color: #252525;
+      color: $icons;
       padding: 10px 0px 10px 0px;
       height: 50px;
       width: 50px;
@@ -27,17 +27,17 @@
     .divider {
       width: 30px;
       height: 4px;
-      background-color: #10abb0;
+      background-color: $aqua;
       margin: auto;
       margin-top: 10px;
     }
   }
 
   .card {
-    background: #f6f6f6;
+    background: $offwhite;
     height: 600px;
     width: 500px;
-    border-bottom: 4px solid #10abb0;
+    border-bottom: 4px solid $aqua;
     justify-content: center;
     align-items: center;
     margin-top: 50%;
@@ -49,13 +49,13 @@
     text-align: center;
     font-weight: 50px;
     font-size: $fontsize-largeText;
-    color: $darkgray;
+    color: $darkgreen;
   }
 
   .typoSpan {
     font-family: "Poppins SemiBold";
     font-weight: bold;
     font-size: $fontsize-largeText;
-    color: $darkgray;
+    color: $darkgreen;
   }
 }

@@ -168,7 +168,7 @@ const Messages = () => {
               color="secondary"
               className="submitButton"
             >
-              "Send message"
+              Send Message
             </button>
           </form>
         </div>

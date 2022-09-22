@@ -27,7 +27,6 @@
       font-size: $fontsize-largeText;
       font-family: "Poppins Medium";
       line-height: 1.3;
-
       text-align: center;
       opacity: 0;
       animation: fadeIn linear 0.8s forwards;
@@ -46,7 +45,7 @@
       }
 
       .hero-colorText {
-        color: #0cbfae;
+        color: $aqua;
       }
     }
   }
