@@ -1,4 +1,4 @@
-@import '../base';
+@import "../base";
 
 .projects {
   max-width: 100%;
@@ -7,7 +7,7 @@
   &-content {
     .projects-title {
       margin: 45px 0 30px 200px;
-      color: $darkgray;
+      color: $darkgreen;
       opacity: 0;
 
       &.fadeIn {
@@ -75,17 +75,19 @@
             .project-maintitle {
               font-size: 23px;
               font-weight: 900;
-              color: $gray;
+              color: $darkgreen;
             }
 
             .project-subtitle {
               font-size: $fontsize-minText;
+              font-weight: bold;
             }
           }
 
           .project-tech {
             line-height: 1.5;
             font-size: $fontsize-smallText;
+            font-weight: bold;
           }
 
           .project-link {
@@ -97,9 +99,10 @@
               line-height: 1.5;
               border-radius: 5px;
               font-size: $fontsize-smallText;
+              font-weight: bold;
               text-decoration: none;
               background-color: $lightgray;
-              border: 1px solid $gray;
+              border: 1px solid $darkgreen;
 
               &:hover {
                 cursor: pointer;
