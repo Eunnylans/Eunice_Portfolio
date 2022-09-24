@@ -94,8 +94,8 @@ const Messages = () => {
             <Divider class="divider"></Divider>
           </Fade>
           <Typography className="questionTypo" variant="body1">
-            "Wanna get in touch or talk about a project? Feel free to contact
-            me?"
+            Wanna get in touch or talk about a project? Feel free to contact
+            me?
           </Typography>
           <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <input
