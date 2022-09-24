@@ -1,6 +1,4 @@
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
-import UIContext from '../context/ui-context';
-import SectionTitle from '../UIcomponents/SectionTitle';
 import { FaSass } from "react-icons/fa";
 import {
   SiCss3,
@@ -16,7 +14,8 @@ import {
 } from "react-icons/si";
 import Typical from "react-typical";
 import ProfilePic from "../assets/Eunice.jpeg";
-
+import UIContext from "../context/ui-context";
+import SectionTitle from "../UIcomponents/SectionTitle";
 
 const skillsArr = [
   {
@@ -121,16 +120,14 @@ const AboutMe = () => {
   });
 
   return (
-    <div className="profile-container">
-      <div
-        className={`profile-parent ${uiCtx.isDark ? "dark" : null}`}
-        ref={ref}
-      >
-        <div  className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
+    <div
+      className={`profile-container ${uiCtx.isDark ? "dark" : null}`}
+      ref={ref}
+    >
+      <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
+        <div className="profile-details">
           <div className="colz">
-            <div className="colz-icon">
-            {skillsList}
-            </div>
+            <div className="colz-icon">{skillsList}</div>
           </div>
 
           <div className="profile-details-name">
@@ -182,7 +179,7 @@ const AboutMe = () => {
             </a>
           </div>
         </div>
-        <div  className={`profile-picture ${fadeIn ? "fadeIn" : null}`}>
+        <div className={`profile-picture ${fadeIn ? "fadeIn" : null}`}>
           <img
             src={ProfilePic}
             alt="Profile"
