@@ -113,11 +113,10 @@ const Messages = () => {
               name="name"
               placeholder={"Please enter your name"}
               ref={register({
-                // <--- Add the (required & maxLength) validations as objects to the form register ---> //
                 required: `${"Please enter a name fewer than 20 characters"}`,
                 maxLength: {
                   value: 20,
-                  message: `${"Please enter a name fewer than 20 characters"}`, // <--- Add your error message to display to the user ---> //
+                  message: `${"Please enter a name fewer than 20 characters"}`, 
                 },
               })}
             />
@@ -136,10 +135,9 @@ const Messages = () => {
               name="email"
               placeholder={"Please enter your email"}
               ref={register({
-                // <--- Add the (required & pattern - using RegEx) validations as objects to the form register ---> //
                 required: `${"Invalid email address"}`,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: `${"Invalid email address"}`, // <--- Add your error message to display to the user ---> //
+                message: `${"Invalid email address"}`, 
               })}
             />
             <Typography
@@ -157,7 +155,6 @@ const Messages = () => {
               name="message"
               placeholder={"Please enter your message"}
               ref={register({
-                // <--- Add the (required) validations as objects to the form register ---> //
                 required: `${"Oops, you forgot your message"}`,
               })}
             ></textarea>
