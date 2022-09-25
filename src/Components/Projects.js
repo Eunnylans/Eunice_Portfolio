@@ -1,48 +1,48 @@
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
-import project2 from "../assets/bug-tracker.png";
-import project4 from "../assets/calculator.png";
-import project1 from "../assets/readyevent.png";
-import project3 from "../assets/weather-app.png";
+import project2 from "../assets/Admin-Dashboard.png";
+import project1 from "../assets/bbconnected.png";
+import project4 from "../assets/bbconnected.png";
+import project3 from "../assets/bbconnected.png";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
 const projectArr = [
   {
-    title: "readyevent",
+    title: "Business Connection Plateform",
     subtitle: "<Team Project>",
-    techName: "React | Tailwind CSS | Google API | MUI | npm | Figma | Heroku",
+    techName: "MongoDb| Express| React | Node | CSS| Figma | Firebase",
     src: project1,
-    alt: "readyevent",
-    livedemo: 'https://github.com/Eunnylans',
-    github: 'https://github.com/Eunnylans',
+    alt: "Bconnected",
+    livedemo: "https://github.com/Eunnylans",
+    github: "https://github.com/Eunnylans",
   },
   {
-    title: "Bug Tracker",
+    title: "Admin Dashboard",
     subtitle: "<Personal Project>",
-    techName: "React | Redux | CSS | Firebase | npm | Figma",
+    techName: "React |React Router | CSS | Firebase | Material UI| Figma",
     src: project2,
-    alt: "bug tracker app",
-    livedemo: 'https://github.com/Eunnylans',
-    github: 'https://github.com/Eunnylans',
+    alt: "Admin Dashboard",
+    livedemo: "https://github.com/Eunnylans",
+    github: "https://github.com/Eunnylans",
   },
   {
-    title: "Weather App",
+    title: "Github User Search App",
     subtitle: "<Personal Project>",
     techName:
       "React | CSS | OpenWeatherMap API | npm | Figma | React Testing Library | Netlify",
     src: project3,
     alt: "weather app",
-    livedemo: 'https://github.com/Eunnylans',
-    github: 'https://github.com/Eunnylans',
+    livedemo: "https://github.com/Eunnylans",
+    github: "https://github.com/Eunnylans",
   },
   {
-    title: "Calculator",
+    title: "Hacker News",
     subtitle: "<Personal Project>",
     techName: "HTML | CSS | Vanilla JavaScript | Jest | GitHub Pages",
     src: project4,
     alt: "calculator",
-    livedemo: 'https://github.com/Eunnylans',
-    github: 'https://github.com/Eunnylans',
+    livedemo: "https://github.com/Eunnylans",
+    github: "https://github.com/Eunnylans",
   },
 ];
 
