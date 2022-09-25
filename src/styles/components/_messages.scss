@@ -94,26 +94,28 @@ form {
 
   &.dark {
     .meassages {
-      .wrapper {
-        .contactTypo {
-          color: $white;
-        }
-
-        .questionTypo {
-          color: $white;
-        }
-
-        form {
-          input {
+      .section {
+        .wrapper {
+          .contactTypo {
             color: $white;
           }
 
-          textArea {
+          .questionTypo {
             color: $white;
           }
 
-          .submitButton {
-            color: $white;
+          form {
+            input {
+              color: $white;
+            }
+
+            textArea {
+              color: $white;
+            }
+
+            .submitButton {
+              color: $white;
+            }
           }
         }
       }
