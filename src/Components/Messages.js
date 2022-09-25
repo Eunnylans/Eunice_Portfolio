@@ -68,7 +68,7 @@ const Messages = () => {
 
   return (
     <div className={`messages ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
-      <section>
+      <section className={`section ${fadeIn ? "fadeIn" : null}`}>
         <svg
           preserveAspectRatio="none"
           viewBox="0 0 100 102"
@@ -76,7 +76,7 @@ const Messages = () => {
           width="100%"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          className="svgcolor-light"
+          className={`svgcolor-light ${fadeIn ? "fadeIn" : null}`}
         >
           <path
             d="M0 0 L50 100 L100 0 Z"
@@ -84,20 +84,28 @@ const Messages = () => {
             stroke="#0cbfae"
           ></path>
         </svg>
-        <div id="contact" className="wrapper">
+        <div id="contact" className={`wrapper ${fadeIn ? "fadeIn" : null}`}>
           <Fade left>
-            <Typography className="contactTypo" variant="h4">
+            <Typography
+              className={`contactTypo ${fadeIn ? "fadeIn" : null}`}
+              variant="h4"
+            >
               CONTACT ME
             </Typography>
           </Fade>
           <Fade right>
             <Divider class="divider"></Divider>
           </Fade>
-          <Typography className="questionTypo" variant="body1">
-            Wanna get in touch or talk about a project? Feel free to contact
-            me?
+          <Typography
+            className={`questionTypo ${fadeIn ? "fadeIn" : null}`}
+            variant="body1"
+          >
+            Wanna get in touch or talk about a project? Feel free to contact me?
           </Typography>
-          <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className={`form ${fadeIn ? "fadeIn" : null}`}
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <input
               className="input"
               type="text"
@@ -166,7 +174,7 @@ const Messages = () => {
               disableRipple="true"
               variant="contained"
               color="secondary"
-              className="submitButton"
+              className={`submitButton ${fadeIn ? "fadeIn" : null}`}
             >
               Send Message
             </button>
