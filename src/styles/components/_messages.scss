@@ -12,13 +12,13 @@
     text-transform: uppercase;
     font-family: "Poppins Medium";
     font-weight: bold;
-    color: $darkgreen;
+    // color: $darkgreen;
     text-align: center;
   }
   .questionTypo {
     font-family: "Poppins Medium";
     font-weight: bold;
-    color: $darkgreen;
+    // color: $darkgreen;
     text-align: center;
     margin-left: 25px;
   }
@@ -27,7 +27,7 @@
     border: 0px;
     width: 110px;
     height: 4px;
-    background-color: #0cbfae;
+    background-color: $aqua;
     margin: 10px 0 40px 0;
   }
   margin: auto;
@@ -35,8 +35,7 @@
   font-family: "Poppins Medium";
   width: 100%;
   margin-bottom: 8px;
-  //   background-color: #0cbfae;
-  color: $darkgray;
+  // color: $darkgreen;
   border: none;
 }
 
@@ -59,7 +58,7 @@ form {
     width: 100%;
     margin-bottom: 8px;
     background-color: #cef1ee;
-    color: $darkgreen;
+    // color: $darkgreen;
     border: none;
   }
   textArea {
@@ -86,7 +85,7 @@ form {
     border-radius: 0px;
     border: 2px solid #0cbfae;
     &:hover {
-      background-color: #10abb0;
+      background-color: $aqua;
       color: white;
       border: none;
     }
