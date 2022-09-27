@@ -63,7 +63,7 @@ $fontsize-minText: 14px;
 }
 
 body {
-  @include setBGAndTextColor($lightgray);
+  @include setBGAndTextColor($white);
 }
 
 body.dark {
