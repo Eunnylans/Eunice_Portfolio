@@ -125,22 +125,26 @@ const AboutMe = () => {
       ref={ref}
     >
       <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
-        <div className="profile-details">
-          <div className="colz">
-            <div className="colz-icon">{skillsList}</div>
+        <div className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
+          <div className={`colz ${fadeIn ? "fadeIn" : null}`}>
+            <div className={`colz-icon ${fadeIn ? "fadeIn" : null}`}>
+              {skillsList}
+            </div>
           </div>
 
-          <div className="profile-details-name">
-            <span className="primary-text">
+          <div className={`profile-details-name ${fadeIn ? "fadeIn" : null}`}>
+            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
               {" "}
               Hello, I'M{" "}
-              <SectionTitle className="highlighted-text">
+              <SectionTitle
+                className={`highlighted-text ${fadeIn ? "fadeIn" : null}`}
+              >
                 Eunice Abieyuwa Igbinedion
               </SectionTitle>
             </span>
           </div>
-          <div className="profile-details-role">
-            <span className="primary-text">
+          <div className={`profile-details-role ${fadeIn ? "fadeIn" : null}`}>
+            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
               {" "}
               <h3>
                 {" "}
@@ -160,7 +164,9 @@ const AboutMe = () => {
                   ]}
                 />
               </h3>
-              <span className="profile-role-tagline">
+              <span
+                className={`profile-role-tagline ${fadeIn ? "fadeIn" : null}`}
+              >
                 Master of building application with Frontend operations. <br />
                 As a Brand Marketer-turned-Front-End Developer, my goal is to
                 provide solutions that create a better user experience. <br />

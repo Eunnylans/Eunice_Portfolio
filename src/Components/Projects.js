@@ -1,6 +1,6 @@
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import project2 from "../assets/Admin-Dashboard.png";
-import project1 from "../assets/bbconnected.png";
+import project1 from "../assets/GUSAPP.png";
 import project4 from "../assets/bbconnected.png";
 import project3 from "../assets/bbconnected.png";
 import UIContext from "../context/ui-context";
@@ -13,7 +13,7 @@ const projectArr = [
     techName: "MongoDb| Express| React | Node | CSS| Figma | Firebase",
     src: project1,
     alt: "Bconnected",
-    livedemo: "https://github.com/Eunnylans",
+    livedemo: "https://gusapp-41a08.firebaseapp.com/",
     github: "https://github.com/Eunnylans",
   },
   {
