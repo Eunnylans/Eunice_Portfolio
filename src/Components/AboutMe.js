@@ -106,14 +106,14 @@ const AboutMe = () => {
   };
 
   useLayoutEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   const skillsList = skillsArr.map((skill) => {
     let icon = skill.icon();
     return (
-      <div className="skill" key={skill.name}>
+      <div className='skill' key={skill.name}>
         {icon}
       </div>
     );
@@ -176,12 +176,12 @@ const AboutMe = () => {
             </span>
           </div>
           <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
-            <button className="btn primary-btn">
+            <button className="primary-btn">
               {""}
               Hire Me{" "}
             </button>
             <a href="MyCV.pdf" download="Eunice.A Igbinedion MyCV.pdf">
-              <button className="btn highlighted-btn">Get Resume</button>
+              <button className="highlighted-btn">Get Resume</button>
             </a>
           </div>
         </div>
