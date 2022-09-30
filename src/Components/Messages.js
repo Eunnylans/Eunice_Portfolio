@@ -1,47 +1,32 @@
 import { Divider, Typography } from "@material-ui/core";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
-import { useForm } from "react-hook-form";
 import Fade from "react-reveal/Fade";
 import UIContext from "../context/ui-context";
 
 const Messages = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const form = useRef();
 
-  const onSubmit = (data, reset) => {
+  const sendEmail = (e) => {
+    e.preventDefault();
     alert(
-      `Thanks for your message ${data.name}. I'll get back to you as soon as possible. Best wishes and keep smiling, Eunice Igbinedion 😊`
+      `Thanks for your message ${user_name}. I'll get back to you as soon as possible. Best wishes and keep smiling, Eunice Igbinedion 😊`
     );
-    const templateId = process.env.REACT_APP_TEMPLATE_ID;
-    const serviceID = process.env.REACT_APP_SERVICE_ID;
-    console.log({
-      full_data: data,
-      from_name: data.name,
-      message: data.message,
-      reply_to: data.email,
-    });
-    sendFeedback(serviceID, templateId, {
-      from_name: data.name,
-      message: data.message,
-      reply_to: data.email,
-    });
-    reset.target.reset();
-  };
-
-  const sendFeedback = (serviceID, templateId, variables) => {
-    window.emailjs
-      .send(serviceID, templateId, variables)
-      .then((res) => {
-        console.log("Email successfully sent!");
-      })
-      .catch((err) =>
-        console.error(
-          "There has been an error.  Here some thoughts on the error that occured:",
-          err
-        )
+    emailjs.sendForm(
+      const serviceID = process.env.REACT_APP_SERVICE_ID;
+       const templateId = process.env.REACT_APP_TEMPLATE_ID;
+        form.current;
+        const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result);
+        },
+        (error) => {
+          console.log("There has been an error.  Here some thoughts on the error that occured", error);
+        }
       );
   };
 
-  const nameError = `${"Please enter a name fewer than 20 characters"}`;
 
   const uiCtx = useContext(UIContext);
   const ref = useRef();
@@ -104,19 +89,19 @@ const Messages = () => {
           </Typography>
           <form
             className={`form ${fadeIn ? "fadeIn" : null}`}
-            onSubmit={handleSubmit(onSubmit)}
+            onSubmit={sendEmail}
           >
             <input
               className="input"
               type="text"
               id="enter-name"
-              name="name"
+              name="user_name"
               placeholder={"Please enter your name"}
               ref={register({
                 required: `${"Please enter a name fewer than 20 characters"}`,
                 maxLength: {
                   value: 20,
-                  message: `${"Please enter a name fewer than 20 characters"}`, 
+                  message: `${"Please enter a name fewer than 20 characters"}`,
                 },
               })}
             />
@@ -132,12 +117,12 @@ const Messages = () => {
               className="input"
               type="email"
               id="enter-email"
-              name="email"
+              name="user_email"
               placeholder={"Please enter your email"}
               ref={register({
                 required: `${"Invalid email address"}`,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: `${"Invalid email address"}`, 
+                message: `${"Invalid email address"}`,
               })}
             />
             <Typography
