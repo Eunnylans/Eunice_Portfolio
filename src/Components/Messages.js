@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import { Divider, Typography } from "@material-ui/core";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import Fade from "react-reveal/Fade";
@@ -5,28 +6,25 @@ import UIContext from "../context/ui-context";
 
 const Messages = () => {
   const form = useRef();
+  // const serviceID = process.env.REACT_APP_SERVICE_ID;
+  // const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  // const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
-    alert(
-      `Thanks for your message ${user_name}. I'll get back to you as soon as possible. Best wishes and keep smiling, Eunice Igbinedion 😊`
+    emailjs.sendForm("service_706zsyo", "template_qssmyuo", form.current, "krEAf1iEyVC5pZLau").then(
+      (result) => {
+        console.log(result.text);
+        alert("Message sucessfully sent, thank you");
+      },
+      (error) => {
+        console.log(error.text);
+        alert(
+          "There has been an error.  Here some thoughts on the error that occured"
+        );
+      }
     );
-    emailjs.sendForm(
-      const serviceID = process.env.REACT_APP_SERVICE_ID;
-       const templateId = process.env.REACT_APP_TEMPLATE_ID;
-        form.current;
-        const publicKey = process.env.REACT_APP_PUBLIC_KEY;
-      )
-      .then(
-        (result) => {
-          console.log("Email successfully sent!", result);
-        },
-        (error) => {
-          console.log("There has been an error.  Here some thoughts on the error that occured", error);
-        }
-      );
   };
-
 
   const uiCtx = useContext(UIContext);
   const ref = useRef();
@@ -88,78 +86,34 @@ const Messages = () => {
             Wanna get in touch or talk about a project? Feel free to contact me?
           </Typography>
           <form
-            className={`form ${fadeIn ? "fadeIn" : null}`}
+            ref={form}
             onSubmit={sendEmail}
+            className={`form ${fadeIn ? "fadeIn" : null}`}
           >
             <input
-              className="input"
               type="text"
-              id="enter-name"
               name="user_name"
               placeholder={"Please enter your name"}
-              ref={register({
-                required: `${"Please enter a name fewer than 20 characters"}`,
-                maxLength: {
-                  value: 20,
-                  message: `${"Please enter a name fewer than 20 characters"}`,
-                },
-              })}
+              className="input"
             />
-            <Typography
-              gutterBottom
-              style={{ color: "#726F6E" }}
-              variant="caption"
-            >
-              {errors.name && errors.name.message}
-            </Typography>
 
             <input
-              className="input"
               type="email"
-              id="enter-email"
               name="user_email"
               placeholder={"Please enter your email"}
-              ref={register({
-                required: `${"Invalid email address"}`,
-                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: `${"Invalid email address"}`,
-              })}
+              className="input"
             />
-            <Typography
-              gutterBottom
-              style={{ color: "white" }}
-              variant="caption"
-            >
-              {errors.email && errors.email.message}
-            </Typography>
-
             <textarea
-              className="textArea"
-              type="text"
-              id="enter-message"
               name="message"
+              className="textArea"
               placeholder={"Please enter your message"}
-              ref={register({
-                required: `${"Oops, you forgot your message"}`,
-              })}
-            ></textarea>
-            <Typography
-              gutterBottom
-              style={{ color: "white" }}
-              variant="caption"
-            >
-              {errors.message && "Oops, you forgot your message"}
-            </Typography>
-
-            <button
+            />
+            <input
               type="submit"
-              disableRipple="true"
-              variant="contained"
-              color="secondary"
+              value="Send"
+              placeholder={"Please enter your message"}
               className={`submitButton ${fadeIn ? "fadeIn" : null}`}
-            >
-              Send Message
-            </button>
+            />
           </form>
         </div>
       </section>
@@ -168,3 +122,61 @@ const Messages = () => {
 };
 
 export default Messages;
+
+// <form
+//   className={`form ${fadeIn ? "fadeIn" : null}`}
+//   onSubmit={sendEmail}
+//   ref={form}
+// >
+//   <input
+//     className="input"
+//     type="text"
+//     id="enter-name"
+//     name="user_name"
+//     placeholder={"Please enter your name"}
+//   />
+//   <Typography
+//     gutterBottom
+//     style={{ color: "#726F6E" }}
+//     variant="caption"
+//   >
+//   </Typography>
+
+//   <input
+//     className="input"
+//     type="email"
+//     id="enter-email"
+//     name="user_email"
+//     placeholder={"Please enter your email"}
+//   />
+//   <Typography
+//     gutterBottom
+//     style={{ color: "white" }}
+//     variant="caption"
+//   >
+//   </Typography>
+
+//   <textarea
+//     className="textArea"
+//     type="text"
+//     id="enter-message"
+//     name="message"
+//     placeholder={"Please enter your message"}
+//   ></textarea>
+//   <Typography
+//     gutterBottom
+//     style={{ color: "white" }}
+//     variant="caption"
+//   >
+//   </Typography>
+
+//   <button
+//     type="submit"
+//     disableRipple="true"
+//     variant="contained"
+//     color="secondary"
+//     className={`submitButton ${fadeIn ? "fadeIn" : null}`}
+//   >
+//     Send Message
+//   </button>
+// </form>

@@ -58,7 +58,6 @@ form {
     width: 100%;
     margin-bottom: 8px;
     background-color: #cef1ee;
-    // color: $darkgreen;
     border: none;
   }
   textArea {
@@ -75,14 +74,17 @@ form {
   }
   .submitButton {
     cursor: pointer;
+    margin-left: 7%;
+    margin-top: 2%;
+    width: 30%;
     align-self: center;
     padding: 10px 15px;
     margin-right: -10px;
+    border-radius: 5px;
     color: $darkgreen;
     font-family: "Poppins Medium";
     font-weight: bold;
     background-color: #cef1ee;
-    border-radius: 0px;
     border: 2px solid #0cbfae;
     &:hover {
       background-color: $aqua;
