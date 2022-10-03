@@ -46,6 +46,21 @@ const HamburgerMenu = () => {
                 About Me
               </LinkScroll>
             </li>
+
+            <li>
+            <LinkScroll
+              className='hamburger-nav-link'
+              activeClass='nav-link-active'
+              to='Techskills'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={700}
+            >
+            Techskills
+            </LinkScroll>
+          </li>
+
             <li>
               <LinkScroll
                 className='hamburger-nav-link'
@@ -59,6 +74,23 @@ const HamburgerMenu = () => {
                 Projects
               </LinkScroll>
             </li>
+
+            
+          <li>
+          <LinkScroll
+            className='hamburger-nav-link'
+            activeClass='nav-link-active'
+            to='messages'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={700}
+          >
+          Messages
+          </LinkScroll>
+        </li>
+
+
             <li>
               <a
                 className='hamburger-nav-link'

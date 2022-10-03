@@ -59,8 +59,11 @@ const Techskills = ({ match }) => {
   }, []);
 
   return (
-    <div className={`techskills ${fadeIn ? "fadeIn" : null}`}>
-      <Grid container spacing={4} className={`techStackContainer ${uiCtx.isDark ? "dark" : null}`} >
+    <div className={`techskills ${uiCtx.isDark ? "dark" : null}`}  ref={ref}>
+      <Grid
+        container
+        spacing={4}
+        className={`techStackContainer ${fadeIn ? "fadeIn" : null}`}>
         {myTechStack &&
           myTechStack.map((tech) => {
             return (
@@ -68,7 +71,7 @@ const Techskills = ({ match }) => {
                 <Grid item className="techStackContainer">
                   <Card elevation={0} className="card">
                     <div className="iconsDiv">
-                      <Icon className={classNames(`${tech.icon}`)} id="icons"/>
+                      <Icon className={classNames(`${tech.icon}`)} id="icons" />
                       <div className="divider"></div>
                     </div>
                     <Typography variant="h5" className="cardTypo">

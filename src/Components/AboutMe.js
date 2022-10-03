@@ -121,30 +121,30 @@ const AboutMe = () => {
 
   return (
     <div
-      className={`profile-container ${uiCtx.isDark ? "dark" : null}`}
-      ref={ref}
+      className="profile-container"
     >
-      <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
+      <div className={`profile-parent ${uiCtx.isDark ? "dark" : null}`}
+      ref={ref} >
         <div className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
-          <div className={`colz ${fadeIn ? "fadeIn" : null}`}>
-            <div className={`colz-icon ${fadeIn ? "fadeIn" : null}`}>
+          <div className="colz">
+            <div className="colz-icon">
               {skillsList}
             </div>
           </div>
 
-          <div className={`profile-details-name ${fadeIn ? "fadeIn" : null}`}>
-            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-details-name">
+            <span className="primary-text">
               {" "}
               Hello, I'M{" "}
               <SectionTitle
-                className={`highlighted-text ${fadeIn ? "fadeIn" : null}`}
+                className="highlighted-text"
               >
                 Eunice Abieyuwa Igbinedion
               </SectionTitle>
             </span>
           </div>
-          <div className={`profile-details-role ${fadeIn ? "fadeIn" : null}`}>
-            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-details-role">
+            <span className="primary-text">
               {" "}
               <h3>
                 {" "}
@@ -165,7 +165,7 @@ const AboutMe = () => {
                 />
               </h3>
               <span
-                className={`profile-role-tagline ${fadeIn ? "fadeIn" : null}`}
+                className="profile-role-tagline"
               >
                 Master of building application with Frontend operations. <br />
                 As a Brand Marketer-turned-Front-End Developer, my goal is to
@@ -175,7 +175,7 @@ const AboutMe = () => {
               </span>
             </span>
           </div>
-          <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-options">
             <button className="primary-btn">
               {""}
               Hire Me{" "}
@@ -185,7 +185,7 @@ const AboutMe = () => {
             </a>
           </div>
         </div>
-        <div className={`profile-picture ${fadeIn ? "fadeIn" : null}`}>
+        <div className="profile-picture">
           <img
             src={ProfilePic}
             alt="Profile"
