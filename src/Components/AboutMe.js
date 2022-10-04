@@ -106,14 +106,14 @@ const AboutMe = () => {
   };
 
   useLayoutEffect(() => {
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const skillsList = skillsArr.map((skill) => {
     let icon = skill.icon();
     return (
-      <div className='skill' key={skill.name}>
+      <div className="skill" key={skill.name}>
         {icon}
       </div>
     );
@@ -121,30 +121,30 @@ const AboutMe = () => {
 
   return (
     <div
-      className="profile-container"
+      className={`profile-container ${uiCtx.isDark ? "dark" : null}`}
+      ref={ref}
     >
-      <div className={`profile-parent ${uiCtx.isDark ? "dark" : null}`}
-      ref={ref} >
+      <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
         <div className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
-          <div className="colz">
-            <div className="colz-icon">
+          <div className={`colz ${fadeIn ? "fadeIn" : null}`}>
+            <div className={`colz-icon ${fadeIn ? "fadeIn" : null}`}>
               {skillsList}
             </div>
           </div>
 
-          <div className="profile-details-name">
-            <span className="primary-text">
+          <div className={`profile-details-name ${fadeIn ? "fadeIn" : null}`}>
+            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
               {" "}
               Hello, I'M{" "}
               <SectionTitle
-                className="highlighted-text"
+                className={`highlighted-text ${fadeIn ? "fadeIn" : null}`}
               >
                 Eunice Abieyuwa Igbinedion
               </SectionTitle>
             </span>
           </div>
-          <div className="profile-details-role">
-            <span className="primary-text">
+          <div className={`profile-details-role ${fadeIn ? "fadeIn" : null}`}>
+            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
               {" "}
               <h3>
                 {" "}
@@ -165,7 +165,7 @@ const AboutMe = () => {
                 />
               </h3>
               <span
-                className="profile-role-tagline"
+                className={`profile-role-tagline ${fadeIn ? "fadeIn" : null}`}
               >
                 Master of building application with Frontend operations. <br />
                 As a Brand Marketer-turned-Front-End Developer, my goal is to
@@ -175,13 +175,15 @@ const AboutMe = () => {
               </span>
             </span>
           </div>
-          <div className="profile-options">
-            <button className="primary-btn">
+          <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
+            <button className={`primary-btn ${fadeIn ? "fadeIn" : null}`}>
               {""}
               Hire Me{" "}
             </button>
             <a href="MyCV.pdf" download="Eunice.A Igbinedion MyCV.pdf">
-              <button className="highlighted-btn">Get Resume</button>
+              <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
+                Get Resume
+              </button>
             </a>
           </div>
         </div>
@@ -198,3 +200,6 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+
+
