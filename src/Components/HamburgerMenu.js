@@ -37,7 +37,7 @@ const HamburgerMenu = () => {
               <LinkScroll
                 className="hamburger-nav-link"
                 activeClass="nav-link-active"
-                to="Aboutme"
+                to="aboutme"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -51,7 +51,7 @@ const HamburgerMenu = () => {
               <LinkScroll
                 className="hamburger-nav-link"
                 activeClass="nav-link-active"
-                to="Techskills"
+                to="techskills"
                 spy={true}
                 smooth={true}
                 offset={0}
