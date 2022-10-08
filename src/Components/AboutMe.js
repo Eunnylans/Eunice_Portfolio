@@ -86,7 +86,7 @@ const skillsArr = [
   },
 ];
 
-const AboutMe = () => {
+const Aboutme = () => {
   const uiCtx = useContext(UIContext);
   const ref = useRef();
   const [fadeIn, setFadeIn] = useState(false);
@@ -121,7 +121,7 @@ const AboutMe = () => {
 
   return (
     <div
-      className={`profile-container ${uiCtx.isDark ? "dark" : null}`}
+      className={`aboutme profile-container ${uiCtx.isDark ? "dark" : null}`}
       ref={ref}
     >
       <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
@@ -199,7 +199,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
-
-
-
+export default Aboutme;

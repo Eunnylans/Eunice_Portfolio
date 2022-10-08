@@ -1,10 +1,9 @@
-import { Link as LinkScroll } from 'react-scroll';
-import { animateScroll as scroll } from 'react-scroll';
-import icon from '../assets/LogoIcon.png';
-import PDF from '../assets/MyCV.pdf';
-import ThemeToggleButton from '../UIcomponents/ThemeToggleButton';
-import { useContext } from 'react';
-import UIContext from '../context/ui-context';
+import { useContext } from "react";
+import { animateScroll as scroll, Link as LinkScroll } from "react-scroll";
+import icon from "../assets/LogoIcon.png";
+import PDF from "../assets/MyCV.pdf";
+import UIContext from "../context/ui-context";
+import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
 
 const Navbar = () => {
   const uiCtx = useContext(UIContext);
@@ -15,16 +14,16 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className='navbar'>
-        <div className='home-icon'>
-          <img src={icon} alt='home' onClick={scrollToTop} />
+      <nav className="navbar">
+        <div className="home-icon">
+          <img src={icon} alt="home" onClick={scrollToTop} />
         </div>
-        <ul className={`navbar-links-list ${uiCtx.isDark ? 'dark' : null}`}>
+        <ul className={`navbar-links-list ${uiCtx.isDark ? "dark" : null}`}>
           <li>
             <LinkScroll
-              className='nav-link'
-              activeClass='nav-link-active'
-              to='aboutme'
+              className="nav-link"
+              activeClass="nav-link-active"
+              to="aboutme"
               spy={true}
               smooth={true}
               offset={0}
@@ -34,23 +33,23 @@ const Navbar = () => {
             </LinkScroll>
           </li>
           <li>
-          <LinkScroll
-            className='nav-link'
-            activeClass='nav-link-active'
-            to='techskills'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={700}
-          >
-            Techskills
-          </LinkScroll>
-        </li>
+            <LinkScroll
+              className="nav-link"
+              activeClass="nav-link-active"
+              to="techskills"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={700}
+            >
+              Techskills
+            </LinkScroll>
+          </li>
           <li>
             <LinkScroll
-              className='nav-link'
-              activeClass='nav-link-active'
-              to='projects'
+              className="nav-link"
+              activeClass="nav-link-active"
+              to="projects"
               spy={true}
               smooth={true}
               offset={-30}
@@ -60,24 +59,24 @@ const Navbar = () => {
             </LinkScroll>
           </li>
           <li>
-          <LinkScroll
-            className='nav-link'
-            activeClass='nav-link-active'
-            to='messages'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={700}
-          >
-            Messages
-          </LinkScroll>
-        </li>
+            <LinkScroll
+              className="nav-link"
+              activeClass="nav-link-active"
+              to="messages"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={700}
+            >
+              Messages
+            </LinkScroll>
+          </li>
           <li>
             <a
-              className='nav-link-resume'
+              className="nav-link-resume"
               href={PDF}
-              target='_blank'
-              rel='noopener noreferrer'
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Resume
             </a>

@@ -1,14 +1,14 @@
 import React, { useContext, useEffect } from "react";
 import "./App.scss";
-import AboutMe from "./Components/AboutMe";
+import Aboutme from "./Components/AboutMe";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
 import HamburgerMenu from "./Components/HamburgerMenu";
 import Hero from "./Components/Hero";
-import Techskills from "./Components/Techskills";
+import Messages from "./Components/Messages";
 import Navbar from "./Components/NavBar";
 import Projects from "./Components/Projects";
-import Messages from './Components/Messages';
+import Techskills from "./Components/Techskills";
 import UIContext from "./context/ui-context";
 import useWindowDimensions from "./hooks/useWindowDimensions";
 import ScrollToTopIcon from "./UIcomponents/ScrollToTopIcon";
@@ -32,7 +32,7 @@ function App() {
 
       <main>
         <Hero />
-        <AboutMe />
+        <Aboutme />
         <Techskills />
         <Projects />
         <Messages />

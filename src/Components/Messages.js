@@ -77,7 +77,7 @@ const Messages = () => {
             </Typography>
           </Fade>
           <Fade right>
-            <Divider class="divider"></Divider>
+            <Divider className="divider"></Divider>
           </Fade>
           <Typography
             className={`questionTypo ${fadeIn ? "fadeIn" : null}`}
