@@ -5,8 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
+  // padding-top: 5px;
   margin: auto;
+  padding: 10px 0px 10px 10px;
+  font-family: "Poppins Medium";
+  width: 100%;
+  margin-bottom: 8px;
+  border: none;
 
   .contactTypo {
     text-transform: uppercase;
@@ -30,92 +35,83 @@
     background-color: $aqua;
     margin: 10px 0 40px 0;
   }
-  margin: auto;
-  padding: 10px 0px 10px 10px;
-  font-family: "Poppins Medium";
-  width: 100%;
-  margin-bottom: 8px;
-  // color: $darkgreen;
-  border: none;
-}
 
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 80px;
-  width: 500px;
-  height: 300px;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 500px;
+    height: 300px;
 
-  input {
-    margin: auto;
-    padding: 10px 0px 10px 10px;
-    font-family: "Poppins Medium";
-    font-weight: bold;
-    width: 100%;
-    margin-bottom: 8px;
-    background-color: #cef1ee;
-    border: none;
-  }
-  textArea {
-    font-family: "Poppins Medium";
-    font-weight: bold;
-    padding: 10px 0px 10px 10px;
-    background-color: #cef1ee;
-    color: $darkgreen;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 8px;
-    margin: auto;
-    border: none;
-  }
-  .submitButton {
-    cursor: pointer;
-    margin-left: 7%;
-    margin-top: 2%;
-    width: 30%;
-    align-self: center;
-    padding: 10px 15px;
-    margin-right: -10px;
-    border-radius: 5px;
-    color: $darkgreen;
-    font-family: "Poppins Medium";
-    font-weight: bold;
-    background-color: #cef1ee;
-    border: 2px solid #0cbfae;
-    &:hover {
-      background-color: $aqua;
-      color: white;
+    input {
+      margin: auto;
+      padding: 10px 0px 10px 10px;
+      font-family: "Poppins Medium";
+      font-weight: bold;
+      width: 100%;
+      margin-bottom: 8px;
+      background-color: #cef1ee;
       border: none;
     }
-  }
+    textArea {
+      font-family: "Poppins Medium";
+      font-weight: bold;
+      padding: 10px 0px 10px 10px;
+      background-color: #cef1ee;
+      color: $darkgreen;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 8px;
+      margin: auto;
+      border: none;
+    }
+    .submitButton {
+      cursor: pointer;
+      margin: 2% -5% 2% -10%;
+      width: 30%;
+      align-self: center;
+      padding: 10px 15px;
+      border-radius: 5px;
+      color: $darkgreen;
+      font-family: "Poppins Medium";
+      font-weight: bold;
+      background-color: #cef1ee;
+      border: 2px solid #0cbfae;
+      &:hover {
+        background-color: $aqua;
+        color: white;
+        border: none;
+      }
+    }
 
-  &.dark {
-    .meassages {
-      .section {
-        .wrapper {
-          .contactTypo {
-            color: $white;
-          }
-
-          .questionTypo {
-            color: $white;
-          }
-
-          form {
-            input {
+    &.dark {
+      .meassages {
+        .section {
+          .wrapper {
+            .contactTypo {
               color: $white;
             }
 
-            textArea {
+            .questionTypo {
               color: $white;
             }
 
-            .submitButton {
-              color: $white;
+            form {
+              input {
+                color: $white;
+              }
+
+              textArea {
+                color: $white;
+              }
+
+              .submitButton {
+                color: $white;
+              }
             }
           }
         }
