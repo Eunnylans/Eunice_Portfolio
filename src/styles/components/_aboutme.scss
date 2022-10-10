@@ -236,6 +236,34 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  //and (min-width: 421px)
+  // .hero {
+  //   height: calc(100vh - 60px);
+
+  //   .hero-content {
+  //     width: 90vw;
+  //     transform: translateY(-30px);
+  //     //position: absolute;
+  //     //position: relative;
+
+  //     h1 {
+  //       font-size: 60px;
+  //     }
+
+  //     p {
+  //       font-size: $fontsize-midText;
+  //     }
+  //   }
+  // }
+  .profile-container {
+    height: calc(100vh);
+    .profile-parent {
+      width: 90vw;
+    }
+  }
+}
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
