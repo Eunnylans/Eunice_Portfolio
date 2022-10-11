@@ -178,11 +178,11 @@ const Aboutme = () => {
           <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
             <button className={`primary-btn ${fadeIn ? "fadeIn" : null}`}>
               {""}
-              Hire Me{" "}
+              Contact{" "}
             </button>
             <a href="MyCV.pdf" download="Eunice.A Igbinedion MyCV.pdf">
               <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
-                Get Resume
+                Resume
               </button>
             </a>
           </div>

@@ -68,7 +68,7 @@ const Navbar = () => {
               offset={0}
               duration={700}
             >
-              Messages
+              Contact
             </LinkScroll>
           </li>
           <li>

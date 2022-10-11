@@ -85,7 +85,7 @@ const HamburgerMenu = () => {
                 offset={0}
                 duration={700}
               >
-                Messages
+                Contact-Me
               </LinkScroll>
             </li>
 

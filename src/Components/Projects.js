@@ -1,9 +1,7 @@
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import project2 from "../assets/Admin-Dashboard.png";
-import {
-  default as project3,
-  default as project4,
-} from "../assets/bbconnected.png";
+import project3 from "../assets/bbconnected.png";
+import project4 from "../assets/Calculator.png";
 import project1 from "../assets/GUSAPP.png";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
