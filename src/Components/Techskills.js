@@ -59,11 +59,12 @@ const Techskills = ({ match }) => {
   }, []);
 
   return (
-    <div className={`techskills ${uiCtx.isDark ? "dark" : null}`}  ref={ref}>
+    <div className={`techskills ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
       <Grid
         container
         spacing={4}
-        className={`techStackContainer ${fadeIn ? "fadeIn" : null}`}>
+        className={`techStackContainer ${fadeIn ? "fadeIn" : null}`}
+      >
         {myTechStack &&
           myTechStack.map((tech) => {
             return (

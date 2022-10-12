@@ -17,13 +17,11 @@
     text-transform: uppercase;
     font-family: "Poppins Medium";
     font-weight: bold;
-    // color: $darkgreen;
     text-align: center;
   }
   .questionTypo {
     font-family: "Poppins Medium";
     font-weight: bold;
-    // color: $darkgreen;
     text-align: center;
     margin-left: 25px;
   }
@@ -100,6 +98,10 @@
               color: $white;
             }
 
+            .divider{
+              background-color: white;
+            }
+
             form {
               input {
                 color: $white;
@@ -121,13 +123,65 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .wrapper {
-    width: 75vw;
+  .meassages {
+    .section {
+      .wrapper {
+        width: 75vw;
+        .form {
+          width: 50vw;
+          .input {
+          }
+          .textArea {
+          }
+          .submitButton {
+          }
+        }
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .wrapper {
-    // width: 73vw;
+  .meassages {
+    .section {
+      .wrapper {
+        width: 72vw;
+        form.form {
+          width: 412px;
+        
+          input.input {
+            width: 412px;
+          }
+          textarea.textArea {
+            width: 412px;
+          }
+          input.submitButton {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .meassages {
+    .section {
+      .wrapper {
+        width: 72vw;
+        form.form {
+          width: 412px;
+          input.input {
+            width: 412px;
+          }
+          textarea.textArea {
+            width: 412px;
+          }
+          input.submitButton {
+            margin-left: auto;
+          }
+        }
+      }
+    }
   }
 }
