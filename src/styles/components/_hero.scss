@@ -64,15 +64,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  //and (min-width: 421px)
   .hero {
     height: calc(100vh - 60px);
 
     .hero-content {
       width: 90vw;
       transform: translateY(-30px);
-      //position: absolute;
-      //position: relative;
 
       h1 {
         font-size: 60px;
@@ -95,7 +92,6 @@
 
       h1 {
         font-size: 30px;
-        //line-height: 1.5;
         padding-bottom: 20px;
       }
 
