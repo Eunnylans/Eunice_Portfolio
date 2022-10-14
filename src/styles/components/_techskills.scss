@@ -66,14 +66,18 @@
 
 @media only screen and (max-width: 767px) {
   .techStackContainer {
-    width: 75vw;
     justify-content: center;
+    .card{
+      width: 100%;
+    }
   }
 }
 
 @media only screen and (max-width: 420px) {
   .techStackContainer {
     justify-content: center;
-    width: 75vw;
+    .card{
+    width: 100%;
+    }
   }
 }

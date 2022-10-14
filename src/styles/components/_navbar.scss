@@ -48,8 +48,8 @@
 
         &-active,
         &:hover {
-          color: $royalblue;
-          font-weight: 500;
+          color: $white;
+          font-weight: 700;
         }
 
         &:visited {
@@ -64,8 +64,8 @@
         }
 
         &:hover {
-          color: $royalblue;
-          font-weight: 500;
+          color: $white;
+          font-weight: 700;
         }
       }
     }
@@ -76,7 +76,8 @@
         .nav-link-resume {
           &-active,
           &:hover {
-            color: $lightblue;
+            color: $darkgray;
+            font-weight: 700;
           }
 
           &:visited {
@@ -90,7 +91,8 @@
           }
 
           &:hover {
-            color: $lightblue;
+            color: $darkgray;
+            font-weight: 700;
           }
         }
       }
