@@ -16,7 +16,7 @@
     text-transform: uppercase;
     font-family: "Poppins Medium";
     font-size: 30px;
-  font-weight: 800;
+    font-weight: 800;
     text-align: center;
   }
   .questionTypo {
@@ -123,6 +123,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .wrapper {
+    form {
+      width: 100%;
+    }
+  }
   .meassages {
     .section {
       .wrapper {
@@ -132,23 +137,23 @@
         .questionTypo {
           font-size: $fontsize-smallText;
         }
-        form {
-          input {
-            width: 100%;
-          }
-          textarea {
-            width: 100%;
-          }
-          .submitButton {
-            align-self: center;
-          }
-        }
+        // form {
+        //   width: 100% !important;
+        //   .submitButton {
+        //     align-self: center;
+        //   }
+        // }
       }
     }
   }
 }
 
 @media only screen and (max-width: 420px) {
+  .wrapper {
+    form {
+      width: 100%;
+    }
+  }
   .meassages {
     .section {
       .wrapper {
@@ -158,17 +163,12 @@
         .questionTypo {
           font-size: $fontsize-smallText;
         }
-        form {
-          input {
-            width: 100%;
-          }
-          textArea {
-            width: 100%;
-          }
-          .submitButton {
-            align-self: center;
-          }
-        }
+        // form {
+        //   width: 100%;
+        //   .submitButton {
+        //     align-self: center;
+        //   }
+        // }
       }
     }
   }

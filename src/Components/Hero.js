@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import UIContext from "../context/ui-context";
 import Contacts from "./Contacts";
+// import Particles from "./Particles"
 
 const Hero = () => {
   const uiCtx = useContext(UIContext);
@@ -21,6 +22,7 @@ const Hero = () => {
         </p>
       </div>
       <Contacts />
+    {/** <Particles id='myParticles'/> **/}
     </div>
   );
 };
