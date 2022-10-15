@@ -12,18 +12,25 @@ const Messages = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm("service_706zsyo", "template_qssmyuo", form.current, "krEAf1iEyVC5pZLau").then(
-      (result) => {
-        console.log(result.text);
-        alert("Message sucessfully sent, thank you");
-      },
-      (error) => {
-        console.log(error.text);
-        alert(
-          "There has been an error.  Here some thoughts on the error that occured"
-        );
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_706zsyo",
+        "template_qssmyuo",
+        form.current,
+        "krEAf1iEyVC5pZLau"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sucessfully sent, thank you");
+        },
+        (error) => {
+          console.log(error.text);
+          alert(
+            "There has been an error.  Here some thoughts on the error that occured"
+          );
+        }
+      );
   };
 
   const uiCtx = useContext(UIContext);
@@ -71,7 +78,6 @@ const Messages = () => {
           <Fade left>
             <Typography
               className={`contactTypo ${fadeIn ? "fadeIn" : null}`}
-              variant="h4"
             >
               CONTACT ME
             </Typography>

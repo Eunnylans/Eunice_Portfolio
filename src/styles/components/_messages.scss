@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding-top: 5px;
   margin: auto;
   padding: 10px 10px 10px 10px;
   font-family: "Poppins Medium";
@@ -16,7 +15,8 @@
   .contactTypo {
     text-transform: uppercase;
     font-family: "Poppins Medium";
-    font-weight: bold;
+    font-size: 30px;
+  font-weight: 800;
     text-align: center;
   }
   .questionTypo {
@@ -42,7 +42,7 @@
     margin: auto;
     margin-top: 40px;
     margin-bottom: 80px;
-    width: 30%;
+    width: 22.5%;
     height: 300px;
 
     input {
@@ -55,7 +55,7 @@
       background-color: #cef1ee;
       border: none;
     }
-    textArea {
+    textarea {
       font-family: "Poppins Medium";
       font-weight: bold;
       padding: 10px 0px 10px 10px;
@@ -69,7 +69,7 @@
     }
     .submitButton {
       cursor: pointer;
-      margin-right: 170px;
+      margin: 1% 0% 0% 0%;
       width: 30%;
       align-self: center;
       padding: 10px 15px;
@@ -107,7 +107,7 @@
                 color: $white;
               }
 
-              textArea {
+              textarea {
                 color: $white;
               }
 
@@ -122,68 +122,54 @@
   }
 }
 
-// @media only screen and (max-width: 767px) {
-//   .meassages {
-//     .section {
-//       .wrapper {
-//         width: 75vw;
-//         .form {
-//           // width: 50vw;
-//           width: 100%;
-//           .input {
-//           }
-//           .textArea {
-//           }
-//           .submitButton {
-//             margin-right: 100px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 767px) {
+  .meassages {
+    .section {
+      .wrapper {
+        .contactTypo {
+          font-size: $fontsize-smallText;
+        }
+        .questionTypo {
+          font-size: $fontsize-smallText;
+        }
+        form {
+          input {
+            width: 100%;
+          }
+          textarea {
+            width: 100%;
+          }
+          .submitButton {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}
 
-// @media only screen and (max-width: 420px) {
-//   .meassages {
-//     .section {
-//       .wrapper {
-//         width: 75vw;
-//         form.form {
-//           width: 100%;
-
-//           input.input {
-//             // width: 412px;
-//           }
-//           textarea.textArea {
-//             // width: 412px;
-//           }
-//           input.submitButton {
-//             margin-right: 100px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 375px) {
-//   .meassages {
-//     .section {
-//       .wrapper {
-//         width: 75vw;
-//         form.form {
-//           width: 100%;
-//           input.input {
-//             // width: 36vw;
-//           }
-//           textarea.textArea {
-//             // width: 36vw;
-//           }
-//           input.submitButton {
-//             margin-right: 100px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 420px) {
+  .meassages {
+    .section {
+      .wrapper {
+        .contactTypo {
+          font-size: 28px;
+        }
+        .questionTypo {
+          font-size: $fontsize-smallText;
+        }
+        form {
+          input {
+            width: 100%;
+          }
+          textArea {
+            width: 100%;
+          }
+          .submitButton {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -111,7 +111,7 @@ const Projects = () => {
         ref={ref}
       >
         <SectionTitle className={`projects-title ${fadeIn ? "fadeIn" : null}`}>
-          Projects
+          PROJECTS
         </SectionTitle>
         <div className="projects-list">{projectList}</div>
       </div>
