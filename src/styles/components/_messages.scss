@@ -54,6 +54,10 @@
       margin-bottom: 8px;
       background-color: #cef1ee;
       border: none;
+      &::placeholder {
+        font-size: $fontsize-minText;
+        color: $darkgreen;
+      }
     }
     textarea {
       font-family: "Poppins Medium";
@@ -66,6 +70,10 @@
       margin-bottom: 8px;
       margin: auto;
       border: none;
+      &::placeholder {
+        font-size: $fontsize-minText;
+        color: $darkgreen;
+      }
     }
     .submitButton {
       cursor: pointer;
@@ -87,34 +95,38 @@
     }
 
     &.dark {
-      .meassages {
-        .section {
-          .wrapper {
-            .contactTypo {
+      .wrapper {
+        .contactTypo {
+          color: $white;
+        }
+
+        .questionTypo {
+          color: $white;
+        }
+
+        .divider {
+          background-color: white;
+        }
+
+        form {
+          input {
+            color: $white;
+            &::placeholder {
+              font-size: $fontsize-smallText;
               color: $white;
             }
+          }
 
-            .questionTypo {
+          textarea {
+            color: $white;
+            &::placeholder {
+              font-size: $fontsize-smallText;
               color: $white;
             }
+          }
 
-            .divider {
-              background-color: white;
-            }
-
-            form {
-              input {
-                color: $white;
-              }
-
-              textarea {
-                color: $white;
-              }
-
-              .submitButton {
-                color: $white;
-              }
-            }
+          .submitButton {
+            color: $white;
           }
         }
       }
@@ -137,12 +149,6 @@
         .questionTypo {
           font-size: $fontsize-smallText;
         }
-        // form {
-        //   width: 100% !important;
-        //   .submitButton {
-        //     align-self: center;
-        //   }
-        // }
       }
     }
   }
@@ -153,23 +159,11 @@
     form {
       width: 100%;
     }
-  }
-  .meassages {
-    .section {
-      .wrapper {
-        .contactTypo {
-          font-size: 28px;
-        }
-        .questionTypo {
-          font-size: $fontsize-smallText;
-        }
-        // form {
-        //   width: 100%;
-        //   .submitButton {
-        //     align-self: center;
-        //   }
-        // }
-      }
+    .contactTypo {
+      font-size: 28px;
+    }
+    .questionTypo {
+      font-size: $fontsize-smallText;
     }
   }
 }
