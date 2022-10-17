@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
       </div>
       <Contacts />
-      <Particles id="tsparticles" />
+      <Particles  />
     </div>
   );
 };
