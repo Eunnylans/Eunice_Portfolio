@@ -68,7 +68,7 @@ const Techskills = ({ match }) => {
         {myTechStack &&
           myTechStack.map((tech) => {
             return (
-              <div>
+              <div key={tech.id}>
                 <Grid item className="techStackContainer">
                   <Card elevation={0} className="card">
                     <div className="iconsDiv">

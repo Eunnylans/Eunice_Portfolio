@@ -38,7 +38,7 @@ const Contacts = () => {
   const uiCtx = useContext(UIContext);
 
   const contact = contactInfo.map((info) => (
-    <div className='contact-item'>
+    <div className='contact-item' key={info.name}>
       <a
         className='contact-link'
         href={info.link}
