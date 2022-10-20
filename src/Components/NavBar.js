@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { animateScroll as scroll, Link as LinkScroll } from "react-scroll";
-import icon from "../assets/LogoIcon.png";
 import PDF from "../assets/MyCV.pdf";
+import icon from "../assets/LogoIcon.png";
 import UIContext from "../context/ui-context";
 import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
 

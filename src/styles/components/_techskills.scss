@@ -55,7 +55,7 @@
       font-family: "Poppins SemiBold";
       font-weight: bold;
       font-size: $fontsize-largeText;
-      color: $darkgreen;
+      color: $aqua;
     }
     &.dark {
       .techStackContainer {
@@ -101,9 +101,36 @@
       }
 
       .cardTypo {
+        font-size: $fontsize-midText;
       }
 
       .typoSpan {
+        font-size: $fontsize-smallText;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .techStackContainer {
+    .card {
+      width: 100%;
+      .iconsDiv {
+        #icons {
+        }
+
+        .divider {
+        }
+      }
+
+      .cardTypo {
+        font-size: $fontsize-midText;
+        font-weight: bold;
+      }
+
+      .typoSpan {
+        font-size: $fontsize-smallText;
+        font-weight: bold;
       }
     }
   }

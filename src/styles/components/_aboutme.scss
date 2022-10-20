@@ -321,13 +321,36 @@
     .profile-parent {
       .profile-details {
         width: 90%;
-        .profile-role-tagline {
-          font-size: $fontsize-smallText;
+        .profile-details-name {
+          .primary-text {
+            font-size: $fontsize-largeText;
+          }
+          .highlighted-text {
+            font-size: $fontsize-largeText;
+          }
+        }
+        .profile-details-role {
+          .primary-text {
+            h3 {
+              font-size: $fontsize-midText;
+            }
+            .profile-role-tagline {
+              font-size: $fontsize-minText;
+            }
+          }
+        }
+        .profile-options {
+          .highlighted-btn {
+            font-size: 15px;
+          }
+          .primary-btn {
+            font-size: 15px;
+          }
         }
       }
       .profile-picture {
-        height: 275px;
-        width: 275px;
+        height: 250px;
+        width: 250px;
         margin-top: -90px;
       }
     }

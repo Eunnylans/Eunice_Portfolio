@@ -31,7 +31,7 @@ const Techskills = ({ match }) => {
       languages_practices: "Practices:",
       language_PracticeList: "Agile, SCRUM",
       tools: "Tools Used:",
-      tooList: "Trello, Slack, Discord",
+      tooList: "Trello, Slack, Discord, Discord, Discord, Discord",
     },
   ];
 
