@@ -31,7 +31,7 @@ const Techskills = ({ match }) => {
       languages_practices: "Practices:",
       language_PracticeList: "Agile, SCRUM",
       tools: "Tools Used:",
-      tooList: "Trello, Slack, Discord, Discord, Discord, Discord",
+      tooList: "Trello, Slack, Discord, Teamdeck, Smartsheet, Monday.com",
     },
   ];
 
@@ -83,7 +83,9 @@ const Techskills = ({ match }) => {
                         {tech.languages_practices}
                       </span>
                       <br />
-                      {tech.language_PracticeList}
+                      <span className="typoSpanList">
+                        {tech.language_PracticeList}
+                      </span>
                     </Typography>
                     <Typography
                       variant="body2"
@@ -91,7 +93,7 @@ const Techskills = ({ match }) => {
                     >
                       <span className="typoSpan">{tech.tools}</span>
                       <br />
-                      {tech.tooList}
+                      <span className="typoSpanList">{tech.tooList}</span>
                     </Typography>
                   </Card>
                 </Grid>

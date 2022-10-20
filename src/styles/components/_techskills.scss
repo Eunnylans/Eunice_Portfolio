@@ -43,7 +43,7 @@
     }
 
     .cardTypo {
-      font-family: "Poppins SemiBold";
+      font-family: "Poppins Bold";
       padding: 50px 0 10px 0;
       text-align: center;
       font-weight: 50px;
@@ -52,7 +52,7 @@
     }
 
     .typoSpan {
-      font-family: "Poppins SemiBold";
+      font-family: "Poppins Bold";
       font-weight: bold;
       font-size: $fontsize-largeText;
       color: $aqua;
@@ -129,8 +129,8 @@
       }
 
       .typoSpan {
-        font-size: $fontsize-smallText;
-        font-weight: bold;
+        font-size: $fontsize-midText;
+        
       }
     }
   }
