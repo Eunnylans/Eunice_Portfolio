@@ -1,11 +1,27 @@
 .section-title {
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
   font-size: 30px;
   font-weight: 800;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-title {
+    // font-size: 48px;
+    font-size: $fontsize-largeText;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .section-title {
+    // font-size: 48px;
+    font-size: $fontsize-largeText;
+  }
+}
 @media only screen and (max-width: 420px) {
   .section-title {
     // font-size: 48px;
-    font-size: 28px;
+    font-size: $fontsize-largeText;
   }
 }

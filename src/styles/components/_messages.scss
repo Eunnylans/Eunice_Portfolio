@@ -145,7 +145,7 @@
     .section {
       .wrapper {
         .contactTypo {
-          font-size: $fontsize-smallText;
+          font-size: $fontsize-largeText;
         }
         .questionTypo {
           font-size: $fontsize-smallText;
@@ -181,10 +181,10 @@
       }
     }
     .contactTypo {
-      font-size: 28px;
+      font-size: $fontsize-largeText;
     }
     .questionTypo {
-      font-size: $fontsize-smallText;
+      font-size: $fontsize-minText;
     }
   }
 }
