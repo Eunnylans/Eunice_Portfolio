@@ -82,6 +82,28 @@
   }
 }
 
+
+@media only screen and (max-width: 540px) {
+  .hero {
+    height: calc(100vh);
+
+    .hero-content {
+      width: 75vw;
+      transform: translateY(0px);
+
+      h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+
+      p {
+        font-size: $fontsize-smallText;
+      }
+    }
+  }
+}
+
+
 @media only screen and (max-width: 420px) {
   .hero {
     height: calc(100vh);

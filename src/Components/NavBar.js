@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { animateScroll as scroll, Link as LinkScroll } from "react-scroll";
-import PDF from "../assets/MyCV.pdf";
 import icon from "../assets/LogoIcon.png";
+import PDF from "../assets/MyCV.pdf";
 import UIContext from "../context/ui-context";
 import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
               offset={0}
               duration={700}
             >
-              About Me
+              AboutMe
             </LinkScroll>
           </li>
           <li>
@@ -68,7 +68,7 @@ const Navbar = () => {
               offset={0}
               duration={700}
             >
-              Contact
+              ContactMe
             </LinkScroll>
           </li>
           <li>
