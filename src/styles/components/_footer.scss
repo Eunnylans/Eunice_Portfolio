@@ -33,6 +33,14 @@
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .footer {
+    p {
+      font-size: $fontsize-minText;
+    }
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .footer {
     p {

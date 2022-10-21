@@ -102,6 +102,36 @@
   }
 }
 
+
+@media only screen and (max-width: 540px) {
+  .techStackContainer {
+    .card {
+      width: 100%;
+      .iconsDiv {
+        #icons {
+        }
+
+        .divider {
+        }
+      }
+
+      .cardTypo {
+        font-size: $fontsize-midText;
+        font-weight: bold;
+      }
+
+      .typoSpan {
+        font-size: $fontsize-smallText;
+      }
+
+      .typoSpanList {
+        font-size: $fontsize-minText;
+      }
+    }
+  }
+}
+
+
 @media only screen and (max-width: 420px) {
   .techStackContainer {
     .card {

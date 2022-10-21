@@ -280,6 +280,49 @@
   }
 }
 
+
+@media screen and (max-width: 540px) {
+  .profile-container {
+    .profile-parent {
+      .profile-details {
+        width: 90%;
+        .profile-details-name {
+          .primary-text {
+            font-size: $fontsize-largeText;
+          }
+          .highlighted-text {
+            font-size: $fontsize-largeText;
+          }
+        }
+        .profile-details-role {
+          .primary-text {
+            h3 {
+              font-size: $fontsize-midText;
+            }
+            .profile-role-tagline {
+              font-size: $fontsize-minText;
+            }
+          }
+        }
+        .profile-options {
+          .highlighted-btn {
+            font-size: 15px;
+          }
+          .primary-btn {
+            font-size: 15px;
+          }
+        }
+      }
+      .profile-picture {
+        height: 250px;
+        width: 250px;
+        margin-top: -90px;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 375px) {
   .profile-container {
     .profile-parent {

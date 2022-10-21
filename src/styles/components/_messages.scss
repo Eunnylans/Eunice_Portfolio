@@ -154,11 +154,31 @@
     }
   }
 }
+@media only screen and (max-width: 540px) {
+  .wrapper {
+    form {
+      width: 100%;
+      .submitButton {
+        font-size: $fontsize-minText;
+      }
+    }
+    .contactTypo {
+      font-size: $fontsize-largeText;
+    }
+    .questionTypo {
+      font-size: $fontsize-minText;
+    }
+  }
+}
 
 @media only screen and (max-width: 420px) {
   .wrapper {
     form {
       width: 100%;
+
+      .submitButton {
+        font-size: $fontsize-minText;
+      }
     }
     .contactTypo {
       font-size: 28px;

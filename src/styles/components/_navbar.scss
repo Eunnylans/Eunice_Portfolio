@@ -122,6 +122,28 @@
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .navbar {
+    height: 100px;
+    width: 130vw;
+    padding: 0px 30px;
+
+    .navbar-links-list {
+      li {
+        width: 85px;
+        padding: 0 10px;
+
+        .nav-link,
+        .nav-link-resume {
+          font-size: $fontsize-minText;
+          row-gap: 0px;
+          margin-bottom: -47%;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .navbar {
     height: 100px;
