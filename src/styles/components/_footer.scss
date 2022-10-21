@@ -1,4 +1,4 @@
-@import '../base';
+@import "../base";
 
 .footer {
   max-width: 100vw;
@@ -13,6 +13,7 @@
   p {
     color: $darkgreen;
     font-family: "Poppins Medium";
+    font-size: $fontsize-largeText;
     font-weight: bold;
   }
 
@@ -25,6 +26,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .footer {
+    p {
+      font-size: $fontsize-smallText;
+    }
+  }
 }
 
 @media only screen and (max-width: 420px) {
