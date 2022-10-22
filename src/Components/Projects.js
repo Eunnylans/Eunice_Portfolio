@@ -8,13 +8,13 @@ import SectionTitle from "../UIcomponents/SectionTitle";
 
 const projectArr = [
   {
-    title: "Business Connection Plateform",
-    subtitle: "<Team Project>",
+    title: "GusApp",
+    subtitle: "<Personal Project>",
     techName: "MongoDb| Express| React | Node | CSS| Figma | Firebase",
     src: project1,
-    alt: "Bconnected",
+    alt: "Github User Search App",
     livedemo: "https://gusapp-41a08.firebaseapp.com/",
-    github: "https://github.com/Eunnylans",
+    github: "https://github.com/Eunnylans/GusApp",
   },
   {
     title: "Admin Dashboard",
@@ -22,21 +22,21 @@ const projectArr = [
     techName: "React |React Router | CSS | Firebase | Material UI| Figma",
     src: project2,
     alt: "Admin Dashboard",
-    livedemo: "https://github.com/Eunnylans",
-    github: "https://github.com/Eunnylans",
+    livedemo: "https://eunnylans-admin-dashboard.netlify.app",
+    github: "https://github.com/Eunnylans/Admin-dashboard",
   },
   {
-    title: "Github User Search App",
-    subtitle: "<Personal Project>",
+    title: "Bconnected Platform",
+    subtitle: "<Team Project>",
     techName:
       "React | CSS | OpenWeatherMap API | npm | Figma | React Testing Library | Netlify",
     src: project3,
-    alt: "weather app",
-    livedemo: "https://github.com/Eunnylans",
-    github: "https://github.com/Eunnylans",
+    alt: "Business Platform",
+    livedemo: "https://b-connected.netlify.app/",
+    github: "https://github.com/SawaMohamed/bbconnected",
   },
   {
-    title: "Hacker News",
+    title: "Calculator",
     subtitle: "<Personal Project>",
     techName: "HTML | CSS | Vanilla JavaScript | Jest | GitHub Pages",
     src: project4,
