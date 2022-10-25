@@ -10,7 +10,7 @@ const projectArr = [
   {
     title: "GusApp",
     subtitle: "<Personal Project>",
-    techName: "Angular | Router | Firebase | CSS | Bootstrap| Figma",
+    techName: "Angular | Router | Firebase | CSS | Bootstrap | Figma | GithubAPI",
     src: project1,
     alt: "Github User Search App",
     livedemo: "https://gusapp-41a08.firebaseapp.com/",
@@ -19,7 +19,7 @@ const projectArr = [
   {
     title: "Admin Dashboard",
     subtitle: "<Personal Project>",
-    techName: "React | React Router | React Icons | CSS | Material UI| Netlify",
+    techName: "React | React Router | React Icons | CSS | Material UI | Netlify",
     src: project2,
     alt: "Admin Dashboard",
     livedemo: "https://eunnylans-admin-dashboard.netlify.app",
