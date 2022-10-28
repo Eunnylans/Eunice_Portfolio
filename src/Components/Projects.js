@@ -1,8 +1,8 @@
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import project2 from "../assets/Admin-Dashboard.png";
 import project3 from "../assets/bbconnected.png";
-import project4 from "../assets/Calculator.png";
 import project1 from "../assets/GUSAPP.png";
+import project4 from "../assets/Quiz.png";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
@@ -10,7 +10,8 @@ const projectArr = [
   {
     title: "GusApp",
     subtitle: "<Personal Project>",
-    techName: "Angular | Router | Firebase | CSS | Bootstrap | Figma | GithubAPI",
+    techName:
+      "Angular | Router | Firebase | CSS | Bootstrap | Figma | GithubAPI",
     src: project1,
     alt: "Github User Search App",
     livedemo: "https://gusapp-41a08.firebaseapp.com/",
@@ -19,7 +20,8 @@ const projectArr = [
   {
     title: "Admin Dashboard",
     subtitle: "<Personal Project>",
-    techName: "React | React Router | React Icons | CSS | Material UI | Netlify",
+    techName:
+      "React | React Router | React Icons | CSS | Material UI | Netlify",
     src: project2,
     alt: "Admin Dashboard",
     livedemo: "https://eunnylans-admin-dashboard.netlify.app",
@@ -36,9 +38,10 @@ const projectArr = [
     github: "https://github.com/SawaMohamed/bbconnected",
   },
   {
-    title: "Calculator",
+    title: "Quiz App",
     subtitle: "<Personal Project>",
-    techName: "HTML | CSS | Vanilla JavaScript | Jest | GitHub Pages",
+    techName:
+      "React | Typescript | React Icons | API | CSS | Material UI | Netlify",
     src: project4,
     alt: "calculator",
     livedemo: "https://github.com/Eunnylans",
