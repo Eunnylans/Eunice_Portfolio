@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $lightgray;
+  background-color: $aqua;
 
   .hamburger-center {
     width: 40px;
@@ -75,17 +75,17 @@
     background-color: $darkgray;
 
     .hamburger-menu-list {
-      background-color: $lightblue;
+      background-color: $aqua;
 
       li {
         .hamburger-nav-link {
-          color: $darkgray;
+          color: $darkgreen;
         }
       }
     }
 
     &.menuIcon-active {
-      background-color: $lightblue;
+      background-color: $aqua;
     }
 
     .hamburger-center {

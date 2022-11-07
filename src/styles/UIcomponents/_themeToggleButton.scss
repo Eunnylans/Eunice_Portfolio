@@ -1,4 +1,4 @@
-@import '../base';
+@import "../base";
 
 .theme-icon-dark,
 .theme-icon-light {
@@ -57,8 +57,8 @@
   height: 24px;
   padding: 0;
   border-radius: 30px;
-  background-color: $lightblue;
-  border: 1px solid darken($color: $lightblue, $amount: 20%);
+  background-color: $orange-shadow;
+  border: 1px solid darken($color: $toast-shadow, $amount: 20%);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;

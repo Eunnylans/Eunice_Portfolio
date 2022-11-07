@@ -101,8 +101,9 @@
               font-size: $fontsize-smallText;
               font-weight: bold;
               text-decoration: none;
-              background-color: $lightgray;
-              border: 1px solid $darkgreen;
+              background-color: $aqua;
+              border: 1px solid $loader-color;
+              color: $darkgreen;
 
               &:hover {
                 cursor: pointer;
