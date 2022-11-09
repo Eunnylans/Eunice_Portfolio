@@ -12,7 +12,7 @@
   .card {
     background: $offwhite;
     height: 600px;
-    width: 500px;
+    width: 430px;
     border-bottom: 4px solid $aqua;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,6 @@
   }
 }
 
-
 @media only screen and (max-width: 540px) {
   .techStackContainer {
     .card {
@@ -130,7 +129,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 420px) {
   .techStackContainer {
