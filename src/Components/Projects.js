@@ -2,7 +2,7 @@ import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import project2 from "../assets/Admin-Dashboard.png";
 import project3 from "../assets/bbconnected.png";
 import project1 from "../assets/GUSAPP.png";
-import project4 from "../assets/landingPage.PNG";
+import project4 from "../assets/HackerNews.png";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
@@ -38,10 +38,10 @@ const projectArr = [
     github: "https://github.com/SawaMohamed/bbconnected",
   },
   {
-    title: "Exchange Platform",
+    title: "Hacker News",
     subtitle: "<Team Project>",
     techName:
-      "React | Typescript | React Icons | API | CSS | Material UI | Netlify",
+      "React | Bootstrap | React Icons | API | CSS | Material UI | Netlify",
     src: project4,
     alt: "calculator",
     livedemo: "https://github.com/Eunnylans",
