@@ -12,14 +12,15 @@
   font-weight: bold;
 
   .home-icon {
-    padding: 10px 0;
+    padding: 0px 0;
+
 
     &:hover {
       cursor: pointer;
     }
 
     & img {
-      height: 30%;
+      height: 10%;
     }
   }
 
