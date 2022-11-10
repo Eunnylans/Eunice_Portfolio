@@ -23,7 +23,7 @@
     flex-direction: column;
     line-height: 1.3;
     h3 {
-      font-size: 35px;
+      font-size: 24px;
       font-family: "Poppins Bold";
       font-weight: bolder;
       color: $aqua;
@@ -36,7 +36,7 @@
   }
   .highlighted-text {
     color: $aqua;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: bolder;
     font-family: "Poppins SemiBold";
     margin-left: auto;
@@ -282,7 +282,6 @@
   }
 }
 
-
 @media screen and (max-width: 540px) {
   .profile-container {
     .profile-parent {
@@ -323,7 +322,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 375px) {
   .profile-container {

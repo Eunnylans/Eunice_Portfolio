@@ -70,8 +70,8 @@ const Messages = () => {
         >
           <path
             d="M0 0 L50 100 L100 0 Z"
-            fill="#0cbfae"
-            stroke="#0cbfae"
+            fill="#cef1ee"
+            stroke="#cef1ee"
           ></path>
         </svg>
         <div id="contact" className={`wrapper ${fadeIn ? "fadeIn" : null}`}>
