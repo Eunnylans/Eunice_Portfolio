@@ -1,4 +1,6 @@
+import { Divider } from "@material-ui/core";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
+import Fade from "react-reveal/Fade";
 import project2 from "../assets/Admin-Dashboard.png";
 import project3 from "../assets/bbconnected.png";
 import project1 from "../assets/GUSAPP.png";
@@ -75,7 +77,6 @@ const Projects = () => {
 
   const projectList = projectArr.map((project) => {
     return (
-      
       <div
         className={`project ${fadeIn ? "fadeIn" : null}`}
         key={project.title}
@@ -114,28 +115,17 @@ const Projects = () => {
         className={`projects-content ${uiCtx.isDark ? "dark" : null}`}
         ref={ref}
       >
-      <section className={`section ${fadeIn ? "fadeIn" : null}`}>
-      <svg
-        preserveAspectRatio="none"
-        viewBox="0 0 100 102"
-        height="75"
-        width="100%"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        className={`svgcolor-light ${fadeIn ? "fadeIn" : null}`}
-      >
-        <path
-          d="M0 0 L50 100 L100 0 Z"
-          fill="#cef1ee"
-          stroke="#cef1ee"
-        ></path>
-      </svg>
-     
-        <SectionTitle className={`projects-title ${fadeIn ? "fadeIn" : null}`}>
-          PROJECTS
-        </SectionTitle>
+        <Fade left>
+          <SectionTitle
+            className={`projects-title ${fadeIn ? "fadeIn" : null}`}
+          >
+            PROJECTS
+          </SectionTitle>
+        </Fade>
+        <Fade right>
+          <Divider className="divider"></Divider>
+        </Fade>
         <div className="projects-list">{projectList}</div>
-        </section>
       </div>
     </div>
   );
