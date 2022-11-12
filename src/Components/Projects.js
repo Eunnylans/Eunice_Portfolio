@@ -75,6 +75,7 @@ const Projects = () => {
 
   const projectList = projectArr.map((project) => {
     return (
+      
       <div
         className={`project ${fadeIn ? "fadeIn" : null}`}
         key={project.title}
@@ -113,10 +114,28 @@ const Projects = () => {
         className={`projects-content ${uiCtx.isDark ? "dark" : null}`}
         ref={ref}
       >
+      <section className={`section ${fadeIn ? "fadeIn" : null}`}>
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 100 102"
+        height="75"
+        width="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        className={`svgcolor-light ${fadeIn ? "fadeIn" : null}`}
+      >
+        <path
+          d="M0 0 L50 100 L100 0 Z"
+          fill="#cef1ee"
+          stroke="#cef1ee"
+        ></path>
+      </svg>
+     
         <SectionTitle className={`projects-title ${fadeIn ? "fadeIn" : null}`}>
           PROJECTS
         </SectionTitle>
         <div className="projects-list">{projectList}</div>
+        </section>
       </div>
     </div>
   );
