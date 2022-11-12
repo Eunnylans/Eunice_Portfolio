@@ -12,8 +12,10 @@ import {
   SiRedux,
   SiTailwindcss,
 } from "react-icons/si";
+import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
 import ProfilePic from "../assets/Eunice.jpeg";
+import CV from "../assets/MyCV.pdf";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
@@ -178,9 +180,19 @@ const Aboutme = () => {
           <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
             <button className={`primary-btn ${fadeIn ? "fadeIn" : null}`}>
               {""}
-              Contact{" "}
+              <LinkScroll
+                // className="hamburger-nav-link"
+                // activeClass="nav-link-active"
+                to="messages"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={700}
+              >
+                Contact
+              </LinkScroll>{" "}
             </button>
-            <a href="MyCV.pdf" download="Eunice.A Igbinedion MyCV.pdf">
+            <a href={CV} download={CV} alt="My-Resume">
               <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
                 Resume
               </button>
