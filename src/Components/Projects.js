@@ -3,8 +3,8 @@ import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import Fade from "react-reveal/Fade";
 import project2 from "../assets/Admin-Dashboard.png";
 import project3 from "../assets/bbconnected.png";
+import project4 from "../assets/CookBook.png";
 import project1 from "../assets/GUSAPP.png";
-import project4 from "../assets/HackerNews.png";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
@@ -40,14 +40,14 @@ const projectArr = [
     github: "https://github.com/SawaMohamed/bbconnected",
   },
   {
-    title: "Hacker News",
+    title: "Cook-Book",
     subtitle: "<Team Project>",
     techName:
-      "React | Bootstrap | React Icons | API | CSS | Material UI | Netlify",
+      "HTML | CSS | JavaScript | Bootstrap | Github-Pages | Material UI",
     src: project4,
     alt: "calculator",
-    livedemo: "https://github.com/Eunnylans",
-    github: "https://github.com/Eunnylans",
+    livedemo: "https://eunnylans.github.io/Cook_Book_Group_One/",
+    github: "https://github.com/Eunnylans/Cook_Book_Group_One",
   },
 ];
 

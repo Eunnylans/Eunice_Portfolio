@@ -76,9 +76,7 @@ const Messages = () => {
         </svg>
         <div id="contact" className={`wrapper ${fadeIn ? "fadeIn" : null}`}>
           <Fade left>
-            <Typography
-              className={`contactTypo ${fadeIn ? "fadeIn" : null}`}
-            >
+            <Typography className={`contactTypo ${fadeIn ? "fadeIn" : null}`}>
               CONTACT ME
             </Typography>
           </Fade>

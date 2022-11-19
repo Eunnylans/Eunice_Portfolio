@@ -131,6 +131,7 @@
     .colz-icon {
       display: flex;
       flex-direction: row;
+      cursor: pointer;
       justify-content: center;
       color: $aqua;
       font-size: $fontsize-largeText;
@@ -138,7 +139,7 @@
       padding: 8px;
       padding-left: 0px;
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
   }
