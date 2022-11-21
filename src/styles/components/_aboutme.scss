@@ -111,13 +111,13 @@
     justify-content: center;
     box-shadow: 0 1px 0px 0px $aqua;
     border-radius: 50%;
-    height: 380px;
-    width: 380px;
+    height: 400px;
+    width: 350px;
     margin: 0 0px 0 100px;
   }
   .profile-picture-background {
     height: 92%;
-    width: 92%;
+    width: 90%;
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -392,6 +392,7 @@
           }
         }
         .profile-options {
+          margin-bottom: 50%;
           .highlighted-btn {
             font-size: 15px;
           }
