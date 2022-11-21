@@ -123,6 +123,26 @@
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .hero {
+    height: calc(100vh);
+
+    .hero-content {
+      width: 75vw;
+      transform: translateY(0px);
+
+      h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+
+      p {
+        font-size: $fontsize-minText;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 280px) {
   .hero {
     height: calc(100vh);

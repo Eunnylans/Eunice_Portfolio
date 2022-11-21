@@ -11,7 +11,7 @@
 
   .card {
     background: $offwhite;
-    height: 600px;
+    height: 450px;
     width: 430px;
     border-bottom: 4px solid $aqua;
     justify-content: center;
@@ -147,6 +147,35 @@
 
       .cardTypo {
         font-size: $fontsize-midText;
+      }
+
+      .typoSpan {
+        font-size: $fontsize-smallText;
+      }
+
+      .typoSpanList {
+        font-size: $fontsize-minText;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .techStackContainer {
+    margin-top: 20%;
+    .card {
+      width: 100%;
+      .iconsDiv {
+        #icons {
+        }
+
+        .divider {
+        }
+      }
+
+      .cardTypo {
+        font-size: $fontsize-midText;
+        font-weight: bold;
       }
 
       .typoSpan {

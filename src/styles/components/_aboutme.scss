@@ -213,12 +213,12 @@
         .highlighted-btn {
           width: 120px;
           padding: 11px 0;
-          z-index: 700;
+          // z-index: 700;
         }
         .primary-btn {
           width: 120px;
           padding: 11px 0;
-          z-index: 700;
+          // z-index: 700;
         }
       }
     }
@@ -279,7 +279,7 @@
     .profile-parent {
       .profile-options {
         .highlighted-btn {
-          z-index: -900;
+          // z-index: -900;
         }
       }
     }
@@ -337,13 +337,37 @@
     .profile-parent {
       .profile-details {
         width: 90%;
-        .profile-role-tagline {
-          font-size: $fontsize-smallText;
+        .profile-details-name {
+          .primary-text {
+            font-size: $fontsize-largeText;
+          }
+          .highlighted-text {
+            font-size: $fontsize-largeText;
+          }
+        }
+        .profile-details-role {
+          .primary-text {
+            h3 {
+              font-size: $fontsize-midText;
+            }
+            .profile-role-tagline {
+              font-size: $fontsize-minText;
+            }
+          }
+        }
+        .profile-options {
+          margin-bottom: 50%;
+          .highlighted-btn {
+            font-size: 15px;
+          }
+          .primary-btn {
+            font-size: 15px;
+          }
         }
       }
       .profile-picture {
-        height: 275px;
-        width: 275px;
+        height: 230px;
+        width: 230px;
         margin-top: -90px;
       }
     }
