@@ -13,7 +13,7 @@ const contactInfo = [
   },
   {
     name: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/eunice-abieyuwa-igbinedion-82bb88117/',
+    link: 'https://www.linkedin.com/in/eunice-igbinedion-82bb88117/',
     icon() {
       return <FaLinkedin className='contact-icon linkedin' />;
     },

@@ -3,17 +3,19 @@
 .navbar {
   padding: 0px 100px;
   height: 100px;
-  max-width: 100%;
+  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins Medium";
-  background-color: #0cbfae;
+  background-color: $aqua;
   font-weight: bold;
+  position: fixed;
+  margin: auto;
+  z-index: 100;
 
   .home-icon {
     padding: 0px 0;
-
 
     &:hover {
       cursor: pointer;
