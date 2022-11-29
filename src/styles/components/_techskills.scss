@@ -10,7 +10,8 @@
   min-height: 100vh;
 
   .card {
-    background: $offwhite;
+    // background: $white;
+    box-shadow: 1px 1px 1px 1px $aqua;
     height: 500px;
     width: 430px;
     border-bottom: 4px solid $aqua;

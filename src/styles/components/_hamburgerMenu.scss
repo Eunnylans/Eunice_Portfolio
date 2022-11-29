@@ -1,7 +1,7 @@
-@import '../base';
+@import "../base";
 
 .hamburger-menu {
-  position: fixed;
+  // position: fixed;
   width: 100vw;
   height: 50px;
   top: 0;
@@ -19,7 +19,7 @@
     &:after,
     & div {
       background: $darkgray;
-      content: '';
+      content: "";
       display: block;
       height: 4px;
       border-radius: 3px;
@@ -31,7 +31,7 @@
   &-list {
     width: 100%;
     height: calc(100vh - 50px);
-    background-color: $royalblue;
+    background-color: #cef1ee;
     position: absolute;
     top: 50px;
     z-index: 50;
@@ -46,7 +46,8 @@
 
       .hamburger-nav-link {
         font-size: $fontsize-largeText;
-        color: white;
+        font-weight: bold;
+        color: $darkgreen;
       }
 
       a {
@@ -56,7 +57,7 @@
   }
 
   &.menuIcon-active {
-    background-color: $royalblue;
+    background-color: $white;
 
     .hamburger-center:before {
       transform: translateY(12px) rotate(135deg);
@@ -79,7 +80,7 @@
 
       li {
         .hamburger-nav-link {
-          color: $darkgreen;
+          color: $white;
         }
       }
     }
@@ -97,4 +98,3 @@
     }
   }
 }
-

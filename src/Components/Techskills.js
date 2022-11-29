@@ -12,8 +12,7 @@ const Techskills = ({ match }) => {
       languages_practices: "Languages:",
       language_PracticeList: "HTML, CSS, Sass, JavaScript, ReactJS",
       tools: "Tech Tools",
-      tooList:
-        "GitHUB, Material UI, Particles.js, Bootstrap, React Spring, Figma, Netlify",
+      tooList: "GitHUB, Material UI, Bootstrap, Figma, Netlify",
     },
     {
       id: 2,
@@ -31,7 +30,7 @@ const Techskills = ({ match }) => {
       languages_practices: "Practices:",
       language_PracticeList: "Agile, SCRUM",
       tools: "Tools Used:",
-      tooList: "Trello, Slack, Discord, Teamdeck, Smartsheet, Monday.com",
+      tooList: "Trello, Slack, Discord, Jira, Miro, Confluence",
     },
   ];
 

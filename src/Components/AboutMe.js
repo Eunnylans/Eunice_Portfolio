@@ -154,15 +154,15 @@ const Aboutme = () => {
                   loop={Infinity}
                   steps={[
                     "Enthusiastic Dev 🌐",
-                    1000,
+                    2000,
                     "Frontend Developer 👩‍💻",
-                    1000,
+                    2000,
                     "React Developer 👩‍💻",
-                    1000,
+                    2000,
                     "Database Administrator 📊",
-                    1000,
+                    2000,
                     "Sales Enthusiast 🔮",
-                    1000,
+                    2000,
                   ]}
                 />
               </h3>
