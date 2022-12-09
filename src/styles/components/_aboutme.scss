@@ -62,10 +62,11 @@
   }
 
   .profile-options {
+    width: auto;
     .highlighted-btn {
       border-radius: 50px;
       padding: 14px 0;
-      width: 160px;
+      width: 50%;
       cursor: pointer;
       transition: 0.2s;
       color: $darkgreen;
@@ -87,7 +88,7 @@
     .primary-btn {
       border-radius: 50px;
       padding: 14px 0;
-      width: 160px;
+      width: 50%;
       cursor: pointer;
       transition: 0.2s;
       font-size: $fontsize-largeText;

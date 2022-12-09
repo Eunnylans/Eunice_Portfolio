@@ -29,6 +29,7 @@
   .navbar-links-list {
     display: flex;
     list-style-type: none;
+    z-index: 900;
 
     li {
       display: flex;
@@ -128,7 +129,7 @@
 @media only screen and (max-width: 540px) {
   .navbar {
     height: 100px;
-    width: 130vw;
+    width: auto;
     padding: 0px 30px;
 
     .navbar-links-list {

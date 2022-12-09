@@ -21,7 +21,7 @@ const Techskills = ({ match }) => {
       languages_practices: "Languages",
       language_PracticeList: "NodeJs, NoSQL, SQL",
       tools: "Tech Tools",
-      tooList: "Express, MongoDB, PostgreSQL, GitHUB, Heroku",
+      tooList: "Express, MongoDB, PostgresSQL, GitHUB, Heroku",
     },
     {
       id: 3,
