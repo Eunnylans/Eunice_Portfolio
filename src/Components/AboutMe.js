@@ -192,11 +192,13 @@ const Aboutme = () => {
                 Contact
               </LinkScroll>{" "}
             </button>
-            <a href={CV} download={CV} alt="My-Resume">
+           
               <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
+              <a href={CV} download={CV} alt="My-Resume">
                 Resume
+                </a>
               </button>
-            </a>
+           
           </div>
         </div>
         <div className="profile-picture">
