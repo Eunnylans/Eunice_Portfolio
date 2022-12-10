@@ -1,7 +1,7 @@
 @import "../base";
 
 .navbar {
-  padding: 0px 100px;
+  padding: 0px 30px;
   height: 100px;
   min-width: 100%;
   display: flex;
@@ -16,18 +16,22 @@
 
   .home-icon {
     padding: 0px 0;
+    width: 5%;
 
     &:hover {
       cursor: pointer;
     }
 
     & img {
-      height: 10%;
+      height: 5%;
+      width:  120%;
     }
   }
 
   .navbar-links-list {
     display: flex;
+    width: 90%;
+    justify-content: flex-end;
     list-style-type: none;
     z-index: 900;
 
@@ -54,7 +58,7 @@
 
         &-active,
         &:hover {
-          color: $aqua;
+          color: $white;
           font-weight: 700;
         }
 
@@ -82,7 +86,7 @@
         .nav-link-resume {
           &-active,
           &:hover {
-            color: $aqua;
+            color: $darkgreen;
             font-weight: 700;
           }
 
@@ -113,6 +117,7 @@
     padding: 0px 30px;
 
     .navbar-links-list {
+      
       li {
         width: auto;
         padding: 0 10px;
@@ -133,6 +138,7 @@
     padding: 0px 30px;
 
     .navbar-links-list {
+      
       li {
         width: 85px;
         padding: 0 10px;
