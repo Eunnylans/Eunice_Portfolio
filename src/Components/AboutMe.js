@@ -153,15 +153,15 @@ const Aboutme = () => {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "MongoDb 📊",
+                    "MongoDb 📚",
                     3000,
-                    "Express 🌐",
+                    "Express 🟩",
                     3000,
-                    "React 👩‍💻",
+                    "React 🧊",
                     3000,
-                    "NodeJs 👩‍💻",
+                    "NodeJs 🔮",
                     3000,
-                    "Sales & Marketing Enthusiast 🔮",
+                    "Sales & Marketing Enthusiast 👩‍💻",
                     3000,
                   ]}
                 />
@@ -172,7 +172,7 @@ const Aboutme = () => {
                 I am a result-driven web developer, an avid learner,
                 <br /> Am quick in understanding new technologies. <br />
                 With my background in Sales & Marketing and passion <br />
-                   for Frontend development. <br />
+                for Frontend development. <br />
                 I am eager to develop efficient digital solutions <br />
                 that create a positive impact in the world
               </span>
