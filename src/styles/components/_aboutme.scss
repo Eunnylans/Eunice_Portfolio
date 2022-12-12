@@ -32,9 +32,9 @@
     flex-direction: column;
     line-height: 1.3;
     h3 {
-      font-size: 24px;
+      font-size: x-large;
       font-family: "Poppins Bold";
-      font-weight: bolder;
+      font-weight: 600;
       color: $aqua;
     }
   }
@@ -45,8 +45,8 @@
   }
   .highlighted-text {
     color: $aqua;
-    font-size: 24px;
-    font-weight: bolder;
+    font-size: x-large;
+    font-weight: 600;
     font-family: "Poppins SemiBold";
     margin-left: auto;
   }

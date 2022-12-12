@@ -141,7 +141,7 @@ const Aboutme = () => {
               <SectionTitle
                 className={`highlighted-text ${fadeIn ? "fadeIn" : null}`}
               >
-                Eunice Abieyuwa Igbinedion
+                A Fullstack(MERN) Web & App Developer
               </SectionTitle>
             </span>
           </div>
@@ -153,15 +153,15 @@ const Aboutme = () => {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Enthusiastic Dev 🌐",
+                    "MongoDb 📊",
                     3000,
-                    "Frontend Developer 👩‍💻",
+                    "Express 🌐",
                     3000,
-                    "React Developer 👩‍💻",
+                    "React 👩‍💻",
                     3000,
-                    "Database Administrator 📊",
+                    "NodeJs 👩‍💻",
                     3000,
-                    "Sales Enthusiast 🔮",
+                    "Sales & Marketing Enthusiast 🔮",
                     3000,
                   ]}
                 />
@@ -169,11 +169,12 @@ const Aboutme = () => {
               <span
                 className={`profile-role-tagline ${fadeIn ? "fadeIn" : null}`}
               >
-                Master of building application with Frontend operations. <br />
-                As a Brand Marketer-turned-Front-End Developer, my goal is to
-                provide solutions that create a better user experience. <br />
-                By combining my marketing expertise with my technical skills, I
-                can push your business forward.
+                I am a result-driven web developer, an avid learner,
+                <br /> Am quick in understanding new technologies. <br />
+                With my background in Sales & Marketing and passion <br />
+                   for Frontend development. <br />
+                I am eager to develop efficient digital solutions <br />
+                that create a positive impact in the world
               </span>
             </span>
           </div>
@@ -187,18 +188,17 @@ const Aboutme = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={700}
+                duration={100}
               >
                 Contact
               </LinkScroll>{" "}
             </button>
-           
-              <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
+
+            <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
               <a href={CV} download={CV} alt="My-Resume">
                 Resume
-                </a>
-              </button>
-           
+              </a>
+            </button>
           </div>
         </div>
         <div className="profile-picture">
