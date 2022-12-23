@@ -15,7 +15,7 @@ import {
 import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
 import ProfilePic from "../assets/Eunice.jpeg";
-import CV from "../assets/MyCV.pdf";
+import PDF from "../assets/MyCV.pdf";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
@@ -197,9 +197,15 @@ const Aboutme = () => {
             </button>
 
             <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
-              <a href={CV} download={CV} alt="My-Resume">
-                Resume
-              </a>
+              <a
+              className="highlighted-btn"
+              href={PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+                
             </button>
           </div>
         </div>

@@ -64,17 +64,25 @@
   .profile-options {
     width: 250px;
     margin: auto;
-    .highlighted-btn {
+    button.highlighted-btn {
       border-radius: 50px;
       padding: 14px 0;
       width: 50%;
       cursor: pointer;
       transition: 0.2s;
       color: $darkgreen;
-      border: 2px solid $aqua;
+      border: 1px solid $aqua;
       font-size: $fontsize-largeText;
       font-family: "Poppins Medium";
       background-color: #cef1ee;
+      a {
+        color: $darkgreen;
+        text-decoration: none;
+
+        &:hover {
+          color: $white;
+        }
+      }
       &:hover {
         // margin: 0 0 0 28px;
         background-color: $aqua;
@@ -83,17 +91,6 @@
       }
       &:active {
         transform: translateY(2px);
-      }
-
-      a {
-        color: $darkgreen;
-        text-decoration: none;
-        &:hover {
-          // margin: 0 0 0 28px;
-          // background-color: $aqua;
-          // border-color: #cef1ee;
-          color: $white;
-        }
       }
     }
 
@@ -106,7 +103,7 @@
       font-size: $fontsize-largeText;
       font-family: "Poppins Medium";
       color: $darkgreen;
-      border: 2px solid $aqua;
+      border: 1px solid $aqua;
       background-color: #cef1ee;
       &:hover {
         // margin: 0 0 0 28px;
