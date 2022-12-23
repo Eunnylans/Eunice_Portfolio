@@ -19,7 +19,7 @@
       font-weight: 900;
       padding-bottom: 20px;
       font-family: "Poppins Medium";
-      color: $darkgray;
+      color: $darkgreen;
       text-align: center;
       opacity: 0;
       animation: fadeIn linear 0.8s forwards;
@@ -45,6 +45,7 @@
         font-size: $fontsize-largeText;
         background-color: $white;
         color: $darkgreen;
+        margin-top: 5%;
         border: 2px solid $aqua;
         font-family: "Poppins Medium";
         font-weight: bold;
@@ -55,7 +56,6 @@
           border-color: #cef1ee;
           color: $white;
         }
-        
       }
     }
 
@@ -68,7 +68,7 @@
         color: $aqua;
       }
 
-      button{
+      button {
         color: $white;
         background-color: $darkgray;
         &:hover {
