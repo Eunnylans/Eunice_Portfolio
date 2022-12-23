@@ -40,15 +40,42 @@
         font-weight: 900;
         font-family: "Poppins Medium";
       }
+
+      button {
+        font-size: $fontsize-largeText;
+        background-color: $white;
+        color: $darkgreen;
+        border: 2px solid $aqua;
+        font-family: "Poppins Medium";
+        font-weight: bold;
+        line-height: 1.3;
+        text-align: center;
+        &:hover {
+          background-color: $aqua;
+          border-color: #cef1ee;
+          color: $white;
+        }
+        
+      }
     }
 
     &.dark {
       h1 {
-        color: white;
+        color: $white;
       }
 
       .hero-colorText {
         color: $aqua;
+      }
+
+      button{
+        color: $white;
+        background-color: $darkgray;
+        &:hover {
+          background-color: $aqua;
+          border-color: #cef1ee;
+          color: $white;
+        }
       }
     }
   }

@@ -175,6 +175,8 @@ const Aboutme = () => {
                 for Frontend development. <br />
                 I am eager to develop efficient digital solutions <br />
                 that create a positive impact in the world
+
+                
               </span>
             </span>
           </div>
