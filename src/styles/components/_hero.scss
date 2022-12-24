@@ -113,6 +113,28 @@
     }
   }
 }
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+  .hero {
+    height: calc(100vh);
+
+    .hero-content {
+      width: 75vw;
+      transform: translateY(0px);
+
+      h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
+      }
+
+      p {
+        font-size: $fontsize-minText;
+        button {
+          font-size: $fontsize-minText;
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 540px) {
   .hero {

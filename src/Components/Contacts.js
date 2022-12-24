@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { FaLinkedin, FaTwitterSquare, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaTwitterSquare, FaGithub, FaXing } from 'react-icons/fa';
 import { SiHashnode } from 'react-icons/si';
 import UIContext from '../context/ui-context';
 
@@ -13,7 +13,7 @@ const contactInfo = [
   },
   {
     name: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/eunice-igbinedion-82bb88117/',
+    link: 'https://www.linkedin.com/in/euniceigbinedion/',
     icon() {
       return <FaLinkedin className='contact-icon linkedin' />;
     },
@@ -26,10 +26,10 @@ const contactInfo = [
     },
   },
   {
-    name: 'Blog',
-    link: 'https://twitter.com/eunnylans',
+    name: 'Xing',
+    link: 'https://www.xing.com/profile/EuniceAbieyuwa_Igbinedion/cv',
     icon() {
-      return <SiHashnode className='contact-icon blog' />;
+      return <FaXing className='contact-icon blog' />;
     },
   },
 ];

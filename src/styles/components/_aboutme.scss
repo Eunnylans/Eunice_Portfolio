@@ -292,18 +292,42 @@
   }
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (min-width: 540px) and (max-width: 767px) {
   .profile-container {
     .profile-parent {
-      .profile-options {
-        .highlighted-btn {
-          // z-index: -900;
+      .profile-details {
+        width: 90%;
+        .profile-details-name {
+          .primary-text {
+            font-size: $fontsize-largeText;
+          }
+          .highlighted-text {
+            font-size: $fontsize-largeText;
+          }
+        }
+        .profile-details-role {
+          .primary-text {
+            h3 {
+              font-size: $fontsize-largeText;
+            }
+            .profile-role-tagline {
+              font-size: $fontsize-minText;
+            }
+          }
+        }
+        .profile-options {
+          .highlighted-btn {
+            font-size: 15px;
+          }
+          .primary-btn {
+            font-size: 15px;
+          }
         }
       }
-    }
-    .profile-details-role {
-      .profile-role-tagline {
-        font-size: $fontsize-smallText;
+      .profile-picture {
+        height: 250px;
+        width: 250px;
+        margin-top: -90px;
       }
     }
   }
