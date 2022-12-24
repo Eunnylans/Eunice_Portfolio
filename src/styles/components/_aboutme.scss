@@ -121,9 +121,10 @@
     justify-content: center;
     box-shadow: 0 1px 0px 0px $aqua;
     border-radius: 50%;
-    height: 400px;
+    height: 500px;
     width: 350px;
     margin: 0 0px 0 100px;
+    image-rendering: auto;
   }
   .profile-picture-background {
     height: 92%;
@@ -247,7 +248,7 @@
   .profile-container {
     .profile-parent {
       .profile-picture {
-        height: 320px;
+        height: 470px;
         width: 320px;
         margin: 0 0 0 4px;
       }
@@ -325,7 +326,7 @@
         }
       }
       .profile-picture {
-        height: 250px;
+        height: 400px;
         width: 250px;
         margin-top: -90px;
       }
@@ -366,9 +367,9 @@
         }
       }
       .profile-picture {
-        height: 250px;
+        height: 350px;
         width: 250px;
-        margin-top: -90px;
+        // margin-top: -90px;
       }
     }
   }
@@ -408,7 +409,7 @@
         }
       }
       .profile-picture {
-        height: 230px;
+        height: 330px;
         width: 230px;
         margin-top: -90px;
       }
@@ -426,7 +427,7 @@
         }
       }
       .profile-picture {
-        height: 275px;
+        height: 375px;
         width: 275px;
         margin-top: -90px;
       }
@@ -468,9 +469,9 @@
         }
       }
       .profile-picture {
-        height: 250px;
+        height: 300px;
         width: 250px;
-        margin-top: -90px;
+        // padding-top: 100px;
       }
     }
   }
