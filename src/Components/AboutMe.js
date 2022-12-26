@@ -15,7 +15,7 @@ import {
 import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
 import ProfilePic from "../assets/Eunnylans.jpg";
-import PDF from "../assets/MyCV.pdf";
+import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 

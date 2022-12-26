@@ -313,6 +313,7 @@
               font-size: $fontsize-largeText;
             }
             .profile-role-tagline {
+              width: 100%;
               font-size: $fontsize-minText;
             }
           }
@@ -327,7 +328,7 @@
         }
       }
       .profile-picture {
-        height: 400px;
+        height: 350px;
         width: 250px;
         margin-top: -90px;
       }
