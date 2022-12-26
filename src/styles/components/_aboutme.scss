@@ -297,7 +297,7 @@
   .profile-container {
     .profile-parent {
       .profile-details {
-        width: 90%;
+        width: 100%;
         .profile-details-name {
           .primary-text {
             font-size: $fontsize-largeText;
@@ -307,6 +307,7 @@
           }
         }
         .profile-details-role {
+          width: 100%;
           .primary-text {
             h3 {
               font-size: $fontsize-largeText;
@@ -375,11 +376,32 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .profile-container {
+    .profile-parent {
+      .profile-details {
+        width: 100%;
+        .profile-role-tagline {
+          width: 100%;
+          font-size: $fontsize-smallText;
+        }
+      }
+      .profile-picture {
+        height: 350px;
+        width: 250px;
+        margin-top: -90px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .profile-container {
     .profile-parent {
       .profile-details {
-        width: 90%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
         .profile-details-name {
           .primary-text {
             font-size: $fontsize-largeText;
@@ -389,6 +411,7 @@
           }
         }
         .profile-details-role {
+          width: 100%;
           .primary-text {
             h3 {
               font-size: $fontsize-midText;
@@ -399,6 +422,7 @@
           }
         }
         .profile-options {
+          width: fit-content;
           margin-bottom: 50%;
           .highlighted-btn {
             font-size: 15px;
@@ -409,26 +433,8 @@
         }
       }
       .profile-picture {
-        height: 330px;
-        width: 230px;
-        margin-top: -90px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .profile-container {
-    .profile-parent {
-      .profile-details {
-        width: 90%;
-        .profile-role-tagline {
-          font-size: $fontsize-smallText;
-        }
-      }
-      .profile-picture {
-        height: 375px;
-        width: 275px;
+        height: 280px;
+        width: 220px;
         margin-top: -90px;
       }
     }
@@ -439,7 +445,7 @@
   .profile-container {
     .profile-parent {
       .profile-details {
-        width: 90%;
+        width: 100%;
         .profile-details-name {
           .primary-text {
             font-size: $fontsize-largeText;
@@ -449,17 +455,20 @@
           }
         }
         .profile-details-role {
+          width: 100%;
           .primary-text {
             h3 {
               font-size: $fontsize-midText;
             }
             .profile-role-tagline {
               font-size: $fontsize-minText;
+              width: 100%;
             }
           }
         }
         .profile-options {
           margin-bottom: 50%;
+          width: fit-content;
           .highlighted-btn {
             font-size: 15px;
           }
@@ -469,9 +478,8 @@
         }
       }
       .profile-picture {
-        height: 300px;
-        width: 250px;
-        // padding-top: 100px;
+        height: 260px;
+        width: 200px;
       }
     }
   }
