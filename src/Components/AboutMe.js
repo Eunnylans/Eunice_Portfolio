@@ -184,8 +184,6 @@ const Aboutme = () => {
             <button className={`primary-btn ${fadeIn ? "fadeIn" : null}`}>
               {""}
               <LinkScroll
-                // className="hamburger-nav-link"
-                // activeClass="nav-link-active"
                 to="messages"
                 spy={true}
                 smooth={true}
