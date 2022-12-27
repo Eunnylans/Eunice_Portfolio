@@ -87,7 +87,7 @@ const Messages = () => {
             className={`questionTypo ${fadeIn ? "fadeIn" : null}`}
             variant="body1"
           >
-            Wanna get in touch or talk about a project? Feel free to contact me?
+            Feel free to get in touch or talk about a project
           </Typography>
           <form
             ref={form}
