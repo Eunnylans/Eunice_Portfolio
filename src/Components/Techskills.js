@@ -61,7 +61,7 @@ const Techskills = ({ match }) => {
     <div className={`techskills ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
       <Grid
         container
-        spacing={4}
+        spacing={1}
         className={`techStackContainer ${fadeIn ? "fadeIn" : null}`}
       >
         {myTechStack &&
