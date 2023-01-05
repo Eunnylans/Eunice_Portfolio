@@ -179,8 +179,8 @@ const Aboutme = () => {
                 to="messages"
                 spy={true}
                 smooth={true}
-                offset={0}
-                duration={100}
+                offset={-100}
+                duration={700}
               >
                 Contact
               </LinkScroll>{" "}
