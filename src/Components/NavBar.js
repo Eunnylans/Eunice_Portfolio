@@ -29,7 +29,7 @@ const Navbar = () => {
               offset={0}
               duration={700}
             >
-              AboutMe
+              About 
             </LinkScroll>
           </li>
           <li>
@@ -68,7 +68,7 @@ const Navbar = () => {
               offset={-100}
               duration={700}
             >
-              ContactMe
+              Contact 
             </LinkScroll>
           </li>
           <li>

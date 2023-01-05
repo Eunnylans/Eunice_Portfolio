@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
                 offset={0}
                 duration={700}
               >
-                About Me
+                About
               </LinkScroll>
             </li>
 
@@ -85,7 +85,7 @@ const HamburgerMenu = () => {
                 offset={0}
                 duration={700}
               >
-                Contact-Me
+                Contact
               </LinkScroll>
             </li>
 
