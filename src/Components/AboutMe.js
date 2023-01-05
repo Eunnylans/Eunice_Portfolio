@@ -14,8 +14,8 @@ import {
 } from "react-icons/si";
 import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
-import ProfilePic from "../assets/Eunnylans.jpg";
 import PDF from "../assets/Eunice-igbinedion-resume.pdf";
+import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
 
@@ -127,26 +127,22 @@ const Aboutme = () => {
       ref={ref}
     >
       <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
-        <div className={`profile-details ${fadeIn ? "fadeIn" : null}`}>
-          <div className={`colz ${fadeIn ? "fadeIn" : null}`}>
-            <div className={`colz-icon ${fadeIn ? "fadeIn" : null}`}>
-              {skillsList}
-            </div>
+        <div className="profile-details">
+          <div className="colz">
+            <div className="colz-icon">{skillsList}</div>
           </div>
 
-          <div className={`profile-details-name ${fadeIn ? "fadeIn" : null}`}>
-            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-details-name">
+            <span className="primary-text">
               {" "}
               Hello, I'M{" "}
-              <SectionTitle
-                className={`highlighted-text ${fadeIn ? "fadeIn" : null}`}
-              >
+              <SectionTitle className="highlighted-text">
                 A Fullstack(MERN) Web & App Developer
               </SectionTitle>
             </span>
           </div>
-          <div className={`profile-details-role ${fadeIn ? "fadeIn" : null}`}>
-            <span className={`primary-text ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-details-role">
+            <span className="primary-text">
               {" "}
               <h3>
                 {" "}
@@ -166,22 +162,18 @@ const Aboutme = () => {
                   ]}
                 />
               </h3>
-              <span
-                className={`profile-role-tagline ${fadeIn ? "fadeIn" : null}`}
-              >
+              <span className="profile-role-tagline">
                 I am a result-driven web developer, an avid learner,
                 <br /> Am quick in understanding new technologies. <br />
                 With my background in Sales & Marketing and passion <br />
                 for Frontend development. <br />
                 I am eager to develop efficient digital solutions <br />
                 that create a positive impact in the world
-
-                
               </span>
             </span>
           </div>
-          <div className={`profile-options ${fadeIn ? "fadeIn" : null}`}>
-            <button className={`primary-btn ${fadeIn ? "fadeIn" : null}`}>
+          <div className="profile-options">
+            <button className="primary-btn">
               {""}
               <LinkScroll
                 to="messages"
@@ -194,16 +186,15 @@ const Aboutme = () => {
               </LinkScroll>{" "}
             </button>
 
-            <button className={`highlighted-btn ${fadeIn ? "fadeIn" : null}`}>
+            <button className="highlighted-btn">
               <a
-              className="highlighted-btn"
-              href={PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-                
+                className="highlighted-btn"
+                href={PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </button>
           </div>
         </div>
