@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { animateScroll as scroll, Link as LinkScroll } from "react-scroll";
 import PDF from "../assets/Eunice-igbinedion-resume.pdf";
-import icon from "../assets/icon.png";
+import icon from "../assets/EuniceLogo.png";
 import UIContext from "../context/ui-context";
 import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
 
