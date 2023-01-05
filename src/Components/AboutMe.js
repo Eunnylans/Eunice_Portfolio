@@ -157,7 +157,9 @@ const Aboutme = () => {
                     3000,
                     "NodeJs 🔮",
                     3000,
-                    "Sales & Marketing Enthusiast 👩‍💻",
+                    "Sales 👩‍💻",
+                    3000,
+                    "Marketing 👩‍💻",
                     3000,
                   ]}
                 />
