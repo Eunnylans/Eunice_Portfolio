@@ -66,7 +66,7 @@ const Messages = () => {
           width="100%"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          className={`svgcolor-light ${fadeIn ? "fadeIn" : null}`}
+          className="svgcolor-light"
         >
           <path
             d="M0 0 L50 100 L100 0 Z"
@@ -74,26 +74,17 @@ const Messages = () => {
             stroke="#cef1ee"
           ></path>
         </svg>
-        <div id="contact" className={`wrapper ${fadeIn ? "fadeIn" : null}`}>
+        <div id="contact" className="wrapper">
           <Fade left>
-            <Typography className={`contactTypo ${fadeIn ? "fadeIn" : null}`}>
-              CONTACT ME
-            </Typography>
+            <Typography className="contactTypo">CONTACT ME</Typography>
           </Fade>
           <Fade right>
             <Divider className="divider"></Divider>
           </Fade>
-          <Typography
-            className={`questionTypo ${fadeIn ? "fadeIn" : null}`}
-            variant="body1"
-          >
+          <Typography className="questionTypo" variant="body1">
             Feel free to get in touch or talk about a project
           </Typography>
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className={`form ${fadeIn ? "fadeIn" : null}`}
-          >
+          <form ref={form} onSubmit={sendEmail} className="form">
             <input
               type="text"
               name="user_name"
@@ -116,7 +107,7 @@ const Messages = () => {
               type="submit"
               value="Send"
               placeholder={"Please enter your message"}
-              className={`submitButton ${fadeIn ? "fadeIn" : null}`}
+              className="submitButton"
             />
           </form>
         </div>
