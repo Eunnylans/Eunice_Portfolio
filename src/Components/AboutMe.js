@@ -147,21 +147,22 @@ const Aboutme = () => {
               <h3>
                 {" "}
                 <Typical
-                  loop={Infinity}
                   steps={[
                     "MongoDb 📚",
-                    3000,
+                    5000,
                     "Express 🟩",
-                    3000,
+                    5000,
                     "React 🧊",
-                    3000,
+                    5000,
                     "NodeJs 🔮",
-                    3000,
+                    5000,
                     "Sales 👩‍💻",
-                    3000,
+                    5000,
                     "Marketing 👩‍💻",
-                    3000,
+                    5000,
                   ]}
+                  // loop={Infinity}
+                  // wrapper="p"
                 />
               </h3>
               <span className="profile-role-tagline">
