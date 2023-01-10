@@ -1,7 +1,7 @@
-import { useContext, useEffect } from 'react';
-import UIContext from '../context/ui-context';
-import Toggle from 'react-toggle';
-import { IoSunnySharp, IoMoonSharp } from 'react-icons/io5';
+import { useContext, useEffect } from "react";
+import { IoMoonSharp, IoSunnySharp } from "react-icons/io5";
+import Toggle from "react-toggle";
+import UIContext from "../context/ui-context";
 
 const ThemeToggleButton = () => {
   const uiCtx = useContext(UIContext);
@@ -21,21 +21,21 @@ const ThemeToggleButton = () => {
 
   useEffect(() => {
     if (uiCtx.isDark) {
-      document.body.classList.add('dark');
+      document.body.classList.add("dark");
     } else {
-      document.body.classList.remove('dark');
+      document.body.classList.remove("dark");
     }
   }, [uiCtx.isDark]);
 
   return (
     <Toggle
-      className='dark-mode-toggle'
-      aria-label='Dark mode toggle'
+      className="dark-mode-toggle"
+      aria-label="Dark mode toggle"
       checked={uiCtx.isDark}
-      //   checked={true}
+      //checked={true}
       icons={{
-        checked: <IoMoonSharp className='theme-icon-dark' />,
-        unchecked: <IoSunnySharp className='theme-icon-light' />,
+        checked: <IoMoonSharp className="theme-icon-dark" />,
+        unchecked: <IoSunnySharp className="theme-icon-light" />,
       }}
       onChange={toggleThemeButton}
     />

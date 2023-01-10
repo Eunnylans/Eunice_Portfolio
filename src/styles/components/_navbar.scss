@@ -2,7 +2,7 @@
 
 .navbar {
   padding: 0px 30px;
-  height: 100px;
+  height: 10%;
   min-width: 100%;
   display: flex;
   align-items: center;
@@ -17,14 +17,12 @@
   .home-icon {
     padding: 0px 0;
     width: 5%;
-
+    img {
+      height: 3%;
+      width: 70%;
+    }
     &:hover {
       cursor: pointer;
-    }
-
-    & img {
-      height: 5%;
-      width: 120%;
     }
   }
 
