@@ -1,13 +1,14 @@
-import UIContext from '../context/ui-context';
-import { useContext } from 'react';
+import { useContext } from "react";
+import UIContext from "../context/ui-context";
 
 const Footer = () => {
   const uiCtx = useContext(UIContext);
 
   return (
-    <footer className={`footer ${uiCtx.isDark ? 'dark' : null}`}>
+    <footer className={`footer ${uiCtx.isDark ? "dark" : null}`}>
       <p>
-       ©Eunnylans <br /> All Rights Reserved
+        Made with ♥ by Eunnylans © {new Date().getFullYear()}
+        <br /> All Rights Reserved
       </p>
     </footer>
   );

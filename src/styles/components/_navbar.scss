@@ -2,7 +2,7 @@
 
 .navbar {
   padding: 0px 30px;
-  height: 10%;
+  height: 4.3rem;
   min-width: 100%;
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@
 
 @media only screen and (max-width: 767px) {
   .navbar {
-    height: 100px;
+    height: 10%;
     width: 625%;
     padding: 0px 30px;
 
@@ -130,7 +130,7 @@
 
 @media only screen and (min-width: 540px) and (max-width: 767px) {
   .navbar {
-    height: 100px;
+    height: 10%;
     width: auto;
     padding-left: 10px;
     font-size: $fontsize-minText;
@@ -166,7 +166,7 @@
 
 @media only screen and (min-width: 421px) and (max-width: 540px) {
   .navbar {
-    height: 100px;
+    height: 10%;
     width: auto;
     padding-left: 10px;
     font-size: $fontsize-minText;
@@ -202,7 +202,7 @@
 
 @media only screen and (max-width: 420px) {
   .navbar {
-    height: 100px;
+    height: 10%;
     width: 625%;
     padding: 0px 30px;
 

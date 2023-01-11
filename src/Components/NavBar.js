@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { animateScroll as scroll, Link as LinkScroll } from "react-scroll";
-import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 import icon from "../assets/EuniceLogo.png";
 import UIContext from "../context/ui-context";
 import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
@@ -19,6 +18,19 @@ const Navbar = () => {
           <img src={icon} alt="home" onClick={scrollToTop} />
         </div>
         <ul className={`navbar-links-list ${uiCtx.isDark ? "dark" : null}`}>
+        <li>
+            <LinkScroll
+              className="nav-link"
+              activeClass="nav-link-active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={700}
+            >
+              Home
+            </LinkScroll>
+          </li>
           <li>
             <LinkScroll
               className="nav-link"
@@ -29,7 +41,7 @@ const Navbar = () => {
               offset={0}
               duration={700}
             >
-              About 
+              About
             </LinkScroll>
           </li>
           <li>
@@ -42,7 +54,7 @@ const Navbar = () => {
               offset={0}
               duration={700}
             >
-              Techskills
+              Skills
             </LinkScroll>
           </li>
           <li>
@@ -65,22 +77,13 @@ const Navbar = () => {
               to="messages"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-70}
               duration={700}
             >
-              Contact 
+              Contact
             </LinkScroll>
           </li>
-          <li>
-            <a
-              className="nav-link-resume"
-              href={PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </li>
+
           <li>
             <ThemeToggleButton />
           </li>
