@@ -1,3 +1,4 @@
+import { saveAs } from "file-saver";
 import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";
 import {
@@ -14,7 +15,6 @@ import {
 } from "react-icons/si";
 import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
-import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
@@ -121,6 +121,10 @@ const Aboutme = () => {
     );
   });
 
+  const saveFile = () => {
+    saveAs("https://eunice-igbindedion-resume.netlify.app/");
+  };
+
   return (
     <div
       className={`aboutme profile-container ${uiCtx.isDark ? "dark" : null}`}
@@ -161,17 +165,15 @@ const Aboutme = () => {
                     "Marketing 👩‍💻",
                     5000,
                   ]}
-                  // loop={Infinity}
-                  // wrapper="p"
+                  loop={Infinity}
                 />
               </h3>
               <span className="profile-role-tagline">
-                I am a result-driven web developer, an avid learner,
-                <br /> Am quick in understanding new technologies. <br />
-                With my background in Sales & Marketing and passion <br />
-                for Frontend development. <br />
-                I am eager to develop efficient digital solutions <br />
-                that create a positive impact in the world
+                I am a result-driven web developer, Am quick in understanding
+                new technologies. With my background in Sales & Marketing and
+                passion for Frontend development. I am eager to develop
+                efficient digital solutions that create a positive impact in the
+                world
               </span>
             </span>
           </div>
@@ -189,15 +191,12 @@ const Aboutme = () => {
               </LinkScroll>{" "}
             </button>
 
-            <button className="highlighted-btn">
-              <a
-                className="highlighted-btn"
-                href={PDF}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
+            <button
+              className="highlighted-btn"
+              onClick={saveFile}
+              target="_blank"
+            >
+              Resume
             </button>
           </div>
         </div>

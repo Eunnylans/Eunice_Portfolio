@@ -18,7 +18,7 @@ const Navbar = () => {
           <img src={icon} alt="home" onClick={scrollToTop} />
         </div>
         <ul className={`navbar-links-list ${uiCtx.isDark ? "dark" : null}`}>
-        <li>
+          <li>
             <LinkScroll
               className="nav-link"
               activeClass="nav-link-active"
@@ -83,7 +83,6 @@ const Navbar = () => {
               Contact
             </LinkScroll>
           </li>
-
           <li>
             <ThemeToggleButton />
           </li>
