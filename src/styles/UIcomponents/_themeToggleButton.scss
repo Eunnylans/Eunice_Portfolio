@@ -24,6 +24,7 @@
   background-color: transparent;
   border: 0;
   padding: 0;
+  margin-bottom: -30%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -160,5 +161,6 @@
 @media only screen and (max-width: 420px) {
   .dark-mode-toggle {
     margin-left: 15px;
+    margin-bottom: -1%;
   }
 }

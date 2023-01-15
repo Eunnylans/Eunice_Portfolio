@@ -1,28 +1,26 @@
 @import "../base";
 
 .navbar {
-  padding: 0px 30px;
+  padding: 0px 10px;
   height: 4.3rem;
   min-width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   font-family: "Poppins Medium";
   background-color: $aqua;
   font-weight: bold;
   position: fixed;
-  margin: auto;
   z-index: 100;
 
   .home-icon {
-    padding: 0px 0;
     width: 5%;
     img {
-      height: 3%;
+      // height: 3%;
       width: 70%;
     }
     &:hover {
       cursor: pointer;
+      // background-color: $darkgreen;
     }
   }
 
@@ -37,7 +35,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 85px;
+      width: 100px;
       height: 100%;
 
       &:hover {
@@ -50,13 +48,13 @@
         font-size: $fontsize-largeText;
         text-decoration: none;
         font-family: "Poppins Medium";
-        margin-bottom: -30%;
-        row-gap: 15px;
+        margin-bottom: -25%;
 
         &-active,
         &:hover {
           color: $white;
           font-weight: 700;
+          // background-color: $darkgreen;
         }
 
         &:visited {
@@ -84,15 +82,15 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (max-width: 1286px) {
   .navbar {
-    height: 10%;
-    width: 625%;
+    height: 4.3rem;
+    min-width: 100%;
     padding: 0px 30px;
 
     .navbar-links-list {
       li {
-        width: 7%;
+        width: auto;
         padding: 0 10px;
 
         .nav-link {
@@ -105,7 +103,7 @@
 
 @media only screen and (min-width: 540px) and (max-width: 767px) {
   .navbar {
-    height: 10%;
+    height: 4.3rem;
     width: auto;
     padding-left: 10px;
     font-size: $fontsize-minText;
@@ -140,7 +138,7 @@
 
 @media only screen and (min-width: 421px) and (max-width: 540px) {
   .navbar {
-    height: 10%;
+    height: 4.3rem;
     width: auto;
     padding-left: 10px;
     font-size: $fontsize-minText;
@@ -154,34 +152,47 @@
 
       & img {
         height: 5%;
-        width: 120%;
+        width: 70%;
       }
     }
 
     .navbar-links-list {
       li {
-        width: 7%;
+        width: auto;
         padding-right: 0px;
 
         .nav-link {
           font-size: $fontsize-minText;
           row-gap: 0px;
-          margin-bottom: -53%;
+          // margin-bottom: -53%;
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (min-width: 50px) and (max-width: 420px) {
   .navbar {
     height: 10%;
-    width: 625%;
+    max-width: 100%;
     padding: 0px 30px;
+    .home-icon {
+      padding: 0px;
+      width: 5%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & img {
+        height: 5%;
+        width: 70%;
+      }
+    }
 
     .navbar-links-list {
       li {
-        width: 7%;
+        width: auto;
         padding: 0 10px;
 
         .nav-link {

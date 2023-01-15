@@ -65,7 +65,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-30}
-              duration={900}
+              duration={700}
             >
               Projects
             </LinkScroll>
