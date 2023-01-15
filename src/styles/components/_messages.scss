@@ -136,10 +136,19 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) and (max-width: 1280px) {
   .wrapper {
     form {
-      width: 100%;
+      width: 50%;
+    }
+    input {
+      width: 50%;
+    }
+    textArea {
+      width: 50%;
+    }
+    .submitButton {
+      width: fit-content;
     }
   }
   .meassages {

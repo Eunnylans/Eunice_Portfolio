@@ -82,7 +82,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) and (max-width: 1286px) {
+@media only screen and (min-width: 767px) and (max-width: 1286px) {
   .navbar {
     height: 4.3rem;
     min-width: 100%;
