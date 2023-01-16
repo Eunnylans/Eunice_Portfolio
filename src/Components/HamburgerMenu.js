@@ -3,7 +3,7 @@ import { Link as LinkScroll } from "react-scroll";
 import UIContext from "../context/ui-context";
 import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
 
-import PDF from "../assets/MyCV.pdf";
+import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 
 const HamburgerMenu = () => {
   const uiCtx = useContext(UIContext);
@@ -57,7 +57,7 @@ const HamburgerMenu = () => {
                 offset={0}
                 duration={700}
               >
-                Techskills
+                Skills
               </LinkScroll>
             </li>
 

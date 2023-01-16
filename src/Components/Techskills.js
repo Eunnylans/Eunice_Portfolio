@@ -74,7 +74,7 @@ const Techskills = ({ match }) => {
                       <Icon className={classNames(`${tech.icon}`)} id="icons" />
                       <div className="divider"></div>
                     </div>
-                    <Typography variant="h5" className="cardTypo">
+                    <Typography className="cardTypo">
                       {tech.category}
                     </Typography>
                     <Typography variant="body2" align="center">

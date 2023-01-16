@@ -18,6 +18,7 @@ import Typical from "react-typical";
 import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
+import Techskills from "./Techskills";
 
 const skillsArr = [
   {
