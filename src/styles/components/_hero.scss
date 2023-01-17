@@ -41,11 +41,11 @@
         font-family: "Poppins Medium";
       }
 
-      button {
+      a {
+        justify-content: space-between;
         font-size: $fontsize-largeText;
         background-color: $white;
         color: $darkgreen;
-        margin-top: 5%;
         border: 2px solid $aqua;
         font-family: "Poppins Medium";
         font-weight: bold;
@@ -55,6 +55,14 @@
           background-color: $aqua;
           border-color: #cef1ee;
           color: $white;
+        }
+
+        .icon {
+          height: 100px;
+          width: 50px;
+          padding-left: 10px;
+          font-size: larger;
+          font-weight: bolder;
         }
       }
     }
@@ -68,7 +76,7 @@
         color: $aqua;
       }
 
-      button {
+      a {
         color: $white;
         background-color: $darkgray;
         &:hover {

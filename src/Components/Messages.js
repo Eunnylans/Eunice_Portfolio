@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { Divider, Typography } from "@material-ui/core";
-import React, { useContext, useLayoutEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Fade from "react-reveal/Fade";
 import UIContext from "../context/ui-context";
 
@@ -36,25 +36,6 @@ const Messages = () => {
   const uiCtx = useContext(UIContext);
   const ref = useRef();
   const [fadeIn, setFadeIn] = useState(false);
-
-  const onScroll = () => {
-    const topPos = ref.current.offsetTop;
-    const bottomPos = ref.current.offsetTop + ref.current.offsetHeight;
-
-    if (
-      topPos + 150 < window.scrollY + window.innerHeight &&
-      bottomPos > window.scrollY
-    ) {
-      setFadeIn(true);
-    } else {
-      setFadeIn(false);
-    }
-  };
-
-  useLayoutEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <div className={`messages ${uiCtx.isDark ? "dark" : null}`} ref={ref}>

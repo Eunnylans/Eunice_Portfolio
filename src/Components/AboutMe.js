@@ -18,7 +18,6 @@ import Typical from "react-typical";
 import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
-import Techskills from "./Techskills";
 
 const skillsArr = [
   {
@@ -94,25 +93,6 @@ const Aboutme = () => {
   const ref = useRef();
   const [fadeIn, setFadeIn] = useState(false);
 
-  const onScroll = () => {
-    const topPos = ref.current.offsetTop;
-    const bottomPos = ref.current.offsetTop + ref.current.offsetHeight;
-
-    if (
-      topPos + 150 < window.scrollY + window.innerHeight &&
-      bottomPos > window.scrollY
-    ) {
-      setFadeIn(true);
-    } else {
-      setFadeIn(false);
-    }
-  };
-
-  useLayoutEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   const skillsList = skillsArr.map((skill) => {
     let icon = skill.icon();
     return (
@@ -170,35 +150,34 @@ const Aboutme = () => {
                 />
               </h3>
               <span className="profile-role-tagline">
-                I am a result-driven web developer, Am quick in understanding
+                I am a resourceful web developer, Am quick in understanding
                 new technologies. With my background in Sales & Marketing and
-                passion for Frontend development. I am eager to develop
-                efficient digital solutions that create a positive impact in the
-                world
+                passion for Frontend development. I can craft solid and 
+                scalable frontend products with great user experiences.
               </span>
             </span>
           </div>
           <div className="profile-options">
-            <button className="primary-btn">
+            <a className="primary-btn">
               {""}
               <LinkScroll
                 to="messages"
                 spy={true}
                 smooth={true}
-                offset={-73}
+                offset={-65}
                 duration={700}
               >
                 Contact
               </LinkScroll>{" "}
-            </button>
+            </a>
 
-            <button
+            <a
               className="highlighted-btn"
               onClick={saveFile}
               target="_blank"
             >
               Resume
-            </button>
+            </a>
           </div>
         </div>
         <div className="profile-picture">

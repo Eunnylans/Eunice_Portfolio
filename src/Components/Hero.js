@@ -1,3 +1,4 @@
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import { useContext } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import UIContext from "../context/ui-context";
@@ -19,7 +20,7 @@ const Hero = () => {
           ✨✨ Reach me if you want to create something beautiful !!✨✨
           <br />
           click the link below to <br />
-          <button>
+          <a>
             <LinkScroll
               // className="hamburger-nav-link"
               // activeClass="nav-link-active"
@@ -30,8 +31,9 @@ const Hero = () => {
               duration={700}
             >
               View my Work
+              <KeyboardArrowDownIcon className="icon" />
             </LinkScroll>{" "}
-          </button>
+          </a>
         </p>
       </div>
       <Contacts />

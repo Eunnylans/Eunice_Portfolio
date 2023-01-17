@@ -51,7 +51,7 @@ const Navbar = () => {
               to="techskills"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={700}
             >
               Skills
@@ -77,7 +77,7 @@ const Navbar = () => {
               to="messages"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={5}
               duration={700}
             >
               Contact

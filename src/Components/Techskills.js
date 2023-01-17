@@ -1,6 +1,8 @@
 import { Card, Grid, Icon, Typography } from "@material-ui/core";
-import classNames from "classnames";
-import React, { useContext, useLayoutEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
+import Database from "../assets/databaseIcon.png";
+import Desktop from "../assets/desktopIcon.png";
+import SiteMap from "../assets/SiteMapIcon.png";
 import UIContext from "../context/ui-context";
 
 const Techskills = ({ match }) => {
@@ -8,7 +10,7 @@ const Techskills = ({ match }) => {
     {
       id: 1,
       category: "Front-End Development",
-      icon: "fas fa-desktop",
+      icon: <img src={Desktop} alt="Desktop" />,
       languages_practices: "Languages:",
       language_PracticeList: "HTML, CSS, Sass, JavaScript, ReactJS",
       tools: "Tech Tools",
@@ -17,7 +19,7 @@ const Techskills = ({ match }) => {
     {
       id: 2,
       category: "Back-End Development",
-      icon: "fas fa-database",
+      icon: <img src={Database} alt="Database" />,
       languages_practices: "Languages",
       language_PracticeList: "NodeJs, NoSQL, SQL",
       tools: "Tech Tools",
@@ -26,7 +28,7 @@ const Techskills = ({ match }) => {
     {
       id: 3,
       category: "Project Management",
-      icon: "fas fa-sitemap",
+      icon: <img src={SiteMap} alt="Site" />,
       languages_practices: "Practices:",
       language_PracticeList: "Agile, SCRUM",
       tools: "Tools Used:",
@@ -37,25 +39,6 @@ const Techskills = ({ match }) => {
   const uiCtx = useContext(UIContext);
   const ref = useRef();
   const [fadeIn, setFadeIn] = useState(false);
-
-  const onScroll = () => {
-    const topPos = ref.current.offsetTop;
-    const bottomPos = ref.current.offsetTop + ref.current.offsetHeight;
-
-    if (
-      topPos + 150 < window.scrollY + window.innerHeight &&
-      bottomPos > window.scrollY
-    ) {
-      setFadeIn(true);
-    } else {
-      setFadeIn(false);
-    }
-  };
-
-  useLayoutEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <div className={`techskills ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
@@ -71,7 +54,7 @@ const Techskills = ({ match }) => {
                 <Grid item className="techStackContainer">
                   <Card elevation={0} className="card">
                     <div className="iconsDiv">
-                      <Icon className={classNames(`${tech.icon}`)} id="icons" />
+                      <Icon id="icons">{tech.icon}</Icon>
                       <div className="divider"></div>
                     </div>
                     <Typography className="cardTypo">
