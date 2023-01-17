@@ -1,5 +1,5 @@
 import { saveAs } from "file-saver";
-import React, { useContext, useLayoutEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";
 import {
   SiCss3,
@@ -150,32 +150,26 @@ const Aboutme = () => {
                 />
               </h3>
               <span className="profile-role-tagline">
-                I am a resourceful web developer, Am quick in understanding
-                new technologies. With my background in Sales & Marketing and
-                passion for Frontend development. I can craft solid and 
-                scalable frontend products with great user experiences.
+                I am a resourceful web developer, Am quick in understanding new
+                technologies. With my background in Sales & Marketing and
+                passion for Frontend development. I can craft solid and scalable
+                frontend products with great user experiences.
               </span>
             </span>
           </div>
           <div className="profile-options">
-            <a className="primary-btn">
-              {""}
-              <LinkScroll
-                to="messages"
-                spy={true}
-                smooth={true}
-                offset={-65}
-                duration={700}
-              >
-                Contact
-              </LinkScroll>{" "}
-            </a>
-
-            <a
-              className="highlighted-btn"
-              onClick={saveFile}
-              target="_blank"
+            {""}
+            <LinkScroll
+              to="messages"
+              spy={true}
+              smooth={true}
+              offset={-65}
+              duration={700}
+              className="primary-btn"
             >
+              Contact
+            </LinkScroll>{" "}
+            <a className="highlighted-btn" onClick={saveFile} target="_blank">
               Resume
             </a>
           </div>
