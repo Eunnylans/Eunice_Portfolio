@@ -1,3 +1,5 @@
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import EmailOutlinedIcon from "@material-ui/icons/Visibility";
 import { saveAs } from "file-saver";
 import React, { useContext, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";
@@ -171,6 +173,10 @@ const Aboutme = () => {
             </LinkScroll>{" "}
             <a className="highlighted-btn" onClick={saveFile} target="_blank">
               Resume
+              <VisibilityIcon
+                fontSize="medium"
+                style={{ paddingLeft: "10px" }}
+              />
             </a>
           </div>
         </div>

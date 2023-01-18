@@ -61,6 +61,10 @@
         color: $darkgreen;
       }
     }
+
+    input:focus-within {
+      outline: 1px auto $aqua;
+    }
     textarea {
       font-family: "Poppins Medium";
       font-weight: bold;
@@ -76,6 +80,10 @@
         font-size: $fontsize-minText;
         color: $darkgreen;
       }
+    }
+
+    textarea:focus-within {
+      outline: 1px auto $aqua;
     }
     .submitButton {
       cursor: pointer;
