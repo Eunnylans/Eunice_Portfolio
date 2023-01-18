@@ -1,5 +1,4 @@
 import VisibilityIcon from "@material-ui/icons/Visibility";
-import EmailOutlinedIcon from "@material-ui/icons/Visibility";
 import { saveAs } from "file-saver";
 import React, { useContext, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";

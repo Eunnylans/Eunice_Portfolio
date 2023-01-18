@@ -1,24 +1,22 @@
 @import "../base";
 
 .techStackContainer {
-  // margin: 2px 20%;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 0 50px 0;
   max-width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   gap: 10px;
 
   .card {
-    // background: $white;
     box-shadow: 1px 1px 1px 1px $aqua;
     height: 350px;
     width: 330px;
     border-bottom: 4px solid $aqua;
     justify-content: center;
     align-items: center;
-    margin-top: 35%;
+    margin-top: 40%;
 
     .iconsDiv {
       margin: auto;
@@ -79,9 +77,9 @@
 
 @media only screen and (max-width: 767px) {
   .techStackContainer {
-    // margin-top: 10%;
     .card {
       width: 100%;
+      margin-bottom: -2rem;
       .iconsDiv {
         #icons {
         }
@@ -107,9 +105,9 @@
 
 @media only screen and (min-width: 540px) and (max-width: 767px) {
   .techStackContainer {
-    // margin-top: 10px;
     .card {
       width: 100%;
+      margin-bottom: -2rem;
       .iconsDiv {
         #icons {
         }
@@ -136,7 +134,7 @@
 
 @media only screen and (max-width: 540px) {
   .techStackContainer {
-    // margin-top: 10px;
+    padding-top: 2rem;
     .card {
       width: 100%;
       .iconsDiv {
@@ -165,7 +163,6 @@
 
 @media only screen and (max-width: 420px) {
   .techStackContainer {
-    // margin-top: 10px;
     .card {
       width: 100%;
       .iconsDiv {
@@ -193,7 +190,7 @@
 
 @media only screen and (max-width: 375px) {
   .techStackContainer {
-    // margin-top: 10px;
+    padding-top: 2rem;
     .card {
       width: 100%;
       .iconsDiv {
@@ -222,9 +219,10 @@
 
 @media only screen and (max-width: 280px) {
   .techStackContainer {
-    margin-top: 20%;
+    padding-top: 2rem;
     .card {
       width: 100%;
+
       .iconsDiv {
         #icons {
         }

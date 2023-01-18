@@ -77,7 +77,7 @@ const Navbar = () => {
               to="messages"
               spy={true}
               smooth={true}
-              offset={5}
+              offset={0}
               duration={700}
             >
               Contact
