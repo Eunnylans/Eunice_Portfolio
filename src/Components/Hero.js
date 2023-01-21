@@ -32,13 +32,14 @@ const Hero = () => {
           <LinkScroll
             // className="hamburger-nav-link"
             // activeClass="nav-link-active"
+            className="hero-view"
             to="projects"
             spy={true}
             smooth={true}
             offset={-20}
             duration={700}
           >
-            View my Work
+            view my work
             <KeyboardArrowDownIcon className="icon" />
           </LinkScroll>{" "}
         </p>
