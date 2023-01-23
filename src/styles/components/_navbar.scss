@@ -1,14 +1,14 @@
 @import "../base";
 
 .navbar {
-  padding: 0px 10px;
+  padding: 0px 25px;
   height: 4.3rem;
   min-width: 100%;
   display: flex;
   justify-content: space-between;
   font-family: "Poppins Medium";
   background-color: $aqua;
-  font-weight: bold;
+  font-weight: 600;
   position: fixed;
   z-index: 100;
 
@@ -26,7 +26,7 @@
 
   .navbar-links-list {
     display: flex;
-    width: 90%;
+    width: 50%;
     justify-content: flex-end;
     list-style-type: none;
     z-index: 900;
@@ -53,7 +53,7 @@
         &-active,
         &:hover {
           color: $white;
-          font-weight: 700;
+          font-weight: 600;
           // background-color: $darkgreen;
         }
 
@@ -70,7 +70,7 @@
           &-active,
           &:hover {
             color: $darkgray;
-            font-weight: 700;
+            font-weight: 600;
           }
 
           &:visited {
@@ -88,7 +88,12 @@
     min-width: 100%;
     padding: 0px 30px;
 
+    .home-icon {
+      width: 5%;
+    }
+
     .navbar-links-list {
+      width: 90%;
       li {
         width: auto;
         padding: 0 10px;
@@ -122,6 +127,7 @@
     }
 
     .navbar-links-list {
+      width: 90%;
       li {
         width: 85px;
         padding-right: 0px;
@@ -136,7 +142,7 @@
   }
 }
 
-@media only screen  and (max-width: 540px) {
+@media only screen and (max-width: 540px) {
   .navbar {
     height: 4.3rem;
     width: auto;
@@ -157,6 +163,7 @@
     }
 
     .navbar-links-list {
+      width: 90%;
       li {
         width: auto;
         padding-right: 0px;
@@ -172,6 +179,40 @@
 }
 
 @media only screen and (max-width: 420px) {
+  .navbar {
+    height: 10%;
+    max-width: 100%;
+    padding: 0px 30px;
+    .home-icon {
+      padding: 0px;
+      width: 5%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & img {
+        height: 5%;
+        width: 70%;
+      }
+    }
+
+    .navbar-links-list {
+      li {
+        width: auto;
+        padding: 0 10px;
+
+        .nav-link {
+          font-size: $fontsize-minText;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
   .navbar {
     height: 10%;
     max-width: 100%;

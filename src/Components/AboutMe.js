@@ -1,4 +1,4 @@
-import VisibilityIcon from "@material-ui/icons/Visibility";
+import { Divider, Typography } from "@material-ui/core";
 import { saveAs } from "file-saver";
 import React, { useContext, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";
@@ -14,8 +14,10 @@ import {
   SiRedux,
   SiTailwindcss,
 } from "react-icons/si";
+import Fade from "react-reveal/Fade";
 import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
+import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
@@ -112,6 +114,26 @@ const Aboutme = () => {
       className={`aboutme profile-container ${uiCtx.isDark ? "dark" : null}`}
       ref={ref}
     >
+    <div
+    className={`profile-content ${uiCtx.isDark ? "dark" : null}`}
+    ref={ref}
+  >
+    <Fade left>
+      <SectionTitle
+        className={`profile-title ${fadeIn ? "fadeIn" : null}`}
+      >
+        About Me
+      </SectionTitle>
+    </Fade>
+    <Fade right>
+      <Divider className="divider" style={{ border: "0px",
+        width: "110px",
+        height: "4px",
+        backgroundColor: "#0cbfae",
+        margin: "10px 0 40px 15.5% "}}></Divider>
+    </Fade>
+  </div>
+
       <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
         <div className="profile-details">
           <div className="colz">
@@ -120,10 +142,8 @@ const Aboutme = () => {
 
           <div className="profile-details-name">
             <span className="primary-text">
-              {" "}
-              Hello, I'M{" "}
               <SectionTitle className="highlighted-text">
-                A Fullstack(MERN) Web & App Developer
+                Web & App Developer
               </SectionTitle>
             </span>
           </div>
@@ -153,30 +173,33 @@ const Aboutme = () => {
               <span className="profile-role-tagline">
                 I am a resourceful web developer, Am quick in understanding new
                 technologies. With my background in Sales & Marketing and
-                passion for Frontend development. I can craft solid and scalable
-                frontend products with great user experiences.
+                passion for Frontend development I can help I develop efficient
+                digital solutions that can push your business forward.
               </span>
             </span>
           </div>
           <div className="profile-options">
-            {""}
-            <LinkScroll
-              to="messages"
-              spy={true}
-              smooth={true}
-              offset={-65}
-              duration={700}
-              className="primary-btn"
+            <button className="primary-btn">
+              {""}
+              <LinkScroll
+                to="messages"
+                spy={true}
+                smooth={true}
+                offset={5}
+                duration={700}
+              >
+                Contact
+              </LinkScroll>{" "}
+            </button>
+
+            <button
+              className="highlighted-btn"
+              href={PDF}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contact
-            </LinkScroll>{" "}
-            <a className="highlighted-btn" onClick={saveFile} target="_blank">
               Resume
-              <VisibilityIcon
-                fontSize="medium"
-                style={{ paddingLeft: "10px" }}
-              />
-            </a>
+            </button>
           </div>
         </div>
         <div className="profile-picture">

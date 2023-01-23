@@ -23,12 +23,12 @@ const Hero = () => {
         </h1>
         <p>
           <span className="hero-colorText">
-            ✨I design and build user-friendly websites✨
+            ✨I build websites with a focus on responsive design, and accessibility.✨
           </span>
           &nbsp; <br />
-          ✨✨ Reach me if you want to create something beautiful !!✨✨
+          ✨✨ click the link below to!!✨✨
           <br />
-          click the link below to <br />
+           
           <LinkScroll
             // className="hamburger-nav-link"
             // activeClass="nav-link-active"
@@ -39,7 +39,7 @@ const Hero = () => {
             offset={-20}
             duration={700}
           >
-            view my work
+            view portfolio
             <KeyboardArrowDownIcon className="icon" />
           </LinkScroll>{" "}
         </p>

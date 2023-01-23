@@ -18,6 +18,7 @@ const Navbar = () => {
           <img src={icon} alt="home" onClick={scrollToTop} />
         </div>
         <ul className={`navbar-links-list ${uiCtx.isDark ? "dark" : null}`}>
+          
           <li>
             <LinkScroll
               className="nav-link"
@@ -77,7 +78,7 @@ const Navbar = () => {
               to="messages"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={5}
               duration={700}
             >
               Contact
