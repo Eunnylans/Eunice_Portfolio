@@ -52,11 +52,10 @@ const Techskills = ({ match }) => {
           <SectionTitle
             className={`techskills-title ${fadeIn ? "fadeIn" : null}`}
             style={{
-              paddingLeft: "10%",
-              textAlign: "center",
+              margin: "10px 0 40px 46.5% ",
             }}
           >
-            Tech Skills
+            Skills
           </SectionTitle>
         </Fade>
         <Fade right>

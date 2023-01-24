@@ -18,7 +18,6 @@ const Navbar = () => {
           <img src={icon} alt="home" onClick={scrollToTop} />
         </div>
         <ul className={`navbar-links-list ${uiCtx.isDark ? "dark" : null}`}>
-          
           <li>
             <LinkScroll
               className="nav-link"
@@ -39,7 +38,7 @@ const Navbar = () => {
               to="aboutme"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={20}
               duration={700}
             >
               About
@@ -52,7 +51,7 @@ const Navbar = () => {
               to="techskills"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-100}
               duration={700}
             >
               Skills
@@ -78,7 +77,7 @@ const Navbar = () => {
               to="messages"
               spy={true}
               smooth={true}
-              offset={5}
+              offset={10}
               duration={700}
             >
               Contact
