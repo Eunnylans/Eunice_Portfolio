@@ -5,7 +5,7 @@ $darkgreen: rgb(83, 103, 97);
 $gray: #615e5e;
 $aqua: #0cbfae;
 $white: white;
-$offwhite:  #f6f6f6;
+$offwhite: #f6f6f6;
 $icons: #252525;
 $lightgray: #fafafa;
 $darkgray: #1a1a1a;
@@ -58,13 +58,15 @@ $fontsize-minText: 14px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:  "Poppins Medium", "Poppins Regular",
-    "Poppins SemiBold", "Poppins Bold", "Poppins ExtraBold", "Poppins Light",
-    "Poppins Thin";
+  // outline: solid 1px red;
+  font-family: "Poppins Medium", "Poppins Regular", "Poppins SemiBold",
+    "Poppins Bold", "Poppins ExtraBold", "Poppins Light", "Poppins Thin";
 }
 
 body {
   @include setBGAndTextColor($white);
+  // overflow-y: hidden; /* Hide vertical scrollbar */
+  // overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 body.dark {
@@ -115,5 +117,3 @@ body.dark {
   font-weight: normal;
   src: url("../assets/fonts/Poppins-Thin.ttf");
 }
-
-

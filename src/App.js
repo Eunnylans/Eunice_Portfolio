@@ -8,7 +8,6 @@ import Hero from "./Components/Hero";
 import Messages from "./Components/Messages";
 import Navbar from "./Components/NavBar";
 import Projects from "./Components/Projects";
-import Techskills from "./Components/Techskills";
 import UIContext from "./context/ui-context";
 import useWindowDimensions from "./hooks/useWindowDimensions";
 import ScrollToTopIcon from "./UIcomponents/ScrollToTopIcon";
@@ -33,7 +32,6 @@ function App() {
       <main>
         <Hero />
         <Aboutme />
-        <Techskills />
         <Projects />
         <Messages />
       </main>

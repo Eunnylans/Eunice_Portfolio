@@ -1,10 +1,12 @@
 @import "../base";
 
 .navbar {
-  padding: 0px 25px;
+  padding: 0px 30px;
   height: 4.3rem;
   min-width: 100%;
+  margin: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: "Poppins Medium";
   background-color: $aqua;
@@ -15,18 +17,17 @@
   .home-icon {
     width: 5%;
     img {
-      // height: 3%;
+      height: 3%;
       width: 70%;
     }
     &:hover {
       cursor: pointer;
-      // background-color: $darkgreen;
     }
   }
 
   .navbar-links-list {
     display: flex;
-    width: 50%;
+    width: 90%;
     justify-content: flex-end;
     list-style-type: none;
     z-index: 900;
@@ -35,38 +36,51 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100px;
+      width: 120px;
       height: 100%;
 
       &:hover {
         cursor: pointer;
       }
 
-      .nav-link {
+      .nav-link,
+      .nav-link-resume {
         display: block;
         line-height: 100%;
         font-size: $fontsize-largeText;
         text-decoration: none;
         font-family: "Poppins Medium";
         margin-bottom: -25%;
+        row-gap: 15px;
 
         &-active,
         &:hover {
           color: $white;
           font-weight: 600;
-          // background-color: $darkgreen;
         }
 
         &:visited {
           text-decoration: none;
           color: $gray;
         }
+        .nav-link-resume {
+          margin-top: 70%;
+          &:visited {
+            color: $gray;
+          }
+
+          &:hover {
+            color: $white;
+            font-weight: 600;
+          }
+        }
       }
     }
 
     &.dark {
       li {
-        .nav-link {
+        .nav-link,
+        .nav-link-resume {
           &-active,
           &:hover {
             color: $darkgray;
@@ -77,6 +91,17 @@
             color: white;
           }
         }
+
+        .nav-link-resume {
+          &:visited {
+            color: white;
+          }
+
+          &:hover {
+            color: $darkgray;
+            font-weight: 600;
+          }
+        }
       }
     }
   }
@@ -85,20 +110,16 @@
 @media only screen and (max-width: 767px) {
   .navbar {
     height: 4.3rem;
-    min-width: 100%;
+    width: 625%;
     padding: 0px 30px;
 
-    .home-icon {
-      width: 5%;
-    }
-
     .navbar-links-list {
-      width: 90%;
       li {
         width: auto;
         padding: 0 10px;
 
-        .nav-link {
+        .nav-link,
+        .nav-link-resume {
           font-size: $fontsize-smallText;
         }
       }
@@ -121,28 +142,28 @@
       }
 
       & img {
-        height: 3%;
-        width: 70%;
+        height: 5%;
+        width: 120%;
       }
     }
 
     .navbar-links-list {
-      width: 90%;
       li {
         width: 85px;
         padding-right: 0px;
 
-        .nav-link {
+        .nav-link,
+        .nav-link-resume {
           font-size: $fontsize-minText;
           row-gap: 0px;
-          // margin-bottom: -47%;
+          margin-bottom: -47%;
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (min-width: 421px) and (max-width: 540px) {
   .navbar {
     height: 4.3rem;
     width: auto;
@@ -158,20 +179,20 @@
 
       & img {
         height: 5%;
-        width: 70%;
+        width: 100%;
       }
     }
 
     .navbar-links-list {
-      width: 90%;
       li {
-        width: auto;
+        width: 85px;
         padding-right: 0px;
 
-        .nav-link {
+        .nav-link,
+        .nav-link-resume {
           font-size: $fontsize-minText;
           row-gap: 0px;
-          // margin-bottom: -53%;
+          margin-bottom: -53%;
         }
       }
     }
@@ -180,63 +201,17 @@
 
 @media only screen and (max-width: 420px) {
   .navbar {
-    height: 10%;
-    max-width: 100%;
+    height: 4.3rem;
+    width: 625%;
     padding: 0px 30px;
-    .home-icon {
-      padding: 0px;
-      width: 5%;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      & img {
-        height: 5%;
-        width: 70%;
-      }
-    }
 
     .navbar-links-list {
       li {
         width: auto;
         padding: 0 10px;
 
-        .nav-link {
-          font-size: $fontsize-minText;
-        }
-      }
-    }
-  }
-}
-
-
-
-@media only screen and (max-width: 375px) {
-  .navbar {
-    height: 10%;
-    max-width: 100%;
-    padding: 0px 30px;
-    .home-icon {
-      padding: 0px;
-      width: 5%;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      & img {
-        height: 5%;
-        width: 70%;
-      }
-    }
-
-    .navbar-links-list {
-      li {
-        width: auto;
-        padding: 0 10px;
-
-        .nav-link {
+        .nav-link,
+        .nav-link-resume {
           font-size: $fontsize-minText;
         }
       }

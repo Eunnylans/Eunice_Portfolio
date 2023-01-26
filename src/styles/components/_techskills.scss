@@ -8,27 +8,8 @@
   max-width: 100%;
   // min-height: 100vh;
   gap: 10px;
-  display:inline-block;
+  display: inline-block;
   flex-wrap: wrap;
-
-  &-content {
-    .techskills-title {
-      margin-left: 45%;
-      margin-bottom: 1%;
-      padding-top: 5%;
-      color: $darkgreen;
-      opacity: 0;
-
-      &.fadeIn {
-        animation: fadeIn linear 0.8s forwards;
-      }
-    }
-
-    .divider {
-    }
-  }
-
-
   .card {
     box-shadow: 1px 1px 1px 1px $aqua;
     height: 350px;

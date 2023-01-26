@@ -1,4 +1,4 @@
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 import { useContext } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import Typist from "react-text-typist";
@@ -23,12 +23,12 @@ const Hero = () => {
         </h1>
         <p>
           <span className="hero-colorText">
-            ✨I build websites with a focus on responsive design, and accessibility.✨
+            ✨I build websites with a focus on responsive design, and
+            accessibility.✨
           </span>
           &nbsp; <br />
           ✨✨ click the link below to!!✨✨
           <br />
-           
           <LinkScroll
             // className="hamburger-nav-link"
             // activeClass="nav-link-active"
@@ -40,7 +40,7 @@ const Hero = () => {
             duration={700}
           >
             view portfolio
-            <KeyboardArrowDownIcon className="icon" />
+            <VisibilityIcon className="icon" />
           </LinkScroll>{" "}
         </p>
       </div>

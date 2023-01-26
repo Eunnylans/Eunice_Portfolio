@@ -1,43 +1,35 @@
 .section-title {
-  justify-content: center;
-  align-items: center;
-  // margin-left: 47.5%;
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
-  width: 100%;
+ 
 }
 
 @media only screen and (max-width: 767px) {
   .section-title {
-    // font-size: 48px;
     font-size: $fontsize-largeText;
   }
 }
 
 @media only screen and (max-width: 540px) {
   .section-title {
-    // font-size: 48px;
     font-size: $fontsize-largeText;
   }
 }
 @media only screen and (max-width: 420px) {
   .section-title {
-    // font-size: 48px;
     font-size: $fontsize-largeText;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .section-title {
-    // font-size: 48px;
     font-size: $fontsize-largeText;
   }
 }
 
 @media only screen and (max-width: 280px) {
   .section-title {
-    // font-size: 48px;
     font-size: $fontsize-largeText;
   }
 }

@@ -21,6 +21,7 @@ import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
+import Techskills from "./Techskills";
 
 const skillsArr = [
   {
@@ -130,7 +131,8 @@ const Aboutme = () => {
         width: "110px",
         height: "4px",
         backgroundColor: "#0cbfae",
-        margin: "10px 0 40px 15.5% "}}></Divider>
+        marginLeft: "46.5%",
+        marginBottom: "40px" }}></Divider>
     </Fade>
   </div>
 
@@ -210,6 +212,7 @@ const Aboutme = () => {
           />
         </div>
       </div>
+      <Techskills />
     </div>
   );
 };

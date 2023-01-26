@@ -44,34 +44,7 @@ const Techskills = ({ match }) => {
 
   return (
     <div className={`techskills ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
-      <div
-        className={`techskills-content ${uiCtx.isDark ? "dark" : null}`}
-        ref={ref}
-      >
-        <Fade left>
-          <SectionTitle
-            className={`techskills-title ${fadeIn ? "fadeIn" : null}`}
-            style={{
-              margin: "10px 0 40px 46.5% ",
-            }}
-          >
-            Skills
-          </SectionTitle>
-        </Fade>
-        <Fade right>
-          <Divider
-            className="divider"
-            style={{
-              border: "0px",
-              width: "110px",
-              height: "4px",
-              backgroundColor: "#0cbfae",
-              margin: "10px 0 40px 46.5% ",
-            }}
-          ></Divider>
-        </Fade>
-      </div>
-
+    
       <Grid
         container
         spacing={1}
