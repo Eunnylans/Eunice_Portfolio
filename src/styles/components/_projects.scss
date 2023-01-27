@@ -112,14 +112,14 @@
               font-size: $fontsize-smallText;
               font-weight: bold;
               text-decoration: none;
-              background-color: $aqua;
-              border: 1px solid $loader-color;
+              background-color: $offwhite;
+              border: 3px solid $aqua;
               color: $darkgreen;
 
               &:hover {
                 cursor: pointer;
                 background-color: $aqua;
-                border: 1px solid $aqua;
+                border: 3px solid $aqua;
                 color: white;
               }
 
@@ -159,11 +159,11 @@
               //color: $darkgray;
               color: white;
               background-color: $darkgray;
-              border: 1px solid white;
+              border: 3px solid white;
 
               &:hover {
                 background-color: $aqua;
-                border: 1px solid $aqua;
+                border: 3px solid $aqua;
                 color: $darkgray;
               }
 
@@ -196,6 +196,7 @@
   .projects {
     display: flex;
     justify-content: center;
+    margin-top: 100rem;
 
     &-content {
       width: 75vw;

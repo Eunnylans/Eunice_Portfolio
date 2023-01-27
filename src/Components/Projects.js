@@ -20,7 +20,7 @@ const projectArr = [
     github: "https://github.com/Eunnylans/GusApp",
   },
   {
-    title: "Admin Dashboard",
+    title: "Dashboard",
     subtitle: "<Personal Project>",
     techName:
       "React | React Router | React Icons | CSS | Material UI | Netlify",
@@ -30,10 +30,10 @@ const projectArr = [
     github: "https://github.com/Eunnylans/Admin-dashboard",
   },
   {
-    title: "Bconnected Platform",
+    title: "B-connected",
     subtitle: "<Team Project>",
     techName:
-      "MongoDb | Express | React | NodeJs | CSS | Bootstrap | Figma |  Heroku | Netlify",
+      "MongoDb | Express | React | NodeJs | CSS | Bootstrap | Figma | Netlify",
     src: project3,
     alt: "Business Platform",
     livedemo: "https://b-connected.netlify.app/",

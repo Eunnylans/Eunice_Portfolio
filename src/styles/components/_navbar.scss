@@ -202,6 +202,48 @@
     width: 625%;
     padding: 0px 30px;
 
+    .home-icon {
+      visibility: hidden;
+      &:hover {
+        cursor: pointer;
+      }
+
+      & img {
+        visibility: hidden;
+      }
+    }
+
+    .navbar-links-list {
+      li {
+        width: auto;
+        padding: 0 10px;
+
+        .nav-link,
+        .nav-link-resume {
+          font-size: $fontsize-minText;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar {
+    height: 4.3rem;
+    width: 625%;
+    padding: 0px 30px;
+
+    .home-icon {
+      visibility: hidden;
+      &:hover {
+        cursor: pointer;
+      }
+
+      & img {
+        visibility: hidden;
+      }
+    }
+
     .navbar-links-list {
       li {
         width: auto;

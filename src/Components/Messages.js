@@ -51,8 +51,8 @@ const Messages = () => {
         >
           <path
             d="M0 0 L50 100 L100 0 Z"
-            fill="#cef1ee"
-            stroke="#cef1ee"
+            fill="#f6f6f6"
+            stroke="#f6f6f6"
           ></path>
         </svg>
         <div id="contact" className="wrapper">
