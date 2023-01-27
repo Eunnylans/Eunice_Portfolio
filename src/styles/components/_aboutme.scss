@@ -8,7 +8,8 @@
   max-width: 100vw;
   margin: auto;
   // min-height: 100vh;
-  padding: 7% 5% 5% 7%;
+  // overflow: auto;%;
+  padding: 7% 5% 0% 7%;
 
   &-content {
     .profile-title {
@@ -28,112 +29,109 @@
   }
 
   .profile-parent {
-   display: flex;
+    display: flex;
     align-items: center;
     color: $darkgreen;
     .profile-details {
       width: 50vw;
       padding-left: 5vw;
-      
-  
-  }
-  .profile-details-name {
-    font-size: 24px;
-    font-family: "Poppins SemiBold";
-  }
-  .profile-details-role {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-    h3 {
+    }
+    .profile-details-name {
+      font-size: 24px;
+      font-family: "Poppins SemiBold";
+    }
+    .profile-details-role {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.3;
+      h3 {
+        font-size: x-large;
+        font-family: "Poppins Bold";
+        font-weight: 600;
+        color: $aqua;
+      }
+    }
+    .primary-text {
+      font-family: "Poppins SemiBold";
+      font-weight: 600;
       font-size: x-large;
-      font-family: "Poppins Bold";
-      font-weight: 600;
+    }
+    .highlighted-text {
       color: $aqua;
-    }
-  }
-  .primary-text {
-    font-family: "Poppins SemiBold";
-    font-weight: 600;
-    font-size: x-large;
-  }
-  .highlighted-text {
-    color: $aqua;
-    font-size: x-large;
-    font-weight: 600;
-    font-family: "Poppins SemiBold";
-    margin-left: auto;
-  }
-
-  .profile-role-tagline {
-    font-size: $fontsize-largeText;
-    font-family: "Poppins Medium";
-    line-height: 1.3;
-    text-align: center;
-    opacity: 0;
-    animation: fadeIn linear 0.8s forwards;
-    animation-delay: 0.3s;
-  }
-
-  .profile-options {
-    width: 250px;
-    margin: auto;
-    .highlighted-btn {
-      border-radius: 50px;
-      padding: 14px 0;
-      width: 50%;
-      cursor: pointer;
-      transition: 0.2s;
-      color: $darkgreen;
-      border: 3px solid $aqua;
-      font-size: $fontsize-largeText;
+      font-size: x-large;
       font-weight: 600;
-      font-family: "Poppins Medium";
-      background-color: $white;
-
-      &:hover {
-        // margin: 0 0 0 28px;
-        background-color: $aqua;
-        border: 3px solid #cef1ee;
-        color: $white;
-      }
-      &:active {
-        transform: translateY(2px);
-      }
+      font-family: "Poppins SemiBold";
+      margin-left: auto;
     }
 
-    .highlighted-btn:focus-within {
-      outline: 2px auto $aqua;
-    }
-
-    .primary-btn {
-      border-radius: 50px;
-      padding: 14px 0;
-      width: 50%;
-      cursor: pointer;
-      transition: 0.2s;
+    .profile-role-tagline {
       font-size: $fontsize-largeText;
-      font-weight: 600;
       font-family: "Poppins Medium";
-      color: $darkgreen;
-      border: 3px solid $aqua;
-      background-color: $white;
-      &:hover {
-        background-color: $aqua;
-        border: 3px solid #cef1ee;
-        color: $white;
-      }
-      &:active {
-        transform: translateY(2px);
-      }
+      line-height: 1.3;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn linear 0.8s forwards;
+      animation-delay: 0.3s;
     }
 
-    .primary-btn:focus-within {
-      outline: 2px auto $aqua;
+    .profile-options {
+      width: 250px;
+      margin: auto;
+      .highlighted-btn {
+        border-radius: 50px;
+        padding: 14px 0;
+        width: 50%;
+        cursor: pointer;
+        transition: 0.2s;
+        color: $darkgreen;
+        border: 3px solid $aqua;
+        font-size: $fontsize-largeText;
+        font-weight: 600;
+        font-family: "Poppins Medium";
+        background-color: $white;
+
+        &:hover {
+          // margin: 0 0 0 28px;
+          background-color: $aqua;
+          border: 3px solid #cef1ee;
+          color: $white;
+        }
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+
+      .highlighted-btn:focus-within {
+        outline: 2px auto $aqua;
+      }
+
+      .primary-btn {
+        border-radius: 50px;
+        padding: 14px 0;
+        width: 50%;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: $fontsize-largeText;
+        font-weight: 600;
+        font-family: "Poppins Medium";
+        color: $darkgreen;
+        border: 3px solid $aqua;
+        background-color: $white;
+        &:hover {
+          background-color: $aqua;
+          border: 3px solid #cef1ee;
+          color: $white;
+        }
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+
+      .primary-btn:focus-within {
+        outline: 2px auto $aqua;
+      }
     }
   }
-
-}
   .profile-picture {
     display: flex;
     align-items: center;

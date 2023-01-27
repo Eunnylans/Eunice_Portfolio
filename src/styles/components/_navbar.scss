@@ -18,7 +18,7 @@
     width: 5%;
     img {
       height: 3%;
-      width: 70%;
+      width: 80%;
     }
     &:hover {
       cursor: pointer;
@@ -50,8 +50,8 @@
         font-size: $fontsize-largeText;
         text-decoration: none;
         font-family: "Poppins Medium";
-        margin-bottom: -25%;
-        row-gap: 15px;
+        margin-top: 10%;
+        row-gap: 5px;
 
         &-active,
         &:hover {
@@ -64,11 +64,10 @@
           color: $gray;
         }
         .nav-link-resume {
-          margin-top: 70%;
+          padding-top: 70%;
           &:visited {
             color: $gray;
           }
-
           &:hover {
             color: $white;
             font-weight: 600;
@@ -156,7 +155,6 @@
         .nav-link-resume {
           font-size: $fontsize-minText;
           row-gap: 0px;
-          margin-bottom: -47%;
         }
       }
     }
@@ -192,7 +190,6 @@
         .nav-link-resume {
           font-size: $fontsize-minText;
           row-gap: 0px;
-          margin-bottom: -53%;
         }
       }
     }
