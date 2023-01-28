@@ -8,7 +8,7 @@
 
   &-content {
     .projects-title {
-      margin: 45px 0px 30px 690px;
+      margin: 45px 0px 0px 690px;
       color: $darkgreen;
       opacity: 0;
 
@@ -22,8 +22,7 @@
       width: 110px;
       height: 4px;
       background-color: $aqua;
-      margin-left: 46.5%;
-      margin-bottom: 40px;
+      margin: 10px 0 40px 46.5%;
     }
 
     .projects-list {
@@ -316,6 +315,71 @@
 }
 
 @media only screen and (max-width: 420px) {
+  .projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 100rem;
+
+    &-content {
+      //width: 90vw;
+      width: 75vw;
+
+      .projects-title {
+        margin-left: 40%;
+        margin-bottom: 1%;
+      }
+
+      .divider {
+        margin-left: 39%;
+        margin-bottom: 5%;
+      }
+
+      .projects-list {
+        width: 100%;
+        grid-template-columns: 1fr;
+
+        .project {
+          &-img {
+            a {
+              // height: 200%;
+              // width: 200%;
+
+              img {
+                //transform: scale(1.1);
+              }
+            }
+          }
+
+          &-description {
+            .project-title-section {
+              .project-maintitle {
+                font-size: $fontsize-smallText;
+                //font-size: 50px;
+              }
+
+              .project-subtitle {
+                font-size: 10px;
+              }
+            }
+
+            .project-tech {
+              font-size: $fontsize-minText;
+            }
+
+            .project-link {
+              a {
+                font-size: $fontsize-minText;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
   .projects {
     display: flex;
     justify-content: center;

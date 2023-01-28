@@ -33,7 +33,7 @@ const projectArr = [
     title: "B-connected",
     subtitle: "<Team Project>",
     techName:
-      "MongoDb | Express | React | NodeJs | CSS | Bootstrap | Figma | Netlify",
+      "MongoDb | Express | React | NodeJs | CSS | Bootstrap | Netlify",
     src: project3,
     alt: "Business Platform",
     livedemo: "https://b-connected.netlify.app/",
