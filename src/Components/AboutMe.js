@@ -1,4 +1,4 @@
-import { Divider, Typography } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
 import { saveAs } from "file-saver";
 import React, { useContext, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";
@@ -115,26 +115,29 @@ const Aboutme = () => {
       className={`aboutme profile-container ${uiCtx.isDark ? "dark" : null}`}
       ref={ref}
     >
-    <div
-    className={`profile-content ${uiCtx.isDark ? "dark" : null}`}
-    ref={ref}
-  >
-    <Fade left>
-      <SectionTitle
-        className={`profile-title ${fadeIn ? "fadeIn" : null}`}
+      <div
+        className={`profile-content ${uiCtx.isDark ? "dark" : null}`}
+        ref={ref}
       >
-        About Me
-      </SectionTitle>
-    </Fade>
-    <Fade right>
-      <Divider className="divider" style={{ border: "0px",
-        width: "110px",
-        height: "4px",
-        backgroundColor: "#0cbfae",
-        marginLeft: "46.5%",
-        marginBottom: "40px" }}></Divider>
-    </Fade>
-  </div>
+        <Fade left>
+          <SectionTitle className={`profile-title ${fadeIn ? "fadeIn" : null}`}>
+            About Me
+          </SectionTitle>
+        </Fade>
+        <Fade right>
+          <Divider
+            className="divider"
+            style={{
+              border: "0px",
+              width: "110px",
+              height: "4px",
+              backgroundColor: "#0cbfae",
+              marginLeft: "46%",
+              marginBottom: "40px",
+            }}
+          ></Divider>
+        </Fade>
+      </div>
 
       <div className={`profile-parent ${fadeIn ? "fadeIn" : null}`}>
         <div className="profile-details">
@@ -175,8 +178,9 @@ const Aboutme = () => {
               <span className="profile-role-tagline">
                 I am a resourceful web developer, Am quick in understanding new
                 technologies. With my background in Sales & Marketing and
-                passion for Frontend development I can help I develop efficient
-                digital solutions that can push your business forward.
+                passion for Frontend development I can help develop efficient
+                and sustainable digital solutions that can push your business
+                forward.
               </span>
             </span>
           </div>

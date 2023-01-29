@@ -258,7 +258,7 @@
   .projects {
     display: flex;
     justify-content: center;
-     margin-top: 100rem;
+    margin-top: 100rem;
 
     &-content {
       //width: 90vw;
@@ -377,7 +377,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 375px) {
   .projects {

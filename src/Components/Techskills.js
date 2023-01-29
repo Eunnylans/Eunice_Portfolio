@@ -1,11 +1,9 @@
-import { Card, Divider, Grid, Icon, Typography } from "@material-ui/core";
+import { Card, Grid, Icon, Typography } from "@material-ui/core";
 import React, { useContext, useRef, useState } from "react";
-import Fade from "react-reveal/Fade";
 import Database from "../assets/databaseIcon.png";
 import Desktop from "../assets/desktopIcon.png";
 import SiteMap from "../assets/SiteMapIcon.png";
 import UIContext from "../context/ui-context";
-import SectionTitle from "../UIcomponents/SectionTitle";
 
 const Techskills = ({ match }) => {
   const myTechStack = [
@@ -44,7 +42,6 @@ const Techskills = ({ match }) => {
 
   return (
     <div className={`techskills ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
-    
       <Grid
         container
         spacing={1}
