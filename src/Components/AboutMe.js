@@ -131,9 +131,8 @@ const Aboutme = () => {
               border: "0px",
               width: "110px",
               height: "4px",
+              margin: " 1% auto",
               backgroundColor: "#0cbfae",
-              marginLeft: "46%",
-              marginBottom: "40px",
             }}
           ></Divider>
         </Fade>

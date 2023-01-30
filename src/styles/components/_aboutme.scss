@@ -12,8 +12,6 @@
 
   &-content {
     .profile-title {
-      margin-left: 45%;
-      margin-bottom: 1%;
       padding-top: 5%;
       color: $darkgreen;
       opacity: 0;
@@ -416,6 +414,7 @@
 
 @media screen and (max-width: 375px) {
   .profile-container {
+    margin-bottom: 20rem;
     &-content {
       .profile-title {
         &.fadeIn {

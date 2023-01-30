@@ -2,13 +2,14 @@
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
+  margin: auto;
  
 }
 
 @media only screen and (max-width: 767px) {
   .section-title {
     font-size: $fontsize-largeText;
-    margin-left: 10%;
+    
   }
 }
 

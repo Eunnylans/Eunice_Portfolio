@@ -1,17 +1,34 @@
 import emailjs from "@emailjs/browser";
 import { Divider, Typography } from "@material-ui/core";
 import React, { useContext, useRef, useState } from "react";
+import { useForm } from "react-hook-form";
 import Fade from "react-reveal/Fade";
 import UIContext from "../context/ui-context";
 
 const Messages = () => {
-  const form = useRef();
+  const { register, handleSubmit, errors } = useForm();
+
   // const serviceID = process.env.REACT_APP_SERVICE_ID;
   // const templateId = process.env.REACT_APP_TEMPLATE_ID;
   // const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const onSubmit = (data, reset) => {
+    alert(
+      `Thank you for your message ${data.user_name}. I'll get back to you as soon as possible. Best wishes and keep smiling, Eunice 😊✨`
+    );
+
+    console.log({
+      full_data: data,
+      from_name: data.user_name,
+      message: data.message,
+      reply_to: data.user_email,
+    });
+    sendForm(serviceID, templateId, {
+      from_name: data.user_name,
+      message: data.message,
+      reply_to: data.user_email,
+    });
+    reset.target.reset();
     emailjs
       .sendForm(
         "service_706zsyo",
@@ -65,25 +82,61 @@ const Messages = () => {
           <Typography className="questionTypo" variant="body1">
             Feel free to get in touch or talk about a project
           </Typography>
-          <form ref={form} onSubmit={sendEmail} className="form">
+          <form onSubmit={handleSubmit(onSubmit)} className="form">
             <input
               type="text"
               name="user_name"
               placeholder={"Please enter your name"}
               className="input"
+              ref={register({
+                required: "Please enter your name",
+                maxLength: {
+                  value: 20,
+                  message: "Please enter a name fewer than 20 characters",
+                },
+              })}
             />
+            <Typography
+              gutterBottom
+              style={{ color: "#726F6E" }}
+              variant="caption"
+            >
+              {errors.name && errors.name.message}
+            </Typography>
 
             <input
               type="email"
               name="user_email"
               placeholder={"Please enter your email"}
               className="input"
+              ref={register({
+                required: "Please enter your email",
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: "Invalid email address",
+              })}
             />
+            <Typography
+              gutterBottom
+              style={{ color: "#726F6E" }}
+              variant="caption"
+            >
+              {errors.email && errors.email.message}
+            </Typography>
             <textarea
               name="message"
               className="textArea"
               placeholder={"Please enter your message"}
+              ref={register({
+                required: "Oops, you forgot your message",
+              })}
             />
+            <Typography
+              gutterBottom
+              style={{ color: "#726F6E" }}
+              variant="caption"
+            >
+              {errors.message && "Oops, you forgot your message"}
+            </Typography>
             <input
               type="submit"
               value="Send"
