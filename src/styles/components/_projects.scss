@@ -113,15 +113,15 @@
               font-size: $fontsize-smallText;
               font-weight: bold;
               text-decoration: none;
-              background-color: $aqua;
-              border: 1px solid $loader-color;
               color: $darkgreen;
+              border: 3px solid $aqua;
+              background-color: $offwhite;
 
               &:hover {
                 cursor: pointer;
                 background-color: $aqua;
-                border: 1px solid $aqua;
-                color: white;
+                border: 3px solid #cef1ee;
+                color: $white;
               }
 
               &:visited {
@@ -131,7 +131,8 @@
                 &:hover {
                   cursor: pointer;
                   background-color: $aqua;
-                  color: white;
+                  border: 3px solid #cef1ee;
+                  color: $white;
                 }
               }
             }
@@ -164,14 +165,15 @@
 
               &:hover {
                 background-color: $aqua;
-                border: 1px solid $aqua;
-                color: $darkgray;
+                border-color: white;
+                color: $white;
               }
 
               &:visited {
                 &:hover {
                   background-color: $aqua;
-                  color: $darkgray;
+                  border-color: white;
+                  color: $white;
                 }
               }
             }
