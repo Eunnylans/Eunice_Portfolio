@@ -3,8 +3,6 @@ import { Link as LinkScroll } from "react-scroll";
 import UIContext from "../context/ui-context";
 import ThemeToggleButton from "../UIcomponents/ThemeToggleButton";
 
-import PDF from "../assets/Eunice-igbinedion-resume.pdf";
-
 const HamburgerMenu = () => {
   const uiCtx = useContext(UIContext);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,7 +90,7 @@ const HamburgerMenu = () => {
             <li>
               <a
                 className="hamburger-nav-link"
-                href={PDF}
+                href="https://eunice-igbinedion-resume.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

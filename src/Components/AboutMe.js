@@ -1,5 +1,5 @@
 import { Divider } from "@material-ui/core";
-import { saveAs } from "file-saver";
+import FileSaver from "file-saver";
 import React, { useContext, useRef, useState } from "react";
 import { FaSass } from "react-icons/fa";
 import {
@@ -17,7 +17,6 @@ import {
 import Fade from "react-reveal/Fade";
 import { Link as LinkScroll } from "react-scroll";
 import Typical from "react-typical";
-import PDF from "../assets/Eunice-igbinedion-resume.pdf";
 import ProfilePic from "../assets/Eunnylans.jpg";
 import UIContext from "../context/ui-context";
 import SectionTitle from "../UIcomponents/SectionTitle";
@@ -107,7 +106,7 @@ const Aboutme = () => {
   });
 
   const saveFile = () => {
-    saveAs("https://eunice-igbindedion-resume.netlify.app/");
+    FileSaver.saveAs("https://eunice-igbinedion-resume.netlify.app/");
   };
 
   return (
@@ -199,7 +198,7 @@ const Aboutme = () => {
 
             <button
               className="highlighted-btn"
-              href={PDF}
+              onClick={saveFile}
               target="_blank"
               rel="noopener noreferrer"
             >
