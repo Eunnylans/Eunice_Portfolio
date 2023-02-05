@@ -189,7 +189,7 @@ const Aboutme = () => {
                 to="messages"
                 spy={true}
                 smooth={true}
-                offset={5}
+                offset={100}
                 duration={700}
               >
                 Contact
