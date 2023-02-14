@@ -4,20 +4,6 @@ import React, { useContext, useLayoutEffect, useRef, useState } from "react";
 import Fade from "react-reveal/Fade";
 import UIContext from "../context/ui-context";
 
-const Result = () => {
-  return (
-    <p
-      style={{
-        fontSize: "10px",
-        padding: "10px",
-      }}
-    >
-      Thank you for your message. I'll get back to you as soon as possible. Best
-      wishes and keep smiling, Eunice 😊✨
-    </p>
-  );
-};
-
 const Messages = (props) => {
   const [result, showResult] = useState(false);
   const form = useRef();
@@ -71,6 +57,20 @@ const Messages = (props) => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const Result = () => {
+    return (
+      <p
+        style={{
+          fontSize: "10px",
+          padding: "10px",
+        }}
+      >
+        Thank you for your message. I'll get back to you as soon as possible.
+        Best wishes and keep smiling, Eunice 😊✨
+      </p>
+    );
+  };
 
   return (
     <div className={`messages ${uiCtx.isDark ? "dark" : null}`} ref={ref}>
