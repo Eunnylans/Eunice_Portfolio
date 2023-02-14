@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={`footer ${uiCtx.isDark ? "dark" : null}`}>
       <p>
-        Made with ♥ by Eunnylans © {new Date().getFullYear()}
+        Crafted with ♥ by Eunnylans © {new Date().getFullYear()}
         <br /> All Rights Reserved
       </p>
     </footer>
